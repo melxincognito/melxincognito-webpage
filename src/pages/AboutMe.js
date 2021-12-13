@@ -1,6 +1,6 @@
 import {
   Card,
-  CardActionArea,
+  CardContent,
   CardMedia,
   Container,
   Typography,
@@ -10,6 +10,8 @@ import Alcala from "../assets/alcala.png";
 import Sicilia from "../assets/Sicilia.png";
 import Tetas from "../assets/Tetas.png";
 import Bellichi from "../assets/Bellichi.png";
+import Santiago from "../assets/Santiago.png";
+
 export default function AboutMe() {
   return (
     <Container
@@ -17,22 +19,27 @@ export default function AboutMe() {
         display: "grid",
         alignContent: "center",
         justifyContent: "center",
-        padding: 3,
       }}
     >
       <Container
         sx={{
-          maxWidth: 690,
+          maxWidth: 680,
           display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          marginBottom: 4,
         }}
       >
         <Card>
-          <CardActionArea
-            sx={{
-              maxWidth: 690,
-            }}
-          >
+          <CardContent>
             <Typography variant="h3"> Hey, I'm Mel! </Typography>
+            <CardMedia
+              sx={{ maxWidth: 300, maxHeight: 300, borderRadius: 50 }}
+              component="img"
+              image={Santiago}
+            />
+          </CardContent>
+          <CardContent>
             <Typography variant="h6">
               {" "}
               Thanks for taking a peek at my site! There's not much now, I'm
@@ -43,7 +50,8 @@ export default function AboutMe() {
               will probably be thousands of frequent updates and changes as I go
               through my web development journey!{" "}
             </Typography>
-          </CardActionArea>
+            <Typography variant="h6">hello</Typography>
+          </CardContent>
         </Card>
       </Container>
       <Container sx={{ display: "flex", flexWrap: "wrap", width: 800 }}>

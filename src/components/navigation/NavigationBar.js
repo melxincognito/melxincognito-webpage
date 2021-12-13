@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
   return (
-    <AppBar position="static" sx={{ bgcolor: "pink" }}>
+    <AppBar position="static" sx={{ bgcolor: "pink", padding: 2 }}>
       <Toolbar>
         <Typography variant="h5">Mel Incögnito</Typography>
         <Container>
@@ -25,6 +25,7 @@ export default function NavigationBar() {
               component={Link}
               to="/mydevjourney"
             />
+            <Tab label="Contact Me" component={Link} to="/contact" />
           </Tabs>
         </Container>
       </Toolbar>

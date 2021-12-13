@@ -2,6 +2,7 @@ import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import MyProjects from "./pages/MyProjects";
 import MyDevJourney from "./pages/MyDevJourney";
+import Contact from "./pages/Contact";
 
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/navigation/Layout";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<MyProjects />} />
           <Route path="/mydevjourney" element={<MyDevJourney />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
     </ThemeProvider>
