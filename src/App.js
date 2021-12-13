@@ -1,7 +1,7 @@
 import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import MyProjects from "./pages/MyProjects";
-import CV from "./pages/CV";
+import MyDevJourney from "./pages/MyDevJourney";
 
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/navigation/Layout";
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<MyProjects />} />
-          <Route path="/clothescollection" element={<CV />} />
+          <Route path="/mydevjourney" element={<MyDevJourney />} />
         </Routes>
       </Layout>
     </ThemeProvider>
