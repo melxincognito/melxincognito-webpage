@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
-
 import { Box, Card, TextField, Button, CardActions } from "@mui/material";
 
-export default function ContactForm() {
+export default function ContactForm(props) {
   const firstNameInput = useRef();
   const lastNameInput = useRef();
   const emailInput = useRef();
@@ -25,7 +24,7 @@ export default function ContactForm() {
       messagedata: message,
     };
 
-    console.log(contactMeMessageData);
+    console.log("hello");
   }
 
   return (
@@ -75,6 +74,8 @@ export default function ContactForm() {
           label="Message"
           multiline
           rows={4}
+          ref={messageInput}
+          required
         />
         <CardActions>
           <Button variant="outlined" color="secondary" onClick={clickedSendBtn}>
