@@ -32,7 +32,7 @@ export default function AboutMe() {
       >
         <Card>
           <CardContent>
-            <Typography variant="h3"> Hey, I'm Mel! </Typography>
+            <Typography variant="h4"> About Me </Typography>
             <CardMedia
               sx={{ maxWidth: 300, maxHeight: 300, borderRadius: 50 }}
               component="img"
@@ -40,17 +40,16 @@ export default function AboutMe() {
             />
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
-              Thanks for taking a peek at my site! There's not much now, I'm
-              just getting started on my web development journey. I hope that
-              with time I'll be able to grow and expand this site in many
-              different forms. Add new features, pages and themes for
-              customization. Feel free to check back every now and again, there
-              will probably be thousands of frequent updates and changes as I go
-              through my web development journey!{" "}
+              Hey! My name is Mel and I'm from Phoenix, Arizona. I have a
+              variety of interests such as traveling, fashion, cooking and art.
+              I hardly knew how to use an iPhone about a year ago so I never
+              thought I would ever be into programming, but once I found it I
+              was hooked. I really enjoy that I can have an idea in my head and
+              create it from absolutely nothing right in front of my computer
+              screen. It makes me feel like a wizard.{" "}
             </Typography>
-            <Typography variant="h6">hello</Typography>
           </CardContent>
         </Card>
       </Container>
