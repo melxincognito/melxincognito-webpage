@@ -18,7 +18,13 @@ export default function NavigationBar() {
           <Tabs>
             <Tab label="Home" component={Link} to="/" />
             <Tab label="About Me" component={Link} to="/about" />
+
             <Tab label="My Projects" component={Link} to="/projects" />
+            <Tab
+              label="My Clothes Collection"
+              component={Link}
+              to="/clothescollection"
+            />
           </Tabs>
         </Container>
       </Toolbar>
