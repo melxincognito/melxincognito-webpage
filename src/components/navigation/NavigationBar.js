@@ -13,7 +13,7 @@ export default function NavigationBar() {
   return (
     <AppBar position="static" sx={{ bgcolor: "pink" }}>
       <Toolbar>
-        <Typography variant="h5">Nav Bar</Typography>
+        <Typography variant="h5">Mel Incögnito</Typography>
         <Container>
           <Tabs>
             <Tab label="Home" component={Link} to="/" />

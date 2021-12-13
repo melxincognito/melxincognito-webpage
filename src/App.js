@@ -4,15 +4,20 @@ import MyProjects from "./pages/MyProjects";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/navigation/Layout";
 
+import { ThemeProvider } from "@mui/material";
+import theme from "./assets/theme";
+
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/projects" element={<MyProjects />} />
-      </Routes>
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<MyProjects />} />
+        </Routes>
+      </Layout>
+    </ThemeProvider>
   );
 }
 
