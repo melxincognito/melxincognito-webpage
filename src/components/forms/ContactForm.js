@@ -10,19 +10,6 @@ export default function ContactForm(props) {
 
   function clickedSendBtn(e) {
     e.preventDefault();
-    const firstName = firstNameInput.current.value;
-    const lastName = lastNameInput.current.value;
-    const email = emailInput.current.value;
-    const twitter = twitterInput.current.value;
-    const message = messageInput.current.value;
-
-    const contactMeMessageData = {
-      name: firstName,
-      surname: lastName,
-      emailAddress: email,
-      twitterHandle: twitter,
-      messagedata: message,
-    };
 
     console.log("hello");
   }
