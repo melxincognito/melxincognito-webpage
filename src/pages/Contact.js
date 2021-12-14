@@ -5,7 +5,9 @@ import ContactForm from "../components/forms/ContactForm";
 export default function Contact() {
   return (
     <Container>
-      <Typography variant="h3">Contact Form</Typography>
+      <Typography variant="h3" color="purple">
+        Contact Me
+      </Typography>
       <ContactForm />
     </Container>
   );
