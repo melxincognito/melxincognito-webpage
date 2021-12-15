@@ -46,7 +46,7 @@ export default function MyDevJourney() {
               When I first started to take the plunge I looked into bootcamps.
               They seemed great at first glance but I didnt have the ability to
               dedicate the time while working a full time job. I also didn't
-              have $9,000+- to spend on a bootcamp. My only option was teaching
+              have $9,000 to spend on a bootcamp. My only option was teaching
               myself at that point. I knew there were a lot of free resources
               online so I tried platforms like{" "}
               <Link href="https://www.codecademy.com/" target="_blank">

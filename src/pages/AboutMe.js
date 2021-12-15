@@ -50,19 +50,19 @@ export default function AboutMe() {
             <Typography variant="body1">
               {" "}
               Hey! My name is Mel and I'm from Phoenix, Arizona. There's a lot
-              to me so it's hard to narrow it down to a short bio, but I'll give
+              to me so it's hard to narrow it down in a short bio, but I'll give
               it my best shot. I have a variety of interests such as traveling,
               fashion, cooking and art. I really enjoy programming and creating
               applications as well. I never thought that I would be the type of
               person to like programming this much but once I found it I was
-              hooked. I feel so lucky I'll be able to make a career out of this.
-              They say if you do what you love you'll never work a day in your
-              life so I hope I'll find that statement to be true. I really enjoy
-              that I can have an idea in my head and make it into something real
-              and have it running right in front of my computer screen. It makes
-              me feel like a wizard. I am barely at the beginning of my
-              developer journey and it excites me knowing there's still so much
-              left to learn ahead!{" "}
+              hooked. I feel so lucky knowing I'll be able to make a career out
+              of this. They say if you do what you love you'll never work a day
+              in your life so I hope I'll find that statement to be true. I love
+              programming because I like being able to have an idea in my head
+              and make it into something real. Having it running in front of my
+              computer screen makes me feel like a wizard. I am barely at the
+              beginning of my developer journey and it excites me knowing
+              there's still so much left to learn ahead!{" "}
             </Typography>
           </CardContent>
         </Card>
