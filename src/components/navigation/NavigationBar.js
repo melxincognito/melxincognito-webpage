@@ -21,7 +21,7 @@ export default function NavigationBar() {
 
             <Tab label="My Projects" component={Link} to="/projects" />
             <Tab
-              label="My Development Journey"
+              label="My Self-Taught Developer Journey"
               component={Link}
               to="/mydevjourney"
             />

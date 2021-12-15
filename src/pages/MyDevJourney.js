@@ -23,36 +23,35 @@ export default function MyDevJourney() {
           <CardContent>
             <Typography variant="h6">
               {" "}
-              As a community taught developer, I thought I would take a moment
-              to share how I've been developing the necessary skills on my own.
-              The whole process started out a little shakey but I ended up
-              finding the right path because I was persistent. I decided I
-              wanted to have a career as a software developer for many reasons.
-              Primarily, I was attracted to the amount of mobility a career as a
-              developer would give me. I needed a job where I could work from
-              home because of my disability. As much as I enjoy working on site,
-              I need a job where I'm able to work from home in order to be
-              productive. I was also extremely attracted to the career because I
-              knew I wouldn't be locked to any one part of the world. I really
-              enjoy moving around to different countries so I wanted a career
-              where I wouldn't be restricted to one area.{" "}
+              As a self-taught developer, I thought I would take a moment to
+              share how I've been developing the necessary skills on my own. The
+              whole process started out a little shakey but I ended up finding
+              the right path because I was persistent. I decided I wanted to
+              have a career as a software developer for many reasons. Primarily,
+              I was attracted to the amount of mobility a career as a developer
+              would give me. I needed a job where I could work from home because
+              of my disability. As much as I enjoy working on site, I need a job
+              where I'm able to work from home in order to be productive. I was
+              also extremely attracted to the career because I knew I wouldn't
+              be locked to any one part of the world. I really enjoy moving
+              around to different countries so I wanted a career where I
+              wouldn't be restricted to any one area.{" "}
             </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="h6">
               {" "}
-              When I first started to take the plunge I looked into some
-              bootcamps. They seemed great at first glance but I didnt have the
-              ability to dedicate the necessary time while working a full time
-              job. I also didn't have $9,000 of dispensible income to spend on a
-              bootcamp. I knew there were a lot of free resources online so I
-              started to look there. I tried platforms like codecademy and free
-              trials of paid courses but I wasted about 5 months jumping from
-              resource to resource because I didn't know exactly what to look
-              for. I didn't get to create anything noteworthy but I played
-              around with a lot of languages and tools so I like to view that as
-              a time where I was able to scratch the surface of everything here
-              and there.{" "}
+              When I first started to take the plunge I looked into bootcamps.
+              They seemed great at first glance but I didnt have the ability to
+              dedicate the necessary time while working a full time job. I also
+              didn't have $9,000 of dispensible income to spend on a bootcamp.
+              My only option was teaching myself at that point. I knew there
+              were a lot of free resources online so I tried platforms like
+              codecademy and free trials of paid courses. I wasted about 5
+              months jumping from resource to resource because I didn't know
+              exactly what to look for. I didn't get to create anything
+              noteworthy during this time but I was able to scratch the surface
+              of a lot of different languages and tools.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -61,7 +60,7 @@ export default function MyDevJourney() {
               It wasn't until I stumbled upon{" "}
               <Link href="https://www.theodinproject.com/" target="_blank">
                 {" "}
-                The Odin Project{" "}
+                The Odin Project{""}
               </Link>{" "}
               that I began to make any real progress. A bunch of developers
               compiled all the necessary tools and resources to use online to
@@ -74,10 +73,10 @@ export default function MyDevJourney() {
                 target="_blank"
               >
                 {" "}
-                Foundations Path{" "}
+                Foundations Path{""}
               </Link>{" "}
-              . I was spending about 4-8 hours a day really taking the time to
-              understand and apply the material.
+              spending about 4-8 hours a day working through the modules and
+              projects.
             </Typography>
           </CardContent>
           <CardContent>
@@ -85,23 +84,23 @@ export default function MyDevJourney() {
               {" "}
               When I was finished with their foundations path I had to choose
               between their Ruby or JavaScript track. After doing some job
-              searches on local job listings, I saw there were significantly
-              more jobs available that required JavaScript. This obviously made
-              my choice pretty straightforward.{" "}
+              searches on local job boards I saw there were significantly more
+              jobs available that required JavaScript. This made my choice
+              pretty straightforward.{" "}
             </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="h6">
               {" "}
               I went through a good part of the JavaScript track but I didnt end
-              up completing the whole thing. I stopped with vanilla javascript
+              up completing the whole thing. I stopped with vanilla JavaScript
               after I learned about WebPacks. I was really intrigued by them and
-              saw the benefit of using them for larger scale projects- I wanted
+              saw the benefit of using them for larger scale projects; I wanted
               to work with them more. I remember a friend working as a software
               engineer saying he works with something called React and he was
               pretty sure it was operating off a webpack so I looked into it.
-              React was JavaScript on steroids and it was EXACTLY what I was
-              looking for.{" "}
+              React was JavaScript on steroids and it ended up being exactly
+              what I never knew I needed.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -113,16 +112,16 @@ export default function MyDevJourney() {
                 target="_blank"
               >
                 {" "}
-                React Docs{" "}
+                React Docs{""}
               </Link>{" "}
-              but honestly I didn't have enough developer skills to learn
-              without having someone explain a few things here and there. I
-              looked around but I couldn't find another platform like the odin
-              project and I didn't have $150 for a full stack React course. I
-              just needed the basics to be explained so I spent twenty dollars
-              on a udemy course. I thought might help but I found out pretty
-              quickly it was just another follow along tutorial I could have
-              watched on Youtube.{" "}
+              but, honestly, I didn't have enough developer skills at the time
+              to learn without having someone explain a few things here and
+              there. I looked around but I couldn't find another platform like
+              the odin project and I didn't have $150 for a full stack React
+              course. I just needed the basics to be explained so I spent twenty
+              dollars on a udemy course. I thought it might help but I found out
+              pretty quickly it was just a follow along tutorial I could have
+              found on Youtube.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -157,16 +156,21 @@ export default function MyDevJourney() {
               you're actually understanding what's going on. The video is four
               hours long and it can be a little dense so I took about two days
               to get through it with a good understanding. By the end I
-              understood enough to have a good foundation of React basics I
-              could move into advanced topics with.{" "}
+              understood enough to have a good foundation of React basics and I
+              felt confident I could move into more advanced topics.{" "}
             </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="h6">
               {" "}
-              After I got a good grip on React I started building whatever
-              projects I could think of which allowed me to learn about other
-              tools available like Redux, Material UI, Firebase, etc.{" "}
+              I started building whatever projects I could think to practice and
+              from there I started to learn about the different tools available
+              like Redux, Material UI, Firebase, etc. React being relatively new
+              means there are a lot of frequent changes and update. A lot of the
+              videos and help guides were outdated even though they were
+              uploaded only a few months prior so I had to really practice
+              researching finding updated and best practices, which is an
+              essential skill to develop when using any language or framework.{" "}
             </Typography>
           </CardContent>
         </Card>
