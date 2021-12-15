@@ -29,13 +29,12 @@ export default function MyDevJourney() {
               the right path because I was persistent. I decided I wanted to
               have a career as a software developer for many reasons. Primarily,
               I was attracted to the amount of mobility a career as a developer
-              would give me. I needed a job where I could work from home because
-              of my disability. As much as I enjoy working on site, I need a job
-              where I'm able to work from home in order to be productive. I was
-              also extremely attracted to the career because I knew I wouldn't
-              be locked to any one part of the world. I really enjoy moving
-              around to different countries so I wanted a career where I
-              wouldn't be restricted to any one area.{" "}
+              would give me. As much as I enjoy working on site, I need a job
+              where I'm able to work from home in order to be productive due to
+              my disability. Another reason I was extremely attracted to the
+              career was because I knew I wouldn't be locked to any one part of
+              the world. I really enjoy moving around to different countries so
+              I wanted a career where I wouldn't be restricted to any one area.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -43,15 +42,18 @@ export default function MyDevJourney() {
               {" "}
               When I first started to take the plunge I looked into bootcamps.
               They seemed great at first glance but I didnt have the ability to
-              dedicate the necessary time while working a full time job. I also
-              didn't have $9,000 of dispensible income to spend on a bootcamp.
-              My only option was teaching myself at that point. I knew there
-              were a lot of free resources online so I tried platforms like
-              codecademy and free trials of paid courses. I wasted about 5
-              months jumping from resource to resource because I didn't know
-              exactly what to look for. I didn't get to create anything
-              noteworthy during this time but I was able to scratch the surface
-              of a lot of different languages and tools.{" "}
+              dedicate the time while working a full time job. I also didn't
+              have $9,000+- to spend on a bootcamp. My only option was teaching
+              myself at that point. I knew there were a lot of free resources
+              online so I tried platforms like
+              <Link href="https://www.codecademy.com/" target="_blank">
+                Codecademy
+              </Link>{" "}
+              and free trials of paid courses. I wasted about 5 months jumping
+              from resource to resource because I didn't know exactly what to
+              look for. I didn't get to create anything noteworthy during this
+              time but I was able to scratch the surface of a lot of different
+              languages and tools.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -62,12 +64,14 @@ export default function MyDevJourney() {
                 {" "}
                 The Odin Project{""}
               </Link>{" "}
-              that I began to make any real progress. A bunch of developers
-              compiled all the necessary tools and resources to use online to
-              start a career in web development along with projects and a
-              community discord. Really, what more could someone in my situation
-              ask for? It was exactly what I needed so I sat down and got to
-              work. It took me about two months to get through their{" "}
+              that I began to make any real progress towards becoming a
+              developer. A bunch of developers compiled all the necessary tools
+              and resources to use online for people who start a career in web
+              development along with projects and a community discord. It was
+              everything someone in my situation needed in order to launch a
+              career, the only catch was you had to be willing to actually do
+              it. I kept persistent, sat down and got to work. It took me about
+              two months to get through their{" "}
               <Link
                 href="https://www.theodinproject.com/paths/foundations/courses/foundations"
                 target="_blank"
@@ -117,11 +121,11 @@ export default function MyDevJourney() {
               but, honestly, I didn't have enough developer skills at the time
               to learn without having someone explain a few things here and
               there. I looked around but I couldn't find another platform like
-              the odin project and I didn't have $150 for a full stack React
+              the odin project and I didn't have $200 for a full stack React
               course. I just needed the basics to be explained so I spent twenty
-              dollars on a udemy course. I thought it might help but I found out
-              pretty quickly it was just a follow along tutorial I could have
-              found on Youtube.{" "}
+              dollars on a Udemy course. I thought it might help but I found out
+              pretty quickly it was just a follow along tutorial. I could have
+              found the same thing on Youtube.{" "}
             </Typography>
           </CardContent>
           <CardContent>
