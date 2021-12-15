@@ -72,9 +72,10 @@ export default function MyDevJourney() {
               and resources online to launch a career in web development along
               with projects and a community discord. It was everything someone
               in my situation needed in order to get started, the only catch was
-              you had to be willing to actually do it. I kept persistent, sat
-              down and got to work. It took me about two months to get through
-              their{" "}
+              you had to be willing to actually do it. I knew there were only
+              three things I needed to do: sit down, get to work and keep
+              persistent. So I did just that and it took me about two months to
+              get through their{" "}
               <Link
                 href="https://www.theodinproject.com/paths/foundations/courses/foundations"
                 target="_blank"
