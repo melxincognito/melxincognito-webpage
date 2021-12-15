@@ -20,13 +20,23 @@ export default function HomePage() {
           />
         </CardContent>
         <CardContent>
-          <Typography variant="h5">Mel Incögnito</Typography>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Typography variant="h4" color="#330e62">
+              Mel Incögnito
+            </Typography>
+          </div>
+        </CardContent>
+        <CardContent>
           <Typography variant="body1">
-            Welcome to my personal page! You'll find a bit of everything here
-            and there. Feel free to look around and check back every now and
-            again to see any updates to the site. I'll continue growing and
-            expanding this webpage while I go through my developer journey!{" "}
+            Welcome to my personal page! I made this site from scratch using
+            React.JS and Material-UI! You'll find a bit of everything here and
+            there. Feel free to look around and check back every now and again
+            to see any updates to the site. It's pretty simple for now but I'll
+            continue growing and expanding this webpage as I go through my
+            developer journey.{" "}
           </Typography>
+        </CardContent>
+        <CardContent>
           <Typography variant="body1">
             {" "}
             You can click on the top tabs to read a little about me, see some of

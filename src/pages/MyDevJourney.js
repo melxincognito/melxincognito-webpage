@@ -18,10 +18,13 @@ export default function MyDevJourney() {
       >
         <Card>
           <CardContent>
-            <Typography variant="h4"> My Web Development Journey </Typography>
+            <Typography variant="h4" color="#330e62">
+              {" "}
+              My Developer Journey{" "}
+            </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               As a self-taught developer, I thought I would take a moment to
               share how I've been developing the necessary skills on my own. The
@@ -38,14 +41,14 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               When I first started to take the plunge I looked into bootcamps.
               They seemed great at first glance but I didnt have the ability to
               dedicate the time while working a full time job. I also didn't
               have $9,000+- to spend on a bootcamp. My only option was teaching
               myself at that point. I knew there were a lot of free resources
-              online so I tried platforms like
+              online so I tried platforms like{" "}
               <Link href="https://www.codecademy.com/" target="_blank">
                 Codecademy
               </Link>{" "}
@@ -57,7 +60,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               It wasn't until I stumbled upon{" "}
               <Link href="https://www.theodinproject.com/" target="_blank">
@@ -66,12 +69,12 @@ export default function MyDevJourney() {
               </Link>{" "}
               that I began to make any real progress towards becoming a
               developer. A bunch of developers compiled all the necessary tools
-              and resources to use online for people who start a career in web
-              development along with projects and a community discord. It was
-              everything someone in my situation needed in order to launch a
-              career, the only catch was you had to be willing to actually do
-              it. I kept persistent, sat down and got to work. It took me about
-              two months to get through their{" "}
+              and resources online to launch a career in web development along
+              with projects and a community discord. It was everything someone
+              in my situation needed in order to get started, the only catch was
+              you had to be willing to actually do it. I kept persistent, sat
+              down and got to work. It took me about two months to get through
+              their{" "}
               <Link
                 href="https://www.theodinproject.com/paths/foundations/courses/foundations"
                 target="_blank"
@@ -84,7 +87,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               When I was finished with their foundations path I had to choose
               between their Ruby or JavaScript track. After doing some job
@@ -94,7 +97,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               I went through a good part of the JavaScript track but I didnt end
               up completing the whole thing. I stopped with vanilla JavaScript
@@ -108,7 +111,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               I tried to learn straight from the{" "}
               <Link
@@ -129,16 +132,16 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               I never made the mistake of spending money on courses ever again.{" "}
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6"> Anyways. </Typography>
+            <Typography variant="body1"> Anyways. </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               Eventualy, I found{" "}
               <Link
@@ -147,25 +150,18 @@ export default function MyDevJourney() {
               >
                 this{""}
               </Link>{" "}
-              YouTube video from{" "}
-              <Link
-                href="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w"
-                target="_blank"
-              >
-                {" "}
-                Academind
-              </Link>{" "}
-              and it was exactly what I was looking for! He gives an explanation
-              of React basics by using an easy tutorial that's broken down so
-              you're actually understanding what's going on. The video is four
-              hours long and it can be a little dense so I took about two days
-              to get through it with a good understanding. By the end I
-              understood enough to have a good foundation of React basics and I
-              felt confident I could move into more advanced topics.{" "}
+              YouTube video from Academind and it was exactly what I was looking
+              for! He gives an explanation of React basics by using an easy
+              tutorial that's broken down so you're actually understanding
+              what's going on. The video is four hours long and it can be a
+              little dense so I took about two days to get through it with a
+              good understanding. By the end I understood enough to have a good
+              foundation of React basics and I felt confident I could move into
+              more advanced topics.{" "}
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography variant="h6">
+            <Typography variant="body1">
               {" "}
               I started building whatever projects I could think to practice and
               from there I started to learn about the different tools available
@@ -173,9 +169,25 @@ export default function MyDevJourney() {
               means there are a lot of frequent changes and update. A lot of the
               videos and help guides were outdated even though they were
               uploaded only a few months prior so I had to really practice
-              researching finding updated and best practices. This is an
-              essential skill to develop when using any language or framework so
-              there's.{" "}
+              researching finding updated and best practices. Tech is always
+              changing so this is an essential skill to develop for any
+              engineer, knowing this allowed me to not get too annoyed by these
+              smaller issues.{" "}
+            </Typography>
+          </CardContent>
+          <CardContent>
+            <Typography variant="body1">
+              {" "}
+              I feel like I have been able to get a good foundation for my path
+              forward but I know this is only the beginning. I've only scratched
+              the surface so far, there's so many things I dont know and so many
+              paths I could take. Currently my goals are to create quality web
+              and mobile applications using React.JS and React Native while also
+              learning to program blockchain applications. I never thought I
+              would have had the ability to teach myself something so valuable
+              but thanks to the surplus of free resources plus the supportive
+              tech community, I know anything is possible as long as I'm willing
+              to put in the effort.{" "}
             </Typography>
           </CardContent>
         </Card>
