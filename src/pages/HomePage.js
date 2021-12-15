@@ -22,10 +22,10 @@ export default function HomePage() {
         <CardContent>
           <Typography variant="h5">Mel Incögnito</Typography>
           <Typography variant="body1">
-            Welcome to my page! Here you'll find a bit of everything here and
-            there. Feel free to look around and check back every now and again
-            to see any updates to the site. I'll be growing and expanding on
-            this webpage while I continue through my web development journey.{" "}
+            Hello Welcome to my page! Here you'll find a bit of everything here
+            and there. Feel free to look around and check back every now and
+            again to see any updates to the site. I'll be growing and expanding
+            on this webpage while I continue through my web development journey.{" "}
           </Typography>
           <Typography variant="body2">
             {" "}

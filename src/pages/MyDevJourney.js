@@ -169,8 +169,9 @@ export default function MyDevJourney() {
               means there are a lot of frequent changes and update. A lot of the
               videos and help guides were outdated even though they were
               uploaded only a few months prior so I had to really practice
-              researching finding updated and best practices, which is an
-              essential skill to develop when using any language or framework.{" "}
+              researching finding updated and best practices. This is an
+              essential skill to develop when using any language or framework so
+              there's.{" "}
             </Typography>
           </CardContent>
         </Card>
