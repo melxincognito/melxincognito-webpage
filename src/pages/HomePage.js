@@ -31,7 +31,7 @@ export default function HomePage() {
             Welcome to my personal page! I made this site from scratch using
             React.JS and Material-UI! It's pretty simple now but I'll continue
             growing and expanding this webpage as I go through my developer
-            journey. Feel free to look around - check back every now and again
+            journey. Feel free to look around and check back every now and again
             to see any updates to the site!{" "}
           </Typography>
         </CardContent>
