@@ -25,15 +25,6 @@ export default function MyProjects() {
               applications with React Native.
             </Typography>
           </CardContent>
-          <CardContent>
-            <Typography variant="body1">
-              Feel free to check out my{" "}
-              <Link href="www.github.com/melxincognito" target="_blank">
-                Github
-              </Link>{" "}
-              to see my code on past projects!
-            </Typography>
-          </CardContent>
 
           <CardContent>
             <Typography>
@@ -62,6 +53,15 @@ export default function MyProjects() {
               progress forward quickly. My goal by the end of 2022 is to develop
               at least three large scale applications in my portfolio using
               React!
+            </Typography>
+          </CardContent>
+          <CardContent>
+            <Typography variant="body1">
+              Feel free to check out my{" "}
+              <Link href="www.github.com/melxincognito" target="_blank">
+                Github
+              </Link>{" "}
+              to see some code from my past projects!
             </Typography>
           </CardContent>
         </CardContent>
