@@ -7,6 +7,7 @@ import {
   Link,
   CardMedia,
 } from "@mui/material";
+import Header from "../assets/mydevjourney/header.png";
 import OdinLogo from "../assets/mydevjourney/odinlogo.png";
 import NoDesk from "../assets/mydevjourney/BegStudy.png";
 import ConDesk from "../assets/mydevjourney/NewSetup.png";
@@ -33,6 +34,9 @@ export default function MyDevJourney() {
               {" "}
               My Developer Journey{" "}
             </Typography>
+          </CardContent>
+          <CardContent>
+            <CardMedia sx={{ maxWidth: 600 }} component="img" image={Header} />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
