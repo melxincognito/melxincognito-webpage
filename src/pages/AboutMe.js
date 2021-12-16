@@ -68,18 +68,6 @@ export default function AboutMe() {
         </Card>
       </Container>
       <Container>
-        <Card sx={{ maxWidth: 800 }}>
-          <CardContent>
-            <Typography variant="h5"> My favorite travel spots </Typography>
-            <Typography variant="body1">
-              {" "}
-              Here are my top favorite travel spots around the globe. I've been
-              able to see so many cool places around the world, it's difficult
-              to pick the ones I liked the most!{" "}
-            </Typography>
-          </CardContent>
-        </Card>
-
         <Container
           sx={{ display: "flex", flexWrap: "wrap", width: 800, gap: 7 }}
         >
