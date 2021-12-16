@@ -29,7 +29,12 @@ export default function MyDevJourney() {
         }}
       >
         <Card>
-          <CardContent>
+          <CardContent
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Typography variant="h4" color="#330e62">
               {" "}
               My Developer Journey{" "}
