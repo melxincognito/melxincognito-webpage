@@ -32,14 +32,17 @@ export default function MyProjects() {
               <ul>
                 {" "}
                 <li>
-                  {" "}
-                  <Link href="www.tmg-contruction.com" target="_blank">
-                    www.tmg-construction.com
+                  <Link
+                    href="https://www.adventuringavocado.com"
+                    target="_blank"
+                  >
+                    www.adventuringavocado.com
                   </Link>
                 </li>
                 <li>
-                  <Link href="www.adventuringavocado.com" target="_blank">
-                    www.adventuringavocado.com
+                  {" "}
+                  <Link href="http://tmg-construction.com/" target="_blank">
+                    www.tmg-construction.com
                   </Link>
                 </li>
               </ul>
@@ -58,10 +61,10 @@ export default function MyProjects() {
           <CardContent>
             <Typography variant="body1">
               Feel free to check out my{" "}
-              <Link href="www.github.com/melxincognito" target="_blank">
+              <Link href="https://www.github.com/melxincognito" target="_blank">
                 Github
               </Link>{" "}
-              to see some code from my past projects!
+              if you're interestedd to see code from my past projects!
             </Typography>
           </CardContent>
         </CardContent>
