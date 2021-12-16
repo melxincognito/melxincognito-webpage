@@ -43,12 +43,10 @@ export default function MyDevJourney() {
               {" "}
               Teaching myself development started off as a mess to say the
               least. I wasted about 5 months jumping from resource to resource
-              because I didn't know exactly what to look for. The only reason I
-              ended up on the right path was because I was persistent. I felt
-              overwhelmed with all the information and resources I could use. I
-              saw how easy it could be to throw in the towel but I really wanted
-              a career as a developer so I didn't let the information overload
-              discourage me from reaching my goal.{" "}
+              because I didn't know exactly what to look for. I saw how easy it
+              could be to throw in the towel from having a lack of direction but
+              I really wanted a career as a developer so I kept going. The only
+              reason I ended up on the right path was because I was persistent.{" "}
             </Typography>
           </CardContent>
           <CardContent>
