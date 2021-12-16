@@ -1,5 +1,13 @@
-import { Container, Card, Typography, CardContent, Link } from "@mui/material";
 import React from "react";
+import {
+  Container,
+  Card,
+  Typography,
+  CardContent,
+  Link,
+  CardMedia,
+} from "@mui/material";
+import OdinLogo from "../assets/mydevjourney/odinlogo.png";
 
 export default function MyDevJourney() {
   return (
@@ -26,38 +34,43 @@ export default function MyDevJourney() {
           <CardContent>
             <Typography variant="body1">
               {" "}
-              As a self-taught developer, I thought I would take a moment to
-              share how I've been developing the necessary skills on my own. The
-              whole process started out a little shakey but I ended up finding
-              the right path because I was persistent. I decided I wanted to
-              have a career as a software developer for many reasons. Primarily,
-              I was attracted to the amount of mobility a career as a developer
-              would give me. As much as I enjoy working on site, I need a job
-              where I'm able to work from home in order to be productive due to
-              my disability. Another reason I was extremely attracted to the
-              career was because I knew I wouldn't be locked to any one part of
-              the world. I really enjoy moving around to different countries so
-              I wanted a career where I wouldn't be restricted to any one area.{" "}
+              Teaching myself development started off as a mess to say the
+              least. I wasted about 5 months jumping from resource to resource
+              because I didn't know exactly what to look for. The only reason I
+              ended up finding the right path was because I was persistent. I
+              decided I wanted to have a career as a software developer for many
+              reasons. For starters, I was attracted to the amount of mobility a
+              career as a developer would give me. Along with being a travel
+              bean who can't be locked away to any one part of the world, I also
+              have a disability where I need to find work where I'm able to work
+              from home. I knew that developer roles would be able to fulfill
+              both those needs while still offering me decent pay.{" "}
             </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="body1">
               {" "}
-              When I first started to take the plunge I looked into bootcamps.
-              They seemed great at first glance but I didnt have the ability to
-              dedicate the time while working a full time job. I also didn't
-              have $9,000 to spend on a bootcamp. My only option was teaching
-              myself at that point. I knew there were a lot of free resources
-              online so I tried platforms like{" "}
+              When I first started I looked into bootcamps. They seemed great at
+              first glance but I didnt have the ability to dedicate the time
+              while working a full time job and I also didn't have $9,000 to
+              shell out. My only option was teaching myself. I did feel a little
+              discouraged but I knew this was what I really wanted to do so I
+              looked into finding as many free resources online. I tried
+              platforms like{" "}
               <Link href="https://www.codecademy.com/" target="_blank">
                 Codecademy
               </Link>{" "}
-              and free trials of paid courses. I wasted about 5 months jumping
-              from resource to resource because I didn't know exactly what to
-              look for. I didn't get to create anything noteworthy during this
-              time but I was able to scratch the surface of a lot of different
-              languages and tools.{" "}
+              and free trials of paid courses. I didn't get to create anything
+              noteworthy during this time but I was able to play around with a
+              lot of different languages and tools.{" "}
             </Typography>
+          </CardContent>
+          <CardContent>
+            <CardMedia
+              sx={{ maxWidth: 600 }}
+              component="img"
+              image={OdinLogo}
+            />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
@@ -68,33 +81,26 @@ export default function MyDevJourney() {
                 The Odin Project{""}
               </Link>{" "}
               that I began to make any real progress towards becoming a
-              developer. A bunch of developers compiled all the necessary tools
-              and resources online to launch a career in web development along
-              with projects and a community discord. It was everything someone
-              in my situation needed in order to get started, the only catch was
-              you had to be willing to actually do it. I knew there were only
-              three things I needed to do: sit down, get to work and keep
-              persistent. So I did just that and it took me about two months to
-              get through their{" "}
-              <Link
-                href="https://www.theodinproject.com/paths/foundations/courses/foundations"
-                target="_blank"
-              >
-                {" "}
-                Foundations Path{""}
-              </Link>{" "}
-              spending about 4-8 hours a day working through the modules and
-              projects.
+              developer. A bunch of developers compiled all the free tools and
+              resources to launch a career in web development. They also
+              included projects and a community discord. It was everything I
+              needed in order to get started, the only catch was I had to be
+              willing to actually do the work. I knew there were only three
+              things I needed to do: sit down, get to work and keep persistent.
+              So I did just that and it took me about two months to get through
+              their foundations path. I spent about 4-8 hours a day working
+              through the modules and projects and ended with a really good
+              foundation to build off of.
             </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="body1">
               {" "}
               When I was finished with their foundations path I had to choose
-              between their Ruby or JavaScript track. After doing some job
-              searches on local job boards I saw there were significantly more
-              jobs available that required JavaScript. This made my choice
-              pretty straightforward.{" "}
+              between their Ruby or JavaScript track. I felt a bit at a
+              crossroads but after doing some job searches on local job boards I
+              saw there were significantly more jobs available that required
+              JavaScript. This made my choice pretty straightforward.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -104,11 +110,15 @@ export default function MyDevJourney() {
               up completing the whole thing. I stopped with vanilla JavaScript
               after I learned about WebPacks. I was really intrigued by them and
               saw the benefit of using them for larger scale projects; I wanted
-              to work with them more. I remember a friend working as a software
-              engineer saying he works with something called React and he was
-              pretty sure it was operating off a webpack so I looked into it.
-              React was JavaScript on steroids and it ended up being exactly
-              what I never knew I needed.{" "}
+              to work with them more. I remembered a friend working as a
+              software engineer saying he works with React and he was pretty
+              sure it was operating off a webpack so I looked into it. After I
+              did my research I concluded that React was JavaScript on steroids.{" "}
+            </Typography>
+          </CardContent>
+          <CardContent>
+            <Typography variant="body1">
+              It ended up being exactly what I never knew I needed.
             </Typography>
           </CardContent>
           <CardContent>

@@ -67,32 +67,58 @@ export default function AboutMe() {
           </CardContent>
         </Card>
       </Container>
-      <Container sx={{ display: "flex", flexWrap: "wrap", width: 800, gap: 7 }}>
-        <Card sx={{ width: 345 }}>
-          <CardMedia component="img" height="320" width="300" image={Alcala} />
-          <Typography variant="subtitle1">
-            {" "}
-            Alcala de Henares, España{" "}
-          </Typography>
+      <Container>
+        <Card sx={{ maxWidth: 800 }}>
+          <CardContent>
+            <Typography variant="h5"> My favorite travel spots </Typography>
+            <Typography variant="body1">
+              {" "}
+              Here are my top favorite travel spots around the globe. I've been
+              able to see so many cool places around the world, it's difficult
+              to pick the ones I liked the most!{" "}
+            </Typography>
+          </CardContent>
         </Card>
 
-        <Card sx={{ width: 345 }}>
-          <CardMedia component="img" height="320" width="300" image={Sicilia} />
-          <Typography variant="subtitle1"> Sicilia, Italia </Typography>
-        </Card>
-        <Card sx={{ width: 345 }}>
-          <CardMedia component="img" height="320" width="300" image={Tetas} />
-          <Typography variant="subtitle1"> Madrid, España </Typography>
-        </Card>
-        <Card sx={{ width: 345 }}>
-          <CardMedia
-            component="img"
-            height="320"
-            width="300"
-            image={Bellichi}
-          />
-          <Typography variant="subtitle1"> Bellichi </Typography>
-        </Card>
+        <Container
+          sx={{ display: "flex", flexWrap: "wrap", width: 800, gap: 7 }}
+        >
+          <Card sx={{ width: 345 }}>
+            <CardMedia
+              component="img"
+              height="320"
+              width="300"
+              image={Alcala}
+            />
+            <Typography variant="subtitle1">
+              {" "}
+              Alcala de Henares, España{" "}
+            </Typography>
+          </Card>
+
+          <Card sx={{ width: 345 }}>
+            <CardMedia
+              component="img"
+              height="320"
+              width="300"
+              image={Sicilia}
+            />
+            <Typography variant="subtitle1"> Sicilia, Italia </Typography>
+          </Card>
+          <Card sx={{ width: 345 }}>
+            <CardMedia component="img" height="320" width="300" image={Tetas} />
+            <Typography variant="subtitle1"> Madrid, España </Typography>
+          </Card>
+          <Card sx={{ width: 345 }}>
+            <CardMedia
+              component="img"
+              height="320"
+              width="300"
+              image={Bellichi}
+            />
+            <Typography variant="subtitle1"> Bellichi </Typography>
+          </Card>
+        </Container>
       </Container>
     </Container>
   );
