@@ -44,33 +44,41 @@ export default function MyDevJourney() {
               Teaching myself development started off as a mess to say the
               least. I wasted about 5 months jumping from resource to resource
               because I didn't know exactly what to look for. The only reason I
-              ended up finding the right path was because I was persistent. I
-              decided I wanted to have a career as a software developer for many
-              reasons. For starters, I was attracted to the amount of mobility a
-              career as a developer would give me. Along with being a travel
-              bean who can't be locked away to any one part of the world, I also
-              have a disability where I need to find work where I'm able to work
-              from home. I knew that developer roles would be able to fulfill
-              both those needs while still offering me decent pay.{" "}
+              ended up on the right path was because I was persistent. I felt
+              overwhelmed with all the information and resources I could use. I
+              saw how easy it could be to throw in the towel but I really wanted
+              a career as a developer so I didn't let the information overload
+              discourage me from reaching my goal.{" "}
             </Typography>
+          </CardContent>
+          <CardContent>
+            <Typography>
+              I decided I wanted to have a career as a developer for many
+              reasons. Primarily, I was attracted to the amount of mobility this
+              career would allow me. Along with being a little travel bean who
+              can't have a career where I'm locked away to any one part of the
+              world, I also have a disability where I need to be able to work
+              from home. I knew that developer roles would be able to fulfill
+              both those needs while also offering good pay & a creative outlet.{" "}
+            </Typography>{" "}
           </CardContent>
 
           <CardContent>
             <Typography variant="body1">
               {" "}
-              When I first started I looked into bootcamps. They seemed great at
-              first glance but I didnt have the ability to dedicate the time
-              while working a full time job and I also didn't have $9,000 to
-              shell out. My only option was teaching myself. I did feel a little
-              discouraged but I knew this was what I really wanted to do so I
-              looked into finding as many free resources online. I tried
-              platforms like{" "}
+              When I first started transitioning into development I looked into
+              bootcamps. They seemed great at first glance but I didnt have the
+              ability to dedicate the time while working a full time job and I
+              also didn't have $9,000 to shell out. My only option was teaching
+              myself. I did feel a little discouraged but I knew this was what I
+              really wanted to do so I wasn't going to let those factors hold me
+              back. I tried platforms like{" "}
               <Link href="https://www.codecademy.com/" target="_blank">
                 Codecademy
               </Link>{" "}
-              and free trials of paid courses. I didn't get to create anything
-              noteworthy during this time but I was able to play around with a
-              lot of different languages and tools.{" "}
+              and some free trials of paid courses. I didn't get to create
+              anything noteworthy during this time but I was able to play around
+              with a lot of different languages and tools.{" "}
             </Typography>
           </CardContent>
           <CardContent>
