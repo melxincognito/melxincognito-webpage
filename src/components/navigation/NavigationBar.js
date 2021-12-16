@@ -21,7 +21,7 @@ export default function NavigationBar() {
             <Tab label="Home" component={Link} to="/" />
             <Tab label="About Me" component={Link} to="/about" />
 
-            <Tab label="My Projects" component={Link} to="/projects" />
+            <Tab label="My CV" component={Link} to="/mycv" />
             <Tab
               label="My Self-Taught Developer Journey"
               component={Link}
