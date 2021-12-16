@@ -8,6 +8,8 @@ import {
   CardMedia,
 } from "@mui/material";
 import OdinLogo from "../assets/mydevjourney/odinlogo.png";
+import NoDesk from "../assets/mydevjourney/BegStudy.png";
+import ConDesk from "../assets/mydevjourney/DeskBought.png";
 
 export default function MyDevJourney() {
   return (
@@ -47,6 +49,7 @@ export default function MyDevJourney() {
               both those needs while still offering me decent pay.{" "}
             </Typography>
           </CardContent>
+
           <CardContent>
             <Typography variant="body1">
               {" "}
@@ -93,6 +96,7 @@ export default function MyDevJourney() {
               foundation to build off of.
             </Typography>
           </CardContent>
+
           <CardContent>
             <Typography variant="body1">
               {" "}
@@ -102,6 +106,10 @@ export default function MyDevJourney() {
               saw there were significantly more jobs available that required
               JavaScript. This made my choice pretty straightforward.{" "}
             </Typography>
+          </CardContent>
+          <CardContent sx={{ display: "flex" }}>
+            <CardMedia sx={{ maxWidth: 345 }} component="img" image={NoDesk} />
+            <CardMedia sx={{ maxWidth: 345 }} component="img" image={ConDesk} />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
