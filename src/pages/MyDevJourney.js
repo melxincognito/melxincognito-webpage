@@ -9,7 +9,8 @@ import {
 } from "@mui/material";
 import OdinLogo from "../assets/mydevjourney/odinlogo.png";
 import NoDesk from "../assets/mydevjourney/BegStudy.png";
-import ConDesk from "../assets/mydevjourney/DeskBought.png";
+import ConDesk from "../assets/mydevjourney/NewSetup.png";
+import Logos from "../assets/mydevjourney/reactredux.png";
 
 export default function MyDevJourney() {
   return (
@@ -100,6 +101,23 @@ export default function MyDevJourney() {
           <CardContent>
             <Typography variant="body1">
               {" "}
+              I didn't have a desk or a table in my apartment for a while so I
+              spent the first couple months working on my couch or on the floor
+              randomly. I was very happy when I finally had a desk and a good
+              sized monitor to start working with. Now that I have more
+              disposable income I like to invest a bit into my workspace because
+              I know it's not the desk that makes me a better developer but I
+              see how much of a difference it makes having a good workspace.
+            </Typography>
+          </CardContent>
+
+          <CardContent sx={{ display: "flex", maxWidth: 630 }}>
+            <CardMedia sx={{ maxWidth: 340 }} component="img" image={NoDesk} />
+            <CardMedia sx={{ maxWidth: 340 }} component="img" image={ConDesk} />
+          </CardContent>
+          <CardContent>
+            <Typography variant="body1">
+              {" "}
               When I was finished with their foundations path I had to choose
               between their Ruby or JavaScript track. I felt a bit at a
               crossroads but after doing some job searches on local job boards I
@@ -107,10 +125,7 @@ export default function MyDevJourney() {
               JavaScript. This made my choice pretty straightforward.{" "}
             </Typography>
           </CardContent>
-          <CardContent sx={{ display: "flex" }}>
-            <CardMedia sx={{ maxWidth: 345 }} component="img" image={NoDesk} />
-            <CardMedia sx={{ maxWidth: 345 }} component="img" image={ConDesk} />
-          </CardContent>
+
           <CardContent>
             <Typography variant="body1">
               {" "}
@@ -180,33 +195,46 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
+            <CardMedia sx={{ maxWidth: 600 }} component="img" image={Logos} />
+          </CardContent>
+          <CardContent>
             <Typography variant="body1">
               {" "}
               I started building whatever projects I could think to practice and
               from there I started to learn about the different tools available
-              like Redux, Material UI, Firebase, etc. React being relatively new
-              means there are a lot of frequent changes and update. A lot of the
-              videos and help guides were outdated even though they were
-              uploaded only a few months prior so I had to really practice
-              researching finding updated and best practices. Tech is always
-              changing so this is an essential skill to develop for any
-              engineer, knowing this allowed me to not get too annoyed by these
-              smaller issues.{" "}
+              like{" "}
+              <Link href="https://redux.js.org/" target="_blank">
+                Redux,
+              </Link>{" "}
+              <Link href="https://mui.com/" target="_blank">
+                Material UI
+              </Link>{" "}
+              and{" "}
+              <Link href="https://firebase.google.com/" target="_blank">
+                Firebase
+              </Link>
+              . React being relatively new means there are a lot more frequent
+              changes and updates. Even though the videos and help guides were
+              uploaded only a few months ago I already found them to be
+              outdated. I had to put into practice researching and finding the
+              updated methods. Tech is always changing so this is an essential
+              skill to develop for any developer. I was glad I was given the
+              opportunity to experience this early in my development path.{" "}
             </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="body1">
               {" "}
-              I feel like I have been able to get a good foundation for my path
-              forward but I know this is only the beginning. I've only scratched
-              the surface so far, there's so many things I dont know and so many
-              paths I could take. Currently my goals are to create quality web
-              and mobile applications using React.JS and React Native while also
-              learning to program blockchain applications. I never thought I
+              I'm proud to say I have been able to give myself a good foundation
+              to build off of. I know I've only scratched the surface, there's
+              so many things I dont know and so many paths I could take going
+              forward. Currently my goals are to create quality web and mobile
+              applications using React.JS and React Native while also learning
+              to program blockchain applications with Rust. I never thought I
               would have had the ability to teach myself something so valuable
-              but thanks to the surplus of free resources plus the supportive
-              tech community, I know anything is possible as long as I'm willing
-              to put in the effort.{" "}
+              but thanks to the availability of free resources plus the
+              supportive tech community I know anything is possible as long as
+              I'm willing to put in the effort.{" "}
             </Typography>
           </CardContent>
         </Card>
