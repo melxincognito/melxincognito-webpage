@@ -38,10 +38,10 @@ export default function HomePage() {
         <CardContent>
           <Typography variant="body1">
             {" "}
-            You can click on the top tabs to read a little about me, see some of
-            my projects and read about my journey as a self-taught developer!
-            Hope you enjoy, feel free to use the contact form to leave any
-            comments or feedback about my site!😊
+            You can click on the top tabs to read a little about me, see a
+            little of my CV and read about my journey as a self-taught
+            developer! Hope you enjoy, feel free to use the contact form to
+            leave any comments or feedback about my site!😊
           </Typography>
         </CardContent>
       </Card>
