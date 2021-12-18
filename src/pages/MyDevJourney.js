@@ -41,7 +41,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <CardMedia sx={{ maxWidth: 600 }} component="img" image={Header} />
+            <CardMedia sx={{ maxWidth: 650 }} component="img" image={Header} />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
@@ -144,14 +144,15 @@ export default function MyDevJourney() {
           <CardContent>
             <Typography variant="body1">
               {" "}
-              I went through a good part of the JavaScript track but I didnt end
-              up completing the whole thing. I stopped with vanilla JavaScript
-              after I learned about WebPacks. I was really intrigued by them and
-              saw the benefit of using them for larger scale projects; I wanted
-              to work with them more. I remembered a friend working as a
-              software engineer saying he works with React and he was pretty
-              sure it was operating off a webpack so I looked into it. After I
-              did my research I concluded that React was JavaScript on steroids.{" "}
+              I went through a good part of the JavaScript track but I haven't
+              completed the whole thing. I stopped with focusing on vanilla
+              JavaScript after I learned about WebPacks. I was really intrigued
+              by them and saw the benefit of using them for larger scale
+              projects; I wanted to work with them more. I remembered a friend
+              working as a software engineer saying he works with React and he
+              was pretty sure it was operating off a webpack so I looked into
+              it. After I did my research I concluded that React was JavaScript
+              on steroids.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -241,15 +242,17 @@ export default function MyDevJourney() {
             <Typography variant="body1">
               {" "}
               I'm proud to say I have been able to give myself a good foundation
-              to build off of. I know I've only scratched the surface, there's
-              so many things I dont know and so many paths I could take going
-              forward. Currently my goals are to create quality web and mobile
-              applications using React.JS and React Native while also learning
-              to program blockchain applications with Rust. I never thought I
-              would have had the ability to teach myself something so valuable
-              but thanks to the availability of free resources plus the
-              supportive tech community I know anything is possible as long as
-              I'm willing to put in the effort.{" "}
+              to build off of. I still go back to The Odin Project and jump
+              around the material because it has a lot of valuable learning
+              material that I can use regardless of what programming
+              language/framework I end up working with in my career. Currently
+              my goals are to create quality web and mobile applications using
+              React.JS and React Native while also learning to program
+              blockchain applications with Rust. I never thought I would have
+              had the ability to teach myself something so valuable but thanks
+              to the availability of free resources plus the supportive tech
+              community I know anything is possible as long as I'm willing to
+              put in the effort.{" "}
             </Typography>
           </CardContent>
         </Card>
