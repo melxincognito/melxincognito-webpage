@@ -41,7 +41,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <CardMedia sx={{ maxWidth: 650 }} component="img" image={Header} />
+            <CardMedia sx={{}} component="img" image={Header} />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
@@ -145,50 +145,35 @@ export default function MyDevJourney() {
             <Typography variant="body1">
               {" "}
               I went through a good part of the JavaScript track but I haven't
-              completed the whole thing. I stopped with focusing on vanilla
+              completed the whole thing yet. I stopped with focusing on vanilla
               JavaScript after I learned about WebPacks. I was really intrigued
               by them and saw the benefit of using them for larger scale
               projects; I wanted to work with them more. I remembered a friend
               working as a software engineer saying he works with React and he
               was pretty sure it was operating off a webpack so I looked into
               it. After I did my research I concluded that React was JavaScript
-              on steroids.{" "}
+              on steroids and it was exactly what I never knew I needed.{" "}
             </Typography>
           </CardContent>
-          <CardContent>
-            <Typography variant="body1">
-              It ended up being exactly what I never knew I needed.
-            </Typography>
-          </CardContent>
+
           <CardContent>
             <Typography variant="body1">
               {" "}
-              I tried to learn straight from the{" "}
+              I tried looking for resources to learn the basics, I didn't
+              realize until months later if I would have just scrolled down on
+              the Javascript module The Odin Project had a whole section to get
+              started in React. I tried to learn straight from the{" "}
               <Link
                 href="https://reactjs.org/docs/getting-started.html"
                 target="_blank"
               >
                 {" "}
                 React Docs{""}
-              </Link>{" "}
-              but, honestly, I didn't have enough developer skills at the time
-              to learn without having someone explain a few things here and
-              there. I looked around but I couldn't find another platform like
-              the odin project and I didn't have $200 for a full stack React
-              course. I just needed the basics to be explained so I spent twenty
-              dollars on a Udemy course. I thought it might help but I found out
-              pretty quickly it was just a follow along tutorial. I could have
-              found the same thing on Youtube.{" "}
+              </Link>
+              . Honestly, I didn't have enough developer skills at the time to
+              learn from the documentation so I just bookmarked it for later and
+              continued my search.
             </Typography>
-          </CardContent>
-          <CardContent>
-            <Typography variant="body1">
-              {" "}
-              I never made the mistake of spending money on courses ever again.{" "}
-            </Typography>
-          </CardContent>
-          <CardContent>
-            <Typography variant="body1"> Anyways. </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="body1">
@@ -250,9 +235,9 @@ export default function MyDevJourney() {
               React.JS and React Native while also learning to program
               blockchain applications with Rust. I never thought I would have
               had the ability to teach myself something so valuable but thanks
-              to the availability of free resources plus the supportive tech
-              community I know anything is possible as long as I'm willing to
-              put in the effort.{" "}
+              to the availability of free resources online plus the supportive
+              tech community I know anything is possible as long as I'm willing
+              to put in the effort.{" "}
             </Typography>
           </CardContent>
         </Card>
