@@ -12,16 +12,16 @@ export default function MyProjects() {
             <Typography variant="body1">
               {" "}
               <Typography variant="h6"> Overview: </Typography>I don't have much
-              experience related directly to web development but I'm very eager
-              to learn and apply best practices Thus far, I've made many
-              websites with WordPress and Adobe Portfolio but I didn't feel like
-              I was getting level of customization I wanted only being able to
-              build everything from a platform. I made this site from scratch
-              with React to really learn all the nuts and bolts of programming!
-              I plan to continue building and maintaining sites so I can learn
-              to develop reliable web applications. Once I become more advanced
-              with ReactJS I plan to learn to develop reliable mobile
-              applications with React Native.
+              experience in web development but I'm very eager to learn and
+              apply best practices. Thus far, I've made many websites with
+              WordPress and Adobe Portfolio but I didn't feel like I was getting
+              level of customization I wanted only being able to build
+              everything from an online platform. I started to make this site
+              from scratch with React to really learn all the nuts and bolts of
+              programming! I plan to continue building and maintaining sites so
+              I can learn to develop reliable web applications. Once I become
+              more advanced with ReactJS I plan to learn to develop reliable
+              mobile applications with React Native.
             </Typography>
           </CardContent>
 
