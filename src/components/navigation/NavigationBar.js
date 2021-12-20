@@ -11,21 +11,19 @@ import { Twitter, LinkedIn, Instagram, GitHub } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
-  function twitterPageClick(e) {
-    e.preventDefault();
+  function twitterPageClick() {
     window.open("https://www.twitter.com/melxincognito", "_blank");
   }
-  function linkedInPageClick(e) {
-    e.preventDefault();
-    window.open("https://www.linkedin.com/in/melgonzalez092/", "_blank");
-  }
-  function instagramPageClick(e) {
-    e.preventDefault();
+
+  function instagramPageClick() {
     window.open("https://www.instagram.com/melxincognito/", "_blank");
   }
-  function githubPageClick(e) {
-    e.preventDefault();
+  function githubPageClick() {
     window.open("https://github.com/melxincognito", "_blank");
+  }
+
+  function linkedInPageClick() {
+    window.open("https://www.linkedin.com/in/melgonzalez092/", "_blank");
   }
 
   return (
