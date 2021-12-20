@@ -7,9 +7,15 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
+import { Twitter } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
+  function twitterPageClick(e) {
+    e.preventDefault();
+    window.open("https://www.twitter.com/melxincognito", "_blank");
+  }
+
   return (
     <AppBar position="static" sx={{ bgcolor: "pink", padding: 2 }}>
       <Toolbar>
@@ -30,6 +36,7 @@ export default function NavigationBar() {
             <Tab label="Contact Me" component={Link} to="/contact" />
           </Tabs>
         </Container>
+        <Twitter onClick={twitterPageClick} />
       </Toolbar>
     </AppBar>
   );
