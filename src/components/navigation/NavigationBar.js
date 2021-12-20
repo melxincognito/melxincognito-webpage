@@ -7,13 +7,21 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
-import { Twitter } from "@mui/icons-material";
+import { Twitter, LinkedIn, Instagram } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
   function twitterPageClick(e) {
     e.preventDefault();
     window.open("https://www.twitter.com/melxincognito", "_blank");
+  }
+  function linkedInPageClick(e) {
+    e.preventDefault();
+    window.open("https://www.linkedin.com/in/melgonzalez092/", "_blank");
+  }
+  function instagramPageClick(e) {
+    e.preventDefault();
+    window.open("https://www.instagram.com/melxincognito/", "_blank");
   }
 
   return (
@@ -36,7 +44,10 @@ export default function NavigationBar() {
             <Tab label="Contact Me" component={Link} to="/contact" />
           </Tabs>
         </Container>
+
         <Twitter onClick={twitterPageClick} />
+        <Instagram onClick={instagramPageClick} />
+        <LinkedIn onClick={linkedInPageClick} />
       </Toolbar>
     </AppBar>
   );
