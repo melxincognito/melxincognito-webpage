@@ -7,7 +7,7 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
-import { Twitter, LinkedIn, Instagram } from "@mui/icons-material";
+import { Twitter, LinkedIn, Instagram, GitHub } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
@@ -22,6 +22,10 @@ export default function NavigationBar() {
   function instagramPageClick(e) {
     e.preventDefault();
     window.open("https://www.instagram.com/melxincognito/", "_blank");
+  }
+  function githubPageClick(e) {
+    e.preventDefault();
+    window.open("https://github.com/melxincognito", "_blank");
   }
 
   return (
@@ -47,6 +51,7 @@ export default function NavigationBar() {
 
         <Twitter onClick={twitterPageClick} />
         <Instagram onClick={instagramPageClick} />
+        <GitHub onClick={githubPageClick} />
         <LinkedIn onClick={linkedInPageClick} />
       </Toolbar>
     </AppBar>
