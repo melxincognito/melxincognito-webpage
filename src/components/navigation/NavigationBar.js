@@ -43,7 +43,6 @@ export default function NavigationBar() {
               component={Link}
               to="/mydevjourney"
             />
-            <Tab label="Contact Me" component={Link} to="/contact" />
           </Tabs>
         </Container>
 
