@@ -46,10 +46,19 @@ export default function NavigationBar() {
           </Tabs>
         </Container>
 
-        <Twitter onClick={twitterPageClick} />
-        <Instagram onClick={instagramPageClick} />
-        <GitHub onClick={githubPageClick} />
-        <LinkedIn onClick={linkedInPageClick} />
+        <Twitter sx={{ p: 0.5 }} fontSize="large" onClick={twitterPageClick} />
+        <Instagram
+          sx={{ p: 0.5 }}
+          fontSize="large"
+          onClick={instagramPageClick}
+        />
+
+        <GitHub sx={{ p: 0.5 }} fontSize="large" onClick={githubPageClick} />
+        <LinkedIn
+          sx={{ p: 0.5 }}
+          fontSize="large"
+          onClick={linkedInPageClick}
+        />
       </Toolbar>
     </AppBar>
   );
