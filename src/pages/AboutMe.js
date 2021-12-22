@@ -94,7 +94,7 @@ export default function AboutMe() {
               globe and live in different places. The adventure isn't over but
               this year is meant to be dedicated to advancing myself in my
               career so I can get to where I really want to be in life while
-              being financially secure and, most importantly, happy.{" "}
+              being financially secure and most importantly, happy.{" "}
             </Typography>
           </CardContent>
           <CardContent>
@@ -108,11 +108,11 @@ export default function AboutMe() {
           </CardContent>
           <CardContent>
             <Typography>
-              An additional goals that extend from my top career goal is to
-              learn how to create reliable, large scale applications with React,
-              both for mobile and web. I plan on continuing on my current path
-              of studying React.JS for web applications and focusing on this
-              path before I begin with React Native for mobile applications.
+              An additional goal that extends from my top goal is to learn how
+              to create reliable, large scale applications with React for mobile
+              and web. I plan on continuing with my current path of focusing on
+              building with React.JS for web applications before I begin to
+              touch on React Native for mobile applications.
             </Typography>
           </CardContent>
           <CardContent>
