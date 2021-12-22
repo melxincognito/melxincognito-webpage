@@ -112,7 +112,9 @@ export default function AboutMe() {
               to create reliable, large scale applications with React for mobile
               and web. I plan on continuing with my current path of focusing on
               building with React.JS for web applications before I begin to
-              touch on React Native for mobile applications.
+              touch on React Native for mobile applications. I would also like
+              to deepen my knowledge of Blockchain applications and learn how to
+              write programs with Rust.
             </Typography>
           </CardContent>
           <CardContent>
@@ -130,7 +132,7 @@ export default function AboutMe() {
             <Typography>
               I know my goals will take a lot of hard work and effort to reach
               but with dedication & persistence I know I'll be able to exceed
-              them. I hope the path forward isn't too rocky but I know this year
+              them. I hope the path forward isn't too rocky, I know this year
               will be a good adventure.
             </Typography>
           </CardContent>
