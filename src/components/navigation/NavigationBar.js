@@ -39,7 +39,7 @@ export default function NavigationBar() {
 
             <Tab label="My CV" component={Link} to="/mycv" />
             <Tab
-              label="My Self-Taught Developer Journey"
+              label="My Developer Journey"
               component={Link}
               to="/mydevjourney"
             />
