@@ -63,7 +63,7 @@ export default function MyProjects() {
               <Link href="https://www.github.com/melxincognito" target="_blank">
                 Github
               </Link>{" "}
-              if you're interestedd to see code from my past projects!
+              if you're interested to see code from my past projects!
             </Typography>
           </CardContent>
         </CardContent>
