@@ -27,7 +27,14 @@ export default function NavigationBar() {
   }
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "pink", padding: 2 }}>
+    <AppBar
+      position="static"
+      sx={{
+        background:
+          "linear-gradient(to right, #c62828, #ff8f00, #ffd600, #388e3c, #0277bd, #303f9f, #e91e63 )",
+        padding: 2,
+      }}
+    >
       <Toolbar>
         <Typography variant="h5" color="#330e62">
           Mel Incögnito
