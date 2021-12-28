@@ -8,7 +8,12 @@ export default function Layout(props) {
     <div>
       <NavigationBar />
       <Container
-        sx={{ alignContent: "center", justifyContent: "center", padding: 3 }}
+        sx={{
+          alignContent: "center",
+          justifyContent: "center",
+          padding: 3,
+          marginTop: "7rem",
+        }}
       >
         {props.children}
       </Container>
