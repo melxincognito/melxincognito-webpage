@@ -13,11 +13,7 @@ export default function HomePage() {
     <Container sx={{ maxWidth: 700 }}>
       <Card>
         <CardContent>
-          <CardMedia
-            sx={{ maxHeight: 300, maxWidth: 690 }}
-            component="img"
-            image={Retiro}
-          />
+          <CardMedia sx={{ maxHeight: 400 }} component="img" image={Retiro} />
         </CardContent>
         <CardContent>
           <div style={{ display: "flex", justifyContent: "center" }}>
