@@ -36,7 +36,7 @@ export default function NavigationBar() {
       }}
     >
       <Toolbar>
-        <Typography variant="h5" color="#330e62">
+        <Typography variant="h5" color="white">
           Mel Incögnito
         </Typography>
         <Container>
