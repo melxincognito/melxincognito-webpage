@@ -11,9 +11,13 @@ import Retiro from "../assets/Retiro.png";
 export default function HomePage() {
   return (
     <Container sx={{ maxWidth: 700 }}>
-      <Card>
+      <Card sx={{ borderRadius: 5 }}>
         <CardContent>
-          <CardMedia sx={{ maxHeight: 400 }} component="img" image={Retiro} />
+          <CardMedia
+            sx={{ maxHeight: 400, borderRadius: 5 }}
+            component="img"
+            image={Retiro}
+          />
         </CardContent>
         <CardContent>
           <div style={{ display: "flex", justifyContent: "center" }}>

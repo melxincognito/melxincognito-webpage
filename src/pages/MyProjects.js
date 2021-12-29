@@ -4,7 +4,7 @@ import React from "react";
 export default function MyProjects() {
   return (
     <Container>
-      <Card>
+      <Card sx={{ borderRadius: 5 }}>
         <CardContent>
           <Typography variant="h4"> My CV</Typography>
 

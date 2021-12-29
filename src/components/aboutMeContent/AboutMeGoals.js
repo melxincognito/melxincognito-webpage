@@ -3,7 +3,7 @@ import { Card, CardContent, Typography } from "@mui/material";
 
 export default function AboutMeGoals() {
   return (
-    <Card>
+    <Card sx={{ borderRadius: 5 }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <CardContent>
           <div style={{ display: "flex", justifyContent: "center" }}>

@@ -28,7 +28,7 @@ export default function MyDevJourney() {
           display: "flex",
         }}
       >
-        <Card>
+        <Card sx={{ borderRadius: 5 }}>
           <CardContent
             sx={{
               display: "flex",
@@ -41,7 +41,11 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <CardMedia sx={{}} component="img" image={Header} />
+            <CardMedia
+              sx={{ borderRadius: 5 }}
+              component="img"
+              image={Header}
+            />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
@@ -85,11 +89,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <CardMedia
-              sx={{ maxWidth: 600 }}
-              component="img"
-              image={OdinLogo}
-            />
+            <CardMedia component="img" image={OdinLogo} />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
