@@ -32,12 +32,22 @@ class AboutMe extends Component {
             display: "flex",
             alignContent: "center",
             justifyContent: "center",
+            marginBottom: 3,
           }}
         >
-          <Tabs>
-            <Tab label="Bio" onClick={this.updateBio} />
-            <Tab label="My 2022 Goals" onClick={this.updateGoals} />
+          <Tabs
+            style={{
+              background:
+                "linear-gradient(to left, #c62828, #ff8f00, #ffd600, #388e3c, #0277bd, #303f9f, #e91e63 )",
+              padding: 5,
+              borderRadius: 25,
+            }}
+            indicatorColor="black"
+          >
+            <Tab value="one" label="Bio" onClick={this.updateBio} />
+            <Tab value="two" label="My 2022 Goals" onClick={this.updateGoals} />
             <Tab
+              value="three"
               label="My Favorite Places"
               onClick={this.updateTravelLocations}
             />
