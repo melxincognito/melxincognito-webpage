@@ -14,7 +14,7 @@ export default function AboutMeBio() {
             </Typography>
           </div>
           <CardMedia
-            sx={{ maxWidth: 300, maxHeight: 300, borderRadius: 50 }}
+            sx={{ maxWidth: 300, maxHeight: 300, borderRadius: 40 }}
             component="img"
             image={Santiago}
           />
