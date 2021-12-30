@@ -196,7 +196,7 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
           <CardContent>
-            <CardMedia sx={{ maxWidth: 600 }} component="img" image={Logos} />
+            <CardMedia sx={{}} component="img" image={Logos} />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
