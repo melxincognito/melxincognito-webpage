@@ -37,18 +37,28 @@ class AboutMe extends Component {
         >
           <Tabs
             style={{
-              background:
-                "linear-gradient(to left, #c62828, #ff8f00, #ffd600, #388e3c, #0277bd, #303f9f, #e91e63 )",
+              background: "#c5cae9",
+              text: "white",
               padding: 5,
               borderRadius: 25,
             }}
             indicatorColor="black"
           >
-            <Tab value="one" label="Bio" onClick={this.updateBio} />
-            <Tab value="two" label="My 2022 Goals" onClick={this.updateGoals} />
+            <Tab
+              sx={{ borderRight: "dotted #fff4fa" }}
+              value="one"
+              label="Bio"
+              onClick={this.updateBio}
+            />
+            <Tab
+              sx={{ borderRight: "dotted #fff4fa" }}
+              value="two"
+              label="2022 Goals"
+              onClick={this.updateGoals}
+            />
             <Tab
               value="three"
-              label="My Favorite Places"
+              label="Favorite Locations"
               onClick={this.updateTravelLocations}
             />
           </Tabs>
