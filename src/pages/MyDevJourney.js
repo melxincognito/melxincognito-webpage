@@ -40,9 +40,15 @@ export default function MyDevJourney() {
               My Developer Journey{" "}
             </Typography>
           </CardContent>
-          <CardContent>
+          <CardContent
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignContent: "center",
+            }}
+          >
             <CardMedia
-              sx={{ borderRadius: 5 }}
+              sx={{ borderRadius: 5, width: 680, m: "1rem" }}
               component="img"
               image={Header}
             />
