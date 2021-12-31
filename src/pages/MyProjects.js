@@ -151,6 +151,8 @@ export default function MyProjects() {
                     <li> Tattooing oranges </li>
                     <li> Digital Art </li>
                     <li> Solo Travel </li>
+
+                    <li> Photography </li>
                     <li> Programming </li>
                     <li> Learning new languages </li>
                   </ul>
