@@ -40,8 +40,7 @@ export default function HomePage() {
             {" "}
             You can click on the top tabs to read a little about me, see a
             little of my CV and read about my journey as a self-taught
-            developer! Hope you enjoy, feel free to use the contact form to
-            leave any comments or feedback about my site!😊
+            developer! Hope you enjoy!😊
           </Typography>
         </CardContent>
       </Card>
