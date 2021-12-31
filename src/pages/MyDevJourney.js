@@ -126,9 +126,32 @@ export default function MyDevJourney() {
             </Typography>
           </CardContent>
 
-          <CardContent sx={{ display: "flex", maxWidth: 630 }}>
-            <CardMedia sx={{ maxWidth: 340 }} component="img" image={NoDesk} />
-            <CardMedia sx={{ maxWidth: 340 }} component="img" image={ConDesk} />
+          <CardContent
+            sx={{
+              display: "flex",
+
+              alignContent: "center",
+              justifyContent: "center",
+            }}
+          >
+            <CardMedia
+              sx={{
+                maxWidth: 340,
+                borderTopLeftRadius: 25,
+                borderBottomLeftRadius: 25,
+              }}
+              component="img"
+              image={NoDesk}
+            />
+            <CardMedia
+              sx={{
+                maxWidth: 340,
+                borderTopRightRadius: 25,
+                borderBottomRightRadius: 25,
+              }}
+              component="img"
+              image={ConDesk}
+            />
           </CardContent>
           <CardContent>
             <Typography variant="body1">
