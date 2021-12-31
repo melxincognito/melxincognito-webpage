@@ -132,6 +132,7 @@ export default function MyDevJourney() {
 
               alignContent: "center",
               justifyContent: "center",
+              m: "1rem",
             }}
           >
             <CardMedia
