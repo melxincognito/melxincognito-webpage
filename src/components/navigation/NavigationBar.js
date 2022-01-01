@@ -6,10 +6,8 @@ import {
   Container,
   Tabs,
   Tab,
-  IconButton,
 } from "@mui/material";
 import { Twitter, LinkedIn, Instagram, GitHub } from "@mui/icons-material";
-import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
@@ -44,15 +42,6 @@ export default function NavigationBar() {
       }}
     >
       <Toolbar>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
-        >
-          <MenuIcon />
-        </IconButton>
         <Typography variant="h5" color="white">
           Mel Incögnito
         </Typography>
