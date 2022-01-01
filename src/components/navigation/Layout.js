@@ -13,7 +13,7 @@ export default function Layout(props) {
           alignContent: "center",
           justifyContent: "center",
           padding: 3,
-          marginTop: "7rem",
+          marginTop: "9rem",
           marginBottom: "5rem",
         }}
       >
