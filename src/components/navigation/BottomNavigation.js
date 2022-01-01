@@ -21,7 +21,7 @@ export default function BottomNavigationLabel() {
         {" "}
         <Typography>
           {" "}
-          © 2021 - melxincögnito | All Rights Reserved | Designed by Mel
+          © 2022 - melxincögnito | All Rights Reserved | Designed by Mel
           Incögnito{" "}
         </Typography>
       </Paper>
