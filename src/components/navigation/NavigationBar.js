@@ -6,6 +6,7 @@ import {
   Container,
   Tabs,
   Tab,
+  Box,
 } from "@mui/material";
 import { Twitter, LinkedIn, Instagram, GitHub } from "@mui/icons-material";
 import { Link } from "react-router-dom";
@@ -53,7 +54,11 @@ export default function NavigationBar() {
           }}
         >
           <Tabs
-            sx={{ bgcolor: "rgba(255, 255, 255, 0.35)", borderRadius: 5 }}
+            sx={{
+              bgcolor: "rgba(255, 255, 255, 0.35)",
+              borderRadius: 5,
+              pt: 1.3,
+            }}
             value={value}
             onChange={handleChange}
             textColor="secondary"
@@ -77,20 +82,32 @@ export default function NavigationBar() {
             />
           </Tabs>
         </Container>
-
-        <Twitter sx={{ p: 0.5 }} fontSize="large" onClick={twitterPageClick} />
-        <Instagram
-          sx={{ p: 0.5 }}
-          fontSize="large"
-          onClick={instagramPageClick}
-        />
-
-        <GitHub sx={{ p: 0.5 }} fontSize="large" onClick={githubPageClick} />
-        <LinkedIn
-          sx={{ p: 0.5 }}
-          fontSize="large"
-          onClick={linkedInPageClick}
-        />
+        <Box display="grid">
+          <Box display="flex">
+            <Twitter
+              sx={{ p: 0.5 }}
+              fontSize="large"
+              onClick={twitterPageClick}
+            />
+            <Instagram
+              sx={{ p: 0.5 }}
+              fontSize="large"
+              onClick={instagramPageClick}
+            />
+          </Box>
+          <Box>
+            <GitHub
+              sx={{ p: 0.5 }}
+              fontSize="large"
+              onClick={githubPageClick}
+            />
+            <LinkedIn
+              sx={{ p: 0.5 }}
+              fontSize="large"
+              onClick={linkedInPageClick}
+            />
+          </Box>
+        </Box>
       </Toolbar>
     </AppBar>
   );
