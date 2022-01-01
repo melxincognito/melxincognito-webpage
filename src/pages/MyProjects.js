@@ -51,7 +51,7 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
-                sx={{ bgcolor: "#e8eaf6" }}
+                sx={{ bgcolor: "#fce9ef" }}
               >
                 <Typography>Web Development Projects</Typography>
               </AccordionSummary>
@@ -91,6 +91,7 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
+                sx={{ bgcolor: "#fce9ef" }}
               >
                 <Typography>Professional Experience</Typography>
               </AccordionSummary>
@@ -119,7 +120,7 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
-                sx={{ bgcolor: "#e8eaf6" }}
+                sx={{ bgcolor: "#fce9ef" }}
               >
                 <Typography>Other Experience</Typography>
               </AccordionSummary>
@@ -143,6 +144,7 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
+                sx={{ bgcolor: "#fce9ef" }}
               >
                 <Typography>Hobbies</Typography>
               </AccordionSummary>
