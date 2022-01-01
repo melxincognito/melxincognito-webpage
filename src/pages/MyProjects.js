@@ -55,7 +55,7 @@ export default function MyProjects() {
               >
                 <Typography>Web Development Projects</Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
                 <Typography>
                   Here's a small list of the websites I've created or
                   maintained:
@@ -95,7 +95,7 @@ export default function MyProjects() {
               >
                 <Typography>Professional Experience</Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
                 <Typography>
                   <ul>
                     <li>
@@ -124,7 +124,7 @@ export default function MyProjects() {
               >
                 <Typography>Other Experience</Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
                 <Typography>
                   <ul>
                     <li>
@@ -148,7 +148,7 @@ export default function MyProjects() {
               >
                 <Typography>Hobbies</Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
                 <Typography>
                   <ul>
                     <li> Cooking </li>
