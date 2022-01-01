@@ -6,11 +6,19 @@ import {
   Container,
   Tabs,
   Tab,
+  IconButton,
 } from "@mui/material";
 import { Twitter, LinkedIn, Instagram, GitHub } from "@mui/icons-material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
+  const [value, setValue] = React.useState("one");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   function twitterPageClick() {
     window.open("https://www.twitter.com/melxincognito", "_blank");
   }
@@ -36,19 +44,47 @@ export default function NavigationBar() {
       }}
     >
       <Toolbar>
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          sx={{ mr: 2 }}
+        >
+          <MenuIcon />
+        </IconButton>
         <Typography variant="h5" color="white">
           Mel Incögnito
         </Typography>
-        <Container>
-          <Tabs>
-            <Tab label="Home" component={Link} to="/" />
-            <Tab label="About Me" component={Link} to="/about" />
+        <Container
+          sx={{
+            display: "flex",
+            alignContent: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Tabs
+            sx={{ bgcolor: "rgba(255, 255, 255, 0.35)", borderRadius: 5 }}
+            value={value}
+            onChange={handleChange}
+            textColor="secondary"
+            indicatorColor="secondary"
+          >
+            <Tab value="one" label="Home" component={Link} to="/" />
+            <Tab value="two" label="About Me" component={Link} to="/about" />
 
-            <Tab label="My CV" component={Link} to="/mycv" />
+            <Tab value="three" label="My CV" component={Link} to="/mycv" />
             <Tab
+              value="four"
               label="My Developer Journey"
               component={Link}
               to="/mydevjourney"
+            />
+            <Tab
+              value="five"
+              label="Resources"
+              component={Link}
+              to="/resources"
             />
           </Tabs>
         </Container>

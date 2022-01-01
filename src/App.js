@@ -8,6 +8,7 @@ import Layout from "./components/navigation/Layout";
 
 import { ThemeProvider } from "@mui/material";
 import theme from "./assets/theme";
+import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<AboutMe />} />
           <Route path="/mycv" element={<MyProjects />} />
           <Route path="/mydevjourney" element={<MyDevJourney />} />
+          <Route path="/resources" element={<Resources />} />
         </Routes>
       </Layout>
     </ThemeProvider>
