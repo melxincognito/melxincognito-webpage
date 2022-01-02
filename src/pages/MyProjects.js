@@ -22,16 +22,15 @@ export default function MyProjects() {
             <Typography variant="body1">
               {" "}
               <Typography variant="h6"> Overview: </Typography>I don't have much
-              experience in web development but I'm very eager to learn and
-              apply best practices. Thus far, I've made many websites with
-              WordPress and Adobe Portfolio but I didn't feel like I was getting
-              level of customization I wanted only being able to build
-              everything from an online platform. I started to make this site
-              from scratch with React to really learn all the nuts and bolts of
-              programming! I plan to continue building and maintaining sites so
-              I can learn to develop reliable web applications. Once I become
-              more advanced with ReactJS I plan to develop reliable mobile
-              applications with React Native.
+              professional experience in web development but I'm very eager to
+              learn and apply best practices. Thus far, I've made an
+              embarrassing number of websites with WordPress and Adobe Portfolio
+              but I didn't feel like I was getting level of customization I
+              wanted only being able to build everything from an online
+              platform. I started to make this site from scratch with React to
+              really learn all the nuts and bolts of web development! I will
+              continue building projects as I progress, my goal is to be able to
+              develop and maintain large scale web applications.
             </Typography>
           </CardContent>
 
@@ -51,30 +50,21 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
-                sx={{ bgcolor: "#fce9ef" }}
               >
-                <Typography>Web Development Projects</Typography>
+                <Typography>Web Development Experience</Typography>
               </AccordionSummary>
-              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
+              <AccordionDetails>
                 <Typography>
                   Here's a small list of the websites I've created or
                   maintained:
                   <ul>
-                    {" "}
-                    <li>
-                      <Link
-                        href="https://www.adventuringavocado.com"
-                        target="_blank"
-                      >
-                        www.adventuringavocado.com
-                      </Link>
-                    </li>
                     <li>
                       {" "}
                       <Link href="http://tmg-construction.com/" target="_blank">
                         www.tmg-construction.com
                       </Link>
                     </li>
+                    <li>www.tgazrealty.com (currently under construction)</li>
                   </ul>
                 </Typography>
                 <Typography variant="body1">
@@ -91,11 +81,10 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
-                sx={{ bgcolor: "#fce9ef" }}
               >
                 <Typography>Professional Experience</Typography>
               </AccordionSummary>
-              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
+              <AccordionDetails>
                 <Typography>
                   <ul>
                     <li>
@@ -120,11 +109,10 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
-                sx={{ bgcolor: "#fce9ef" }}
               >
                 <Typography>Other Experience</Typography>
               </AccordionSummary>
-              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
+              <AccordionDetails>
                 <Typography>
                   <ul>
                     <li>
@@ -144,11 +132,10 @@ export default function MyProjects() {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
-                sx={{ bgcolor: "#fce9ef" }}
               >
                 <Typography>Hobbies</Typography>
               </AccordionSummary>
-              <AccordionDetails sx={{ bgcolor: "rgba(255, 195, 77, 0.06)" }}>
+              <AccordionDetails>
                 <Typography>
                   <ul>
                     <li> Cooking </li>

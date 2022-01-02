@@ -176,10 +176,10 @@ export default function DeveloperResources() {
               Tech Twitter is a really good networking resource for developers.
               I've found it to be a very supportive community with a lot of
               useful resources. There's a lot of people on there willing to help
-              others break into tech. They take time out of their days to speak
-              on twitter talks with useful advice, do portfolio/resume reviews,
-              create content with tips, etc. You get the most out of it if
-              you're willing to post your work publicly and aren't afraid to
+              others break into tech by taking the time out of their days to
+              speak on twitter talks with useful advice, do portfolio/resume
+              reviews, create content with tips, etc. You get the most out of it
+              if you're willing to post your work publicly and aren't afraid to
               interact with people. I personally believe you won't get anywhere
               if nobody knows you exist. I'll be updating this list as I go
               along, but some good accounts to follow are:

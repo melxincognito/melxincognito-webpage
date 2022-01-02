@@ -11,7 +11,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function VSCodeExtensions() {
   return (
-    <Card>
+    <Card sx={{ borderRadius: 5 }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <CardContent>
           <div style={{ display: "flex", justifyContent: "center" }}>
