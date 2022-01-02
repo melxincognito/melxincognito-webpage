@@ -57,7 +57,7 @@ export default function DeveloperResources() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <ul>
+              <ol>
                 <li>
                   {" "}
                   <Link href="https://unsplash.com/" target="_blank">
@@ -74,13 +74,13 @@ export default function DeveloperResources() {
                 <li>
                   {" "}
                   <Link href="https://mui.com/" target="_blank">
-                    Material UI
+                    Material-UI
                   </Link>{" "}
                 </li>
                 <ul>
                   <li>
-                    Material-UI is a GREAT styling library for React! I followed
-                    along with{" "}
+                    Material-UI is my favorite styling library for React! I
+                    followed along with{" "}
                     <Link
                       href="https://www.youtube.com/watch?v=EyqpbNgrW3o&t=994s"
                       target="_blank"
@@ -92,7 +92,7 @@ export default function DeveloperResources() {
                   </li>
                   <li>
                     {" "}
-                    It's very clear on the documentation all the packages you
+                    It's not clear on the documentation all the packages you
                     need to install using npm/yarn for everything to work. Don't
                     bother installing the one package listed on the front web
                     page. The packages you need to install are:
@@ -124,9 +124,42 @@ export default function DeveloperResources() {
                     documentation.
                   </li>
                 </ul>
-                <li> Bootstrap </li>
-                <li> Hex Color Tool </li>
-              </ul>
+                <li>
+                  <Link href="https://getbootstrap.com/" target="_blank">
+                    Bootstrap
+                  </Link>
+                </li>
+                <ul>
+                  {" "}
+                  <li>
+                    This is another popular styling library. It's probably the
+                    most commonly used by employers so it's good to get familiar
+                    with. I used it for a bit before I found out about
+                    Material-UI. I used{" "}
+                    <Link
+                      href="https://www.youtube.com/watch?v=8pKjULHzs0s"
+                      target="_blank"
+                    >
+                      this
+                    </Link>{" "}
+                    Youtube video for a walkthrough of the basics.
+                  </li>
+                </ul>
+                <li>
+                  <Link href="https://www.hexcolortool.com/" target="_blank">
+                    Hex Color Tool
+                  </Link>{" "}
+                </li>
+                <ul>
+                  <li>
+                    I'm very particular about the shades of a color I need. I
+                    like this site because you can play around with the
+                    different gradients, opacities, lightness, etc. It gives you
+                    the color codes you need in different formats and you have
+                    the ability to save shades you use to a pallet on the site.{" "}
+                  </li>
+                </ul>
+              </ol>
             </Typography>
           </AccordionDetails>
         </Accordion>
