@@ -117,6 +117,20 @@ export default function LearningResources() {
                   for CSS and JavaScript References. I like it because it's
                   pretty straight forward explaining things, no extra fluff.
                 </li>
+                <li>
+                  <Link href="https://leetcode.com/explore/" target="_blank">
+                    Leetcode
+                  </Link>{" "}
+                  is a good resource for coding challanges to practice your
+                  skills. I see theres a lot of other features like interview
+                  preps on premium but I've only used it for the exercises.
+                  Another site I like to use for practice problems is{" "}
+                  <Link href="https://www.codewars.com/" target="_blank">
+                    Codewars
+                  </Link>
+                  . I dont use it as often as Leetcode but it's still a good
+                  resource.
+                </li>
               </ul>
             </Typography>
           </AccordionDetails>
