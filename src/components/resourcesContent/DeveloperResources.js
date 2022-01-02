@@ -34,9 +34,9 @@ export default function DeveloperResources() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Theres a few different Code Editors out there. I had a bunch of
-              different resources recommending one over the other but my
-              favorite is{" "}
+              Theres a bunch of different Code Editors out there like Atom,
+              Sublime Text, Vim, VSCode... I had a bunch of different resources
+              recommending one over the other but my favorite so far is{" "}
               <Link href="https://code.visualstudio.com/" target="_blank">
                 VSCode
               </Link>
