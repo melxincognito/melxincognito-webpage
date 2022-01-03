@@ -69,10 +69,10 @@ export default function MyProjects() {
                 </Typography>
                 <Typography variant="body1">
                   {" "}
-                  I know the list is small but I know my passion will allow me
-                  to progress forward quickly. My goal by the end of 2022 is to
-                  develop at least three large scale applications in my
-                  portfolio using React!
+                  I know the list is small but my passion will allow me to
+                  progress forward quickly. My goal by the end of 2022 is to
+                  develop at least 2 large scale applications in my portfolio
+                  using React!
                 </Typography>
               </AccordionDetails>
             </Accordion>
