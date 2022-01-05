@@ -59,9 +59,8 @@ export default function AboutMeGoals() {
       <CardContent>
         <Typography>
           I know my goals will take a lot of hard work and effort to reach but
-          with dedication & persistence I know I'll be able to exceed them. I
-          hope the path forward isn't too rocky, I know this year will be a good
-          adventure.
+          with dedication & persistence I'll be able to exceed them. I hope the
+          path forward isn't too rocky, this year will be a good adventure.
         </Typography>
       </CardContent>
     </Card>
