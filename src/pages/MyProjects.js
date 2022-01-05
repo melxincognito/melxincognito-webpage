@@ -53,8 +53,8 @@ export default function MyProjects() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Here's a small list of the websites I've created or
-                  maintained:
+                  Here's a small list of the websites I've been contracted to
+                  create and maintain:
                   <ul>
                     <li>
                       {" "}
