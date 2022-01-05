@@ -21,9 +21,7 @@ export default function MyProjects() {
           <CardContent>
             <Typography variant="body1">
               {" "}
-              <Typography variant="h6"> Overview: </Typography>I don't have much
-              professional experience in web development but I'm very eager to
-              learn and apply best practices. Thus far, I've made an
+              <Typography variant="h6"> Overview: </Typography> I've made an
               embarrassing number of websites with WordPress and Adobe Portfolio
               but I didn't feel like I was getting level of customization I
               wanted only being able to build everything from an online
