@@ -160,6 +160,21 @@ export default function DeveloperResources() {
                     the ability to save shades you use to a pallet on the site.{" "}
                   </li>
                 </ul>
+                <li>
+                  <Link href="https://colorhunt.co/" target="_blank">
+                    Colorhunt
+                  </Link>{" "}
+                </li>
+                <ul>
+                  <li>
+                    My favorite color palett picker. Sometimes it's difficult to
+                    know which colors will flow well with one another. This site
+                    combines colors that compliment one another while also
+                    providing you the color codes needed. It also has different
+                    themes you can search through like wedding, vintage, nature,
+                    light, dark, etc.{" "}
+                  </li>
+                </ul>
               </ol>
             </Typography>
           </AccordionDetails>
