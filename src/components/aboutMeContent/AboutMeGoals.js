@@ -26,17 +26,18 @@ export default function AboutMeGoals() {
       </CardContent>
       <CardContent>
         <Typography>
-          My top goal for 2022 is landing my first position as a Junior
-          Developer. I would love the opportunity to work with senior developers
-          so I can learn from them and gain the experience needed to become a
-          developer who can not only complete tasks but can also provide
-          additional value.
+          My top goal for 2022 is landing my first position working in
+          development. Whether it be designing, implementing, quality
+          assurance.. I would love the opportunity to work with more experienced
+          individuals so I can learn from them and gain the experience needed to
+          become a developer who can not only complete tasks but can also
+          provide additional value.
         </Typography>
       </CardContent>
       <CardContent>
         <Typography>
-          An additional goal that extends from my top goal is to learn how to
-          create reliable, large scale applications with React for mobile and
+          An additional goal that extends from my top goal is to practice
+          creating reliable, large scale applications with React for mobile and
           web. I plan on continuing with my current path of focusing on building
           with React.JS for web applications before I begin to touch on React
           Native for mobile applications. I would also like to deepen my
