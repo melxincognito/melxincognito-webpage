@@ -26,11 +26,11 @@ export default function AboutMeGoals() {
       </CardContent>
       <CardContent>
         <Typography>
-          My top goal for 2022 is landing my first position working in
-          development. I would love the opportunity to work with more
-          experienced individuals so I can learn from them and gain the
-          experience needed to become a developer who can not only complete
-          tasks but can also provide additional value.
+          My top goal for 2022 is landing my first position working as a
+          developer. I would love the opportunity to work with more experienced
+          individuals so I can learn from them and gain the experience needed to
+          become a developer who can not only complete tasks but can also
+          provide additional value.
         </Typography>
       </CardContent>
       <CardContent>

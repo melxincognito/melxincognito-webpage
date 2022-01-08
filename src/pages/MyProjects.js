@@ -7,6 +7,7 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import React from "react";
@@ -46,8 +47,8 @@ export default function MyProjects() {
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+                aria-controls="panel1-content"
+                id="panel1"
               >
                 <Typography>Web Development Experience</Typography>
               </AccordionSummary>
@@ -77,8 +78,8 @@ export default function MyProjects() {
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
+                aria-controls="panel2-content"
+                id="panel2"
               >
                 <Typography>Professional Experience</Typography>
               </AccordionSummary>
@@ -105,8 +106,8 @@ export default function MyProjects() {
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
+                aria-controls="panel3-content"
+                id="panel3"
               >
                 <Typography>Other Experience</Typography>
               </AccordionSummary>
@@ -128,8 +129,72 @@ export default function MyProjects() {
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
+                aria-controls="panel4-content"
+                id="panel4"
+              >
+                <Typography>Languages</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Box display="flex" sx={{ gap: 7 }}>
+                  <div>
+                    <Typography>
+                      <p>
+                        <strong>Programming Languages</strong>
+                      </p>
+                      <ul>
+                        <li> HTML🖥 </li>
+                        <li> CSS🎨 </li>
+                        <li> JavaScript🚀 </li>
+                        <li> Python🐍 </li>
+                      </ul>
+                    </Typography>
+                  </div>
+
+                  <div>
+                    {" "}
+                    <Typography>
+                      <p>
+                        <strong>Spoken Languages</strong>
+                      </p>
+                      <ul>
+                        <li>
+                          English - <i> Native(USA)</i>🇺🇸
+                        </li>
+                        <li>
+                          {" "}
+                          Spanish - <i> B2(Castellano & Latin America)</i>🇪🇸🇲🇽
+                        </li>
+                        <li>
+                          {" "}
+                          French - <i>A2(France)</i>🇫🇷
+                          <ul>
+                            <li> Currently working towards B2 certificate</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </Typography>
+                  </div>
+
+                  <div>
+                    {" "}
+                    <Typography>
+                      <p>
+                        <strong>Frameworks</strong>
+                      </p>
+                      <ul>
+                        <li>React.JS</li>
+                        <li>Flask</li>
+                      </ul>
+                    </Typography>
+                  </div>
+                </Box>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel5-content"
+                id="panel5"
               >
                 <Typography>Hobbies</Typography>
               </AccordionSummary>
