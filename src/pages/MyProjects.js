@@ -135,7 +135,7 @@ export default function MyProjects() {
                 <Typography>Languages</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Box display="flex" sx={{ gap: 7 }}>
+                <Box display="flex" sx={{ gap: 6 }}>
                   <div>
                     <Typography>
                       <p>
