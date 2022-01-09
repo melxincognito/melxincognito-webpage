@@ -82,6 +82,24 @@ export default function LearningResources() {
                   it!
                 </li>
                 <li>
+                  <Link href="https://scrimba.com/dashboard" target="_blank">
+                    Scrimba
+                  </Link>{" "}
+                  is a teaching platform where you can learn from interactive
+                  tutorials and projects, they even come with certificates if
+                  you complete everything in the course. This is the only
+                  platform I've paid for so far that I've found to be worth it.
+                  There's a lot of different content on there for beginners,
+                  intermediate and advanced developers. I saw a lot of
+                  recommendations for their Front End Developer course but I was
+                  too advanced to get a lot of use from it. The membership comes
+                  with access to all the courses so I looked around and started
+                  their more advanced courses for React and TypeScript. I really
+                  like them so far, it's probably the only platform I've used I
+                  can see myself completing all the way through and earning
+                  certificates for.{" "}
+                </li>
+                <li>
                   <Link href="https://www.codecademy.com/" target="_blank">
                     Codecademy
                   </Link>{" "}
