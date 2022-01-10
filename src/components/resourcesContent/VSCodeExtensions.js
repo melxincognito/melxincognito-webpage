@@ -46,12 +46,31 @@ export default function VSCodeExtensions() {
                   </Link>{" "}
                   is amazing, I don't know how I went so long without this
                   extension. It's an opinionated code formatter that formats
-                  your code so it's easily readable. When you first download it
-                  you have to do a special key combo to format it, change the
-                  settings so it formats on save and it's a lot more useful. If
-                  your code has an error like a missing bracket it won't format
-                  on save so it's a good cue to take another look at your code
-                  before you run.
+                  your code so it's easily readable. If your code has an error
+                  like a missing bracket it won't format on save so it's a good
+                  cue to take another look at your code before you run. When you
+                  first download it you have to do a special key combo to format
+                  it, change the settings so it formats on save and it's a lot
+                  more useful. To turn prettier on and have it format on save:
+                  <ul>
+                    {" "}
+                    <li>
+                      Navigate to <strong>Prefrences</strong> >
+                      <strong> Settings</strong> > Search{" "}
+                      <strong>'format document' </strong>
+                    </li>
+                    <li>
+                      {" "}
+                      Under <strong> Editor: Default Formatter</strong>, click
+                      the menu button and select{" "}
+                      <strong> Prettier - Code formatter</strong>
+                    </li>
+                    <li>
+                      {" "}
+                      Look below and check the box under{" "}
+                      <strong>Editor: Format On Save</strong>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   {" "}
