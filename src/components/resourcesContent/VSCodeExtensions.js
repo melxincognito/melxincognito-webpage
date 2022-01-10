@@ -62,7 +62,7 @@ export default function VSCodeExtensions() {
                     <li>
                       {" "}
                       Under <strong> Editor: Default Formatter</strong>, click
-                      the menu button and select{" "}
+                      the selector button and select{" "}
                       <strong> Prettier - Code formatter</strong>
                     </li>
                     <li>
