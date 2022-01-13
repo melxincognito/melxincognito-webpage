@@ -162,11 +162,11 @@ export default function MyProjects() {
                         </li>
                         <li>
                           {" "}
-                          Spanish - <i> B2(Castellano & Latin America)</i>🇪🇸🇲🇽
+                          Spanish - <i> B2</i>🇪🇸🇲🇽
                         </li>
                         <li>
                           {" "}
-                          French - <i>A2(France)</i>🇫🇷
+                          French - <i>A2</i>🇫🇷
                           <ul>
                             <li> Currently working towards B2 certificate</li>
                           </ul>
