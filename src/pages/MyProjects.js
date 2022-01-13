@@ -183,7 +183,6 @@ export default function MyProjects() {
                       </p>
                       <ul>
                         <li>React.JS</li>
-                        <li>Flask</li>
                       </ul>
                     </Typography>
                   </div>
