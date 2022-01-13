@@ -21,20 +21,6 @@ export default function MyProjects() {
 
           <CardContent>
             <Typography variant="body1">
-              {" "}
-              <Typography variant="h6"> Overview: </Typography> I've made an
-              embarrassing number of websites with WordPress and Adobe Portfolio
-              but I didn't feel like I was getting level of customization I
-              wanted only being able to build everything from an online
-              platform. I started to make this site from scratch with React to
-              really learn all the nuts and bolts of web development! I will
-              continue building projects as I progress, my goal is to be able to
-              develop and maintain large scale web applications.
-            </Typography>
-          </CardContent>
-
-          <CardContent>
-            <Typography variant="body1">
               Feel free to check out my{" "}
               <Link href="https://www.github.com/melxincognito" target="_blank">
                 Github
@@ -54,8 +40,7 @@ export default function MyProjects() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Here's a small list of the websites I've been contracted to
-                  create and maintain:
+                  Sites I've created/maintained:
                   <ul>
                     <li>
                       {" "}
