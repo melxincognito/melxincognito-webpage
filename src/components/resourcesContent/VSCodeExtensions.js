@@ -112,6 +112,27 @@ export default function VSCodeExtensions() {
                   my project was crashing only to find I was missing a single }
                   🙃
                 </li>
+                <li>
+                  <Link
+                    href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag"
+                    target="_blank"
+                  >
+                    Auto rename tag
+                  </Link>{" "}
+                  automatically renames the paired HTML/XML tag in your code
+                  editor while you're working.
+                </li>
+                <li>
+                  <Link
+                    href="https://marketplace.visualstudio.com/items?itemName=almenon.arepl"
+                    target="_blank"
+                  >
+                    {" "}
+                    AREPL for Python
+                  </Link>{" "}
+                  automatically evaluates and gives you a preview of your python
+                  code as you type.{" "}
+                </li>
               </ul>
             </Typography>
           </AccordionDetails>
