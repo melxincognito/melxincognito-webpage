@@ -9,6 +9,7 @@ import {
   Link,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import NewComputerSetup from "./NewComputerSetup";
 
 export default function DeveloperResources() {
   return (
@@ -212,6 +213,7 @@ export default function DeveloperResources() {
             </Typography>
           </AccordionDetails>
         </Accordion>
+        <NewComputerSetup />
       </CardContent>
     </Card>
   );

@@ -156,6 +156,14 @@ export default function VSCodeExtensions() {
               <ul>
                 <li>
                   <Link
+                    href="https://marketplace.visualstudio.com/items?itemName=PawelBorkar.jellyfish"
+                    target="_blank"
+                  >
+                    JellyFish
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula"
                     target="_blank"
                   >
