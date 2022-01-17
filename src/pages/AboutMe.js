@@ -42,7 +42,6 @@ class AboutMe extends Component {
               padding: 5,
               borderRadius: 25,
             }}
-            indicatorColor="black"
           >
             <Tab
               sx={{ borderRight: "dotted #fff4fa" }}
@@ -65,12 +64,15 @@ class AboutMe extends Component {
         </Container>
         <Container>
           <Box>
-            <Typography> {this.state.message}</Typography>
+            <Typography component={"div"}> {this.state.message}</Typography>
           </Box>
         </Container>
       </Container>
     );
   }
 }
+
+/* have to add component={'div'} to Typography or you'll get an error message that your
+objects aren't nesting correctly when they're getting imported from the other pages */
 
 export default AboutMe;
