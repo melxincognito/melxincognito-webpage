@@ -1,4 +1,4 @@
-import { Container, Box, Tabs, Tab, Typography } from "@mui/material";
+import { Container, Box, Tabs, Tab } from "@mui/material";
 import React, { Component } from "react";
 import AboutMeBio from "../components/aboutMeContent/AboutMeBio";
 import AboutMeGoals from "../components/aboutMeContent/AboutMeGoals";
@@ -9,6 +9,7 @@ class AboutMe extends Component {
     super(props);
     this.state = {
       message: <AboutMeBio />,
+      selectedTab: 0,
     };
   }
 
@@ -45,18 +46,18 @@ class AboutMe extends Component {
           >
             <Tab
               sx={{ borderRight: "dotted #fff4fa" }}
-              value="one"
+              value={this.selectedTab}
               label="Bio"
               onClick={this.updateBio}
             />
             <Tab
               sx={{ borderRight: "dotted #fff4fa" }}
-              value="two"
+              value={this.selectedTab}
               label="2022 Goals"
               onClick={this.updateGoals}
             />
             <Tab
-              value="three"
+              value={this.selectedTab}
               label="Favorite Locations"
               onClick={this.updateTravelLocations}
             />
@@ -64,15 +65,12 @@ class AboutMe extends Component {
         </Container>
         <Container>
           <Box>
-            <Typography component={"div"}> {this.state.message}</Typography>
+            <div> {this.state.message} </div>
           </Box>
         </Container>
       </Container>
     );
   }
 }
-
-/* have to add component={'div'} to Typography or you'll get an error message that your
-objects aren't nesting correctly when they're getting imported from the other pages */
 
 export default AboutMe;
