@@ -6,6 +6,7 @@ import AboutMe from "./pages/AboutMe";
 import AboutMeBio from "./components/aboutMeContent/AboutMeBio";
 import AboutMeGoals from "./components/aboutMeContent/AboutMeGoals";
 import AboutMeTravelLocations from "./components/aboutMeContent/AboutMeTravelLocations";
+import Resources from "./pages/Resources";
 
 describe("HomePage", () => {
   test("renders homepage component", () => {
@@ -39,3 +40,21 @@ describe("About Me Page", () => {
     render(<AboutMe />);
   });
 });
+
+/* had to fix the nexting issue on About Me page by changing <Typography> Element to a <div> 
+element. The nesting was getting messed up because using Typography was rendering like:
+<p>
+<div> </div>
+</p> 
+*/
+// Still need to fix Tab Value issue
+
+describe("Resources Page", () => {
+  test("renders main Resources Page", () => {
+    render(<Resources />);
+  });
+});
+
+/* 
+Resources Page also having nesting issues and issues w the Tab value.
+*/
