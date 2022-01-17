@@ -213,7 +213,6 @@ export default function DeveloperResources() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <NewComputerSetup />
       </CardContent>
     </Card>
   );
