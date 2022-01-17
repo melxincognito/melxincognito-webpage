@@ -164,6 +164,14 @@ export default function VSCodeExtensions() {
                 </li>
                 <li>
                   <Link
+                    href="https://marketplace.visualstudio.com/items?itemName=bpat86.nightcall"
+                    target="_blank"
+                  >
+                    Nightcall
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula"
                     target="_blank"
                   >
