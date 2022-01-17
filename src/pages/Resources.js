@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Box, Tabs, Tab, Typography } from "@mui/material";
+import { Container, Box, Tabs, Tab } from "@mui/material";
 import LearningResources from "../components/resourcesContent/LearningResources";
 import VSCodeExtensions from "../components/resourcesContent/VSCodeExtensions";
 import DeveloperResources from "../components/resourcesContent/DeveloperResources";
@@ -62,7 +62,7 @@ export default class Resources extends Component {
         </Box>
         <Container>
           <Box>
-            <Typography> {this.state.content}</Typography>
+            <div> {this.state.content}</div>
           </Box>
         </Container>
       </Container>
