@@ -7,6 +7,7 @@ import AboutMeBio from "./components/aboutMeContent/AboutMeBio";
 import AboutMeGoals from "./components/aboutMeContent/AboutMeGoals";
 import AboutMeTravelLocations from "./components/aboutMeContent/AboutMeTravelLocations";
 import Resources from "./pages/Resources";
+import MyDevJourney from "./pages/MyDevJourney";
 
 describe("HomePage", () => {
   test("renders homepage component", () => {
@@ -58,3 +59,13 @@ describe("Resources Page", () => {
 /* 
 Resources Page also having nesting issues and issues w the Tab value.
 */
+
+describe("My Dev Journey", () => {
+  test("renders My Dev Journey Page", () => {
+    render(<MyDevJourney />);
+    screen.debug();
+  });
+});
+
+/* fix the amount of divs you're having rendered on my dev journey. It doesn't need that many
+containers on it.*/
