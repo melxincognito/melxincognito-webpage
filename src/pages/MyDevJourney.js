@@ -43,7 +43,11 @@ export default function MyDevJourney() {
           }}
         >
           <CardMedia
-            sx={{ borderRadius: 5, width: 680, m: "1rem" }}
+            sx={{
+              borderRadius: 5,
+              m: "1rem",
+              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.8)",
+            }}
             component="img"
             image={Header}
           />
@@ -90,7 +94,13 @@ export default function MyDevJourney() {
           </Typography>
         </CardContent>
         <CardContent>
-          <CardMedia component="img" image={OdinLogo} />
+          <CardMedia
+            sx={{
+              borderRadius: 5,
+            }}
+            component="img"
+            image={OdinLogo}
+          />
         </CardContent>
         <CardContent>
           <Typography variant="body1">
@@ -129,7 +139,6 @@ export default function MyDevJourney() {
         <CardContent
           sx={{
             display: "flex",
-
             alignContent: "center",
             justifyContent: "center",
             m: "1rem",
@@ -140,6 +149,7 @@ export default function MyDevJourney() {
               maxWidth: 340,
               borderTopLeftRadius: 25,
               borderBottomLeftRadius: 25,
+              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
             }}
             component="img"
             image={NoDesk}
@@ -149,6 +159,7 @@ export default function MyDevJourney() {
               maxWidth: 340,
               borderTopRightRadius: 25,
               borderBottomRightRadius: 25,
+              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
             }}
             component="img"
             image={ConDesk}
@@ -220,7 +231,7 @@ export default function MyDevJourney() {
           </Typography>
         </CardContent>
         <CardContent>
-          <CardMedia sx={{}} component="img" image={Logos} />
+          <CardMedia component="img" image={Logos} />
         </CardContent>
         <CardContent>
           <Typography variant="body1">

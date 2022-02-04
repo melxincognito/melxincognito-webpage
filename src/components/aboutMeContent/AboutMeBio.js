@@ -3,6 +3,13 @@ import Santiago from "../../assets/Santiago.png";
 import { Card, CardContent, Typography, CardMedia } from "@mui/material";
 
 export default function AboutMeBio() {
+  const cardMediaStyle = {
+    maxWidth: 300,
+    maxHeight: 300,
+    borderRadius: 40,
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
+  };
+
   return (
     <Card sx={{ borderRadius: 5 }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -13,11 +20,7 @@ export default function AboutMeBio() {
               About Me{" "}
             </Typography>
           </div>
-          <CardMedia
-            sx={{ maxWidth: 300, maxHeight: 300, borderRadius: 40 }}
-            component="img"
-            image={Santiago}
-          />
+          <CardMedia sx={cardMediaStyle} component="img" image={Santiago} />
         </CardContent>
       </div>
       <CardContent>

@@ -14,7 +14,11 @@ export default function HomePage() {
       <Card sx={{ borderRadius: 5 }}>
         <CardContent>
           <CardMedia
-            sx={{ maxHeight: 400, borderRadius: 5 }}
+            sx={{
+              maxHeight: 400,
+              borderRadius: 5,
+              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
+            }}
             component="img"
             image={Retiro}
           />

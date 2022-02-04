@@ -41,6 +41,7 @@ export default class Resources extends Component {
               text: "white",
               padding: 5,
               borderRadius: 25,
+              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
             }}
           >
             <Tab
