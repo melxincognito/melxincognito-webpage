@@ -48,15 +48,17 @@ export default function MyProjects() {
                         www.tmg-construction.com
                       </Link>
                     </li>
+                    <li>
+                      {" "}
+                      <Link
+                        href="http://links-melxincognito.com/"
+                        target="_blank"
+                      >
+                        www.links-melxincognito.com/
+                      </Link>
+                    </li>
                     <li>www.tgazrealty.com (currently under construction)</li>
                   </ul>
-                </Typography>
-                <Typography variant="body1">
-                  {" "}
-                  I know the list is small but my passion will allow me to
-                  progress forward quickly. My goal by the end of 2022 is to
-                  develop at least 2 large scale applications in my portfolio
-                  using React!
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -182,7 +184,6 @@ export default function MyProjects() {
                     <li> Tattooing oranges </li>
                     <li> Digital Art </li>
                     <li> Solo Travel </li>
-
                     <li> Photography </li>
                     <li> Programming </li>
                     <li> Learning new languages </li>
