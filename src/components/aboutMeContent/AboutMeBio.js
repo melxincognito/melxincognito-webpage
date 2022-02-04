@@ -11,7 +11,12 @@ export default function AboutMeBio() {
   };
 
   return (
-    <Card sx={{ borderRadius: 5 }}>
+    <Card
+      sx={{
+        borderRadius: 5,
+        boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
+      }}
+    >
       <div style={{ display: "flex", justifyContent: "center" }}>
         <CardContent>
           <div style={{ display: "flex", justifyContent: "center" }}>

@@ -23,7 +23,12 @@ export default function MyDevJourney() {
         maxWidth: 750,
       }}
     >
-      <Card sx={{ borderRadius: 5 }}>
+      <Card
+        sx={{
+          borderRadius: 5,
+          boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
+        }}
+      >
         <CardContent
           sx={{
             display: "flex",

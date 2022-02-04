@@ -11,7 +11,12 @@ import Retiro from "../assets/Retiro.png";
 export default function HomePage() {
   return (
     <Container sx={{ maxWidth: 700 }}>
-      <Card sx={{ borderRadius: 5 }}>
+      <Card
+        sx={{
+          borderRadius: 5,
+          boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
+        }}
+      >
         <CardContent>
           <CardMedia
             sx={{

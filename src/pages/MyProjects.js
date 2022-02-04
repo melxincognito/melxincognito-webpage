@@ -15,7 +15,12 @@ import React from "react";
 export default function MyProjects() {
   return (
     <Container>
-      <Card sx={{ borderRadius: 5 }}>
+      <Card
+        sx={{
+          borderRadius: 5,
+          boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
+        }}
+      >
         <CardContent>
           <Typography variant="h4"> My CV</Typography>
 
