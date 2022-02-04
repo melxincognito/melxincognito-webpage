@@ -144,13 +144,8 @@ export default function MyProjects() {
                         <strong>Spoken Languages</strong>
                       </p>
                       <ul>
-                        <li>
-                          English - <i> Native(USA)</i>🇺🇸
-                        </li>
-                        <li>
-                          {" "}
-                          Spanish - <i> B2</i>🇪🇸🇲🇽
-                        </li>
+                        <li>English</li>
+                        <li> Spanish</li>
                       </ul>
                     </Typography>
                   </div>
