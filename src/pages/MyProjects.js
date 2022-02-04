@@ -149,13 +149,6 @@ export default function MyProjects() {
                           {" "}
                           Spanish - <i> B2</i>🇪🇸🇲🇽
                         </li>
-                        <li>
-                          {" "}
-                          French - <i>A2</i>🇫🇷
-                          <ul>
-                            <li> Currently working towards B2 certificate</li>
-                          </ul>
-                        </li>
                       </ul>
                     </Typography>
                   </div>
