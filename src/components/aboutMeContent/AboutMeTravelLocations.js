@@ -18,8 +18,15 @@ export default function AboutMeTravelLocations() {
     borderRadius: 3,
   };
 
+  const containerStyles = {
+    display: "flex",
+    flexWrap: "wrap",
+    width: 800,
+    gap: 7,
+  };
+
   return (
-    <Container sx={{ display: "flex", flexWrap: "wrap", width: 800, gap: 7 }}>
+    <Container sx={containerStyles}>
       <Card sx={travelCardStyle}>
         <CardMedia component="img" height="320" width="300" image={Alcala} />
         <Typography variant="subtitle1"> Alcala de Henares, Madrid </Typography>

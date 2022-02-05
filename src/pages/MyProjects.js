@@ -11,16 +11,12 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import React from "react";
+import MainCard from "../components/ui/MainCard";
 
 export default function MyProjects() {
   return (
     <Container>
-      <Card
-        sx={{
-          borderRadius: 5,
-          boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-        }}
-      >
+      <MainCard>
         <CardContent>
           <Typography variant="h4"> My CV</Typography>
 
@@ -193,7 +189,7 @@ export default function MyProjects() {
             </Accordion>
           </CardContent>
         </CardContent>
-      </Card>
+      </MainCard>
     </Container>
   );
 }

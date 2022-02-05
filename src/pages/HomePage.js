@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Container,
-  Typography,
-} from "@mui/material";
+import { CardContent, CardMedia, Container, Typography } from "@mui/material";
 import React from "react";
 import Retiro from "../assets/Retirooo.avif";
 import MainCard from "../components/ui/MainCard";
@@ -17,6 +11,11 @@ export default function HomePage() {
     position: "sticky",
   };
 
+  const centerDivStyles = {
+    display: "flex",
+    justifyContent: "center",
+  };
+
   return (
     <Container>
       <MainCard>
@@ -24,7 +23,7 @@ export default function HomePage() {
           <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
         </CardContent>
         <CardContent>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={centerDivStyles}>
             <Typography variant="h4" color="#330e62">
               Mel Incögnito
             </Typography>

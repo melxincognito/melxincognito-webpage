@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Card,
   CardContent,
   Typography,
   Accordion,
@@ -9,18 +8,19 @@ import {
   Link,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import MainCard from "../ui/MainCard";
 
 export default function VSCodeExtensions() {
+  const centerDisplayStyle = {
+    display: "flex",
+    justifyContent: "center",
+  };
+
   return (
-    <Card
-      sx={{
-        borderRadius: 5,
-        boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "center" }}>
+    <MainCard>
+      <div style={centerDisplayStyle}>
         <CardContent>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={centerDisplayStyle}>
             <Typography variant="h4" color="#330e62">
               {" "}
               VS Code Extensions{" "}
@@ -204,6 +204,6 @@ export default function VSCodeExtensions() {
           </AccordionDetails>
         </Accordion>
       </CardContent>
-    </Card>
+    </MainCard>
   );
 }

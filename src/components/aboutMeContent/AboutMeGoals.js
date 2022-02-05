@@ -1,26 +1,25 @@
 import React from "react";
-import { Card, CardContent, Typography } from "@mui/material";
+import { CardContent, Typography } from "@mui/material";
+import MainCard from "../ui/MainCard";
 
 export default function AboutMeGoals() {
+  const headerDivStyle = {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: 5,
+  };
   return (
-    <Card
-      sx={{
-        borderRadius: 5,
-        boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <CardContent>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <Typography variant="h4" color="#330e62">
-              {" "}
-              My Goals for 2022{" "}
-            </Typography>
-          </div>
-        </CardContent>
-      </div>
+    <MainCard>
       <CardContent>
-        <Typography variant="body1">
+        <div style={headerDivStyle}>
+          <Typography variant="h4" color="#330e62">
+            {" "}
+            My Goals for 2022{" "}
+          </Typography>
+        </div>
+      </CardContent>
+      <CardContent>
+        <Typography>
           {" "}
           I've lived a lot of adventure being able to travel around the globe
           and live in different places. The adventure isn't over but this year
@@ -67,6 +66,6 @@ export default function AboutMeGoals() {
           path forward isn't too rocky, this year will be a good adventure.
         </Typography>
       </CardContent>
-    </Card>
+    </MainCard>
   );
 }

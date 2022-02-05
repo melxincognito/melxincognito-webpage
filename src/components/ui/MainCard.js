@@ -8,8 +8,8 @@ export default function MainCard(props) {
   };
 
   return (
-    <div>
+    <>
       <Card sx={cardStyles}>{props.children}</Card>
-    </div>
+    </>
   );
 }

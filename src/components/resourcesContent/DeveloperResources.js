@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Card,
   CardContent,
   Typography,
   Accordion,
@@ -9,18 +8,18 @@ import {
   Link,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import MainCard from "../ui/MainCard";
 
 export default function DeveloperResources() {
+  const centerDisplayStyle = {
+    display: "flex",
+    justifyContent: "center",
+  };
   return (
-    <Card
-      sx={{
-        borderRadius: 5,
-        boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-      }}
-    >
+    <MainCard>
       <div>
-        <CardContent sx={{ display: "flex", justifyContent: "center" }}>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+        <CardContent sx={centerDisplayStyle}>
+          <div style={centerDisplayStyle}>
             <Typography variant="h4" color="#330e62">
               {" "}
               Developer Resources{" "}
@@ -218,6 +217,6 @@ export default function DeveloperResources() {
           </AccordionDetails>
         </Accordion>
       </CardContent>
-    </Card>
+    </MainCard>
   );
 }

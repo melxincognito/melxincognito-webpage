@@ -1,6 +1,7 @@
 import React from "react";
 import Santiago from "../../assets/Santiago.png";
-import { Card, CardContent, Typography, CardMedia } from "@mui/material";
+import { CardContent, Typography, CardMedia } from "@mui/material";
+import MainCard from "../ui/MainCard";
 
 export default function AboutMeBio() {
   const cardMediaStyle = {
@@ -10,16 +11,16 @@ export default function AboutMeBio() {
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
   };
 
+  const centerDivStyle = {
+    display: "flex",
+    justifyContent: "center",
+  };
+
   return (
-    <Card
-      sx={{
-        borderRadius: 5,
-        boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "center" }}>
+    <MainCard>
+      <div style={centerDivStyle}>
         <CardContent>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={centerDivStyle}>
             <Typography variant="h4" color="#330e62">
               {" "}
               About Me{" "}
@@ -46,6 +47,6 @@ export default function AboutMeBio() {
           excites me knowing there's still so much left to learn ahead!{" "}
         </Typography>
       </CardContent>
-    </Card>
+    </MainCard>
   );
 }
