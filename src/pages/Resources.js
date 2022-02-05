@@ -25,25 +25,30 @@ export default class Resources extends Component {
   };
 
   render() {
+    const containerStyles = {
+      display: "grid",
+      alignContent: "center",
+    };
+
+    const boxStyles = {
+      display: "flex",
+      alignContent: "center",
+      justifyContent: "center",
+      marginBottom: 3,
+    };
+
+    const tabStyles = {
+      background: "#c5cae9",
+      text: "white",
+      padding: 5,
+      borderRadius: 25,
+      boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
+    };
+
     return (
-      <Container sx={{ display: "grid", alignContent: "center" }}>
-        <Box
-          sx={{
-            display: "flex",
-            alignContent: "center",
-            justifyContent: "center",
-            marginBottom: 3,
-          }}
-        >
-          <Tabs
-            style={{
-              background: "#c5cae9",
-              text: "white",
-              padding: 5,
-              borderRadius: 25,
-              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
-            }}
-          >
+      <Container sx={containerStyles}>
+        <Box sx={boxStyles}>
+          <Tabs style={tabStyles}>
             <Tab
               value="one"
               label="Developer Resources"
