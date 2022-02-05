@@ -1,6 +1,6 @@
 import { CardContent, CardMedia, Container, Typography } from "@mui/material";
 import React from "react";
-import Retiro from "../assets/Retirooo.avif";
+import Retiro from "../assets/Retiro.jpg";
 import MainCard from "../components/ui/MainCard";
 
 export default function HomePage() {

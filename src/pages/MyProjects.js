@@ -1,7 +1,6 @@
 import {
   Container,
   Typography,
-  Card,
   CardContent,
   Link,
   Accordion,
