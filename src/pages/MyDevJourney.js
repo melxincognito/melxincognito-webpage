@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Container,
-  Card,
   Typography,
   CardContent,
   Link,
@@ -12,50 +11,55 @@ import OdinLogo from "../assets/mydevjourney/odinlogo.png";
 import NoDesk from "../assets/mydevjourney/BegStudy.png";
 import ConDesk from "../assets/mydevjourney/NewSetup.png";
 import Logos from "../assets/mydevjourney/reactredux.png";
+import MainCard from "../components/ui/MainCard";
 
 export default function MyDevJourney() {
+  // styles for page
+
+  const mainContainerStyles = {
+    display: "grid",
+    alignContent: "center",
+    justifyContent: "center",
+    maxWidth: 750,
+  };
+
+  const centerCardContentStyles = {
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+  };
+
+  const headerImageStyles = {
+    borderRadius: 5,
+    m: "1rem",
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.8)",
+  };
+
+  const noDeskCardImageStyles = {
+    maxWidth: 340,
+    borderTopLeftRadius: 25,
+    borderBottomLeftRadius: 25,
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
+  };
+
+  const withDeskCardImageStyles = {
+    maxWidth: 340,
+    borderTopRightRadius: 25,
+    borderBottomRightRadius: 25,
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
+  };
+
   return (
-    <Container
-      sx={{
-        display: "grid",
-        alignContent: "center",
-        justifyContent: "center",
-        maxWidth: 750,
-      }}
-    >
-      <Card
-        sx={{
-          borderRadius: 5,
-          boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-        }}
-      >
-        <CardContent
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
+    <Container sx={mainContainerStyles}>
+      <MainCard>
+        <CardContent sx={centerCardContentStyles}>
           <Typography variant="h4" color="#330e62">
             {" "}
             My Developer Journey{" "}
           </Typography>
         </CardContent>
-        <CardContent
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignContent: "center",
-          }}
-        >
-          <CardMedia
-            sx={{
-              borderRadius: 5,
-              m: "1rem",
-              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.8)",
-            }}
-            component="img"
-            image={Header}
-          />
+        <CardContent sx={centerCardContentStyles}>
+          <CardMedia sx={headerImageStyles} component="img" image={Header} />
         </CardContent>
         <CardContent>
           <Typography variant="body1">
@@ -99,13 +103,7 @@ export default function MyDevJourney() {
           </Typography>
         </CardContent>
         <CardContent>
-          <CardMedia
-            sx={{
-              borderRadius: 5,
-            }}
-            component="img"
-            image={OdinLogo}
-          />
+          <CardMedia component="img" image={OdinLogo} />
         </CardContent>
         <CardContent>
           <Typography variant="body1">
@@ -150,22 +148,12 @@ export default function MyDevJourney() {
           }}
         >
           <CardMedia
-            sx={{
-              maxWidth: 340,
-              borderTopLeftRadius: 25,
-              borderBottomLeftRadius: 25,
-              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
-            }}
+            sx={noDeskCardImageStyles}
             component="img"
             image={NoDesk}
           />
           <CardMedia
-            sx={{
-              maxWidth: 340,
-              borderTopRightRadius: 25,
-              borderBottomRightRadius: 25,
-              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
-            }}
+            sx={withDeskCardImageStyles}
             component="img"
             image={ConDesk}
           />
@@ -279,7 +267,7 @@ export default function MyDevJourney() {
             long as I'm willing to put in the effort.{" "}
           </Typography>
         </CardContent>
-      </Card>
+      </MainCard>
     </Container>
   );
 }
