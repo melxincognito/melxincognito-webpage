@@ -40,7 +40,7 @@ export default function VSCodeExtensions() {
           <AccordionDetails>
             <Typography>
               There are a lot of different productivity extensions out there,
-              these are just the ones I use on a regular basis.
+              these are just the ones I use on a regular basis
               <ul>
                 <li>
                   <Link
