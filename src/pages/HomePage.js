@@ -6,27 +6,22 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import Retiro from "../assets/Retiro.png";
+import Retiro from "../assets/Retirooo.avif";
+import MainCard from "../components/ui/MainCard";
 
 export default function HomePage() {
+  const cardMediaStyles = {
+    maxHeight: 400,
+    borderRadius: 5,
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
+    position: "sticky",
+  };
+
   return (
-    <Container sx={{ maxWidth: 700 }}>
-      <Card
-        sx={{
-          borderRadius: 5,
-          boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-        }}
-      >
+    <Container>
+      <MainCard>
         <CardContent>
-          <CardMedia
-            sx={{
-              maxHeight: 400,
-              borderRadius: 5,
-              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
-            }}
-            component="img"
-            image={Retiro}
-          />
+          <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
         </CardContent>
         <CardContent>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -52,7 +47,7 @@ export default function HomePage() {
             developer! Hope you enjoy!😊
           </Typography>
         </CardContent>
-      </Card>
+      </MainCard>
     </Container>
   );
 }

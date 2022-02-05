@@ -18,8 +18,8 @@ export default function DeveloperResources() {
         boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
       }}
     >
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <CardContent>
+      <div>
+        <CardContent sx={{ display: "flex", justifyContent: "center" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Typography variant="h4" color="#330e62">
               {" "}
