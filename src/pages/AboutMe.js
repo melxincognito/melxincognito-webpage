@@ -26,33 +26,41 @@ class AboutMe extends Component {
   };
 
   render() {
+    const mainContainerStyles = {
+      display: "grid",
+      alignContent: "center",
+    };
+
+    const tabsContainerStyles = {
+      display: "flex",
+      alignContent: "center",
+      justifyContent: "center",
+      marginBottom: 3,
+    };
+
+    const tabsStyles = {
+      background: "#c5cae9",
+      text: "white",
+      padding: 5,
+      borderRadius: 25,
+      boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
+    };
+
+    const tabBorderStyles = {
+      borderRight: "dotted #fff4fa",
+    };
     return (
-      <Container sx={{ display: "grid", alignContent: "center" }}>
-        <Container
-          sx={{
-            display: "flex",
-            alignContent: "center",
-            justifyContent: "center",
-            marginBottom: 3,
-          }}
-        >
-          <Tabs
-            style={{
-              background: "#c5cae9",
-              text: "white",
-              padding: 5,
-              borderRadius: 25,
-              boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
-            }}
-          >
+      <Container sx={mainContainerStyles}>
+        <Container sx={tabsContainerStyles}>
+          <Tabs style={tabsStyles}>
             <Tab
-              sx={{ borderRight: "dotted #fff4fa" }}
+              sx={tabBorderStyles}
               value={this.selectedTab}
               label="Bio"
               onClick={this.updateBio}
             />
             <Tab
-              sx={{ borderRight: "dotted #fff4fa" }}
+              sx={tabBorderStyles}
               value={this.selectedTab}
               label="2022 Goals"
               onClick={this.updateGoals}
