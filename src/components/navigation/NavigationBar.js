@@ -79,9 +79,9 @@ export default function NavigationBar() {
             <Tab value="three" label="My CV" component={Link} to="/mycv" />
             <Tab
               value="four"
-              label="My Developer Journey"
+              label="Services"
               component={Link}
-              to="/mydevjourney"
+              to="/services"
             />
             <Tab
               value="five"
