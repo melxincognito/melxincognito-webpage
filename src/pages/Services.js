@@ -28,7 +28,10 @@ export default function Services() {
           on creating everything using the best development tools for your
           project.
         </CardContent>
-        <CardContent>SEO Optimization.</CardContent>
+        <CardContent>
+          SEO Optimization. Increase your business visibility with SEO
+          optimization.{" "}
+        </CardContent>
         <CardContent>
           Website Maintenance. The web is always changing with new practices
           being introduced everyday. I'll make sure everything on your website
@@ -38,6 +41,11 @@ export default function Services() {
           Domain name registration. Your website wouldn't be complete without a
           custom domain name. I'll be sure to have your site hosted online at a
           domain that's associated with your business.
+        </CardContent>
+        <CardContent>
+          QR Code creation. Gone are the days where you manually input a website
+          name. In todays world your website wouldn't be complete without a QR
+          code that'll allow users to go directly to your site.
         </CardContent>
       </MainCard>
     </>
