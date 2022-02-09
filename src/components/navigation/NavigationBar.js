@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
   // values for the tab indicator color
+
   const [value, setValue] = React.useState("one");
 
   const handleChange = (event, newValue) => {
@@ -21,6 +22,7 @@ export default function NavigationBar() {
   };
 
   // styles as consts to prevent crowding in code
+
   const appBarStyles = {
     background:
       "linear-gradient(to right, #c62828, #ff8f00, #ffd600, #388e3c, #0277bd, #303f9f, #e91e63 )",
