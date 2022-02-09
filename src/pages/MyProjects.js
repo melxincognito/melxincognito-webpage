@@ -141,11 +141,11 @@ export default function MyProjects() {
                     {" "}
                     <Typography>
                       <p>
-                        <strong>Spoken Languages</strong>
+                        <strong>Frameworks</strong>
                       </p>
                       <ul>
-                        <li>English</li>
-                        <li> Spanish</li>
+                        <li>React.JS</li>
+                        <li> Flask</li>
                       </ul>
                     </Typography>
                   </div>
@@ -154,10 +154,11 @@ export default function MyProjects() {
                     {" "}
                     <Typography>
                       <p>
-                        <strong>Frameworks</strong>
+                        <strong>Spoken Languages</strong>
                       </p>
                       <ul>
-                        <li>React.JS</li>
+                        <li>English</li>
+                        <li> Spanish</li>
                       </ul>
                     </Typography>
                   </div>
