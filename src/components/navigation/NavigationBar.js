@@ -8,7 +8,8 @@ import {
   Tab,
   Box,
 } from "@mui/material";
-import { Twitter, LinkedIn, Instagram, GitHub } from "@mui/icons-material";
+import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
@@ -49,8 +50,11 @@ export default function NavigationBar() {
     window.open("https://www.twitter.com/melxincognito", "_blank");
   }
 
-  function instagramPageClick() {
-    window.open("https://www.instagram.com/melxincognito/", "_blank");
+  function youtubePageClick() {
+    window.open(
+      "https://www.youtube.com/channel/UCIsEgMaokVbYBt6siV9y1NQ/videos",
+      "_blank"
+    );
   }
   function githubPageClick() {
     window.open("https://github.com/melxincognito", "_blank");
@@ -98,10 +102,10 @@ export default function NavigationBar() {
               fontSize="large"
               onClick={twitterPageClick}
             />
-            <Instagram
+            <YouTubeIcon
               sx={socialLinkStyles}
               fontSize="large"
-              onClick={instagramPageClick}
+              onClick={youtubePageClick}
             />
           </Box>
           <Box>
