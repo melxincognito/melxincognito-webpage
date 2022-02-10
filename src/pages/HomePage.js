@@ -1,4 +1,4 @@
-import { CardContent, CardMedia, Container, Typography } from "@mui/material";
+import { CardContent, CardMedia, Typography } from "@mui/material";
 import React from "react";
 import Retiro from "../assets/Retiro.jpg";
 import MainCard from "../components/ui/MainCard";
@@ -17,36 +17,34 @@ export default function HomePage() {
   };
 
   return (
-    <Container>
-      <MainCard>
-        <CardContent>
-          <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
-        </CardContent>
-        <CardContent>
-          <div style={centerDivStyles}>
-            <Typography variant="h4" color="#330e62">
-              Mel Incögnito
-            </Typography>
-          </div>
-        </CardContent>
-        <CardContent>
-          <Typography variant="body1">
-            Welcome to my personal page! I made this site from scratch using
-            React.JS and Material-UI! It's pretty simple now but I'll continue
-            growing and expanding this webpage as I go through my developer
-            journey. Feel free to look around and check back every now and again
-            to see any updates to the site!{" "}
+    <MainCard>
+      <CardContent>
+        <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
+      </CardContent>
+      <CardContent>
+        <div style={centerDivStyles}>
+          <Typography variant="h4" color="#330e62">
+            Mel Incögnito
           </Typography>
-        </CardContent>
-        <CardContent>
-          <Typography variant="body1">
-            {" "}
-            You can click on the top tabs to read a little about me, see a
-            little of my CV and read about my journey as a self-taught
-            developer! Hope you enjoy!😊
-          </Typography>
-        </CardContent>
-      </MainCard>
-    </Container>
+        </div>
+      </CardContent>
+      <CardContent>
+        <Typography variant="body1">
+          Welcome to my personal page! I made this site from scratch using
+          React.JS and Material-UI! It's pretty simple now but I'll continue
+          growing and expanding this webpage as I go through my developer
+          journey. Feel free to look around and check back every now and again
+          to see any updates to the site!{" "}
+        </Typography>
+      </CardContent>
+      <CardContent>
+        <Typography variant="body1">
+          {" "}
+          You can click on the top tabs to read a little about me, see a little
+          of my CV and read about my journey as a self-taught developer! Hope
+          you enjoy!😊
+        </Typography>
+      </CardContent>
+    </MainCard>
   );
 }
