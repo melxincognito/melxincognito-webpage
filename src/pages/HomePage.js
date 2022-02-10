@@ -30,19 +30,21 @@ export default function HomePage() {
       </CardContent>
       <CardContent>
         <Typography variant="body1">
-          Welcome to my personal page! I made this site from scratch using
-          React.JS and Material-UI! It's pretty simple now but I'll continue
-          growing and expanding this webpage as I go through my developer
-          journey. Feel free to look around and check back every now and again
-          to see any updates to the site!{" "}
+          Welcome to my page! I'm Mel, a Software Developer who makes Web
+          applications using React.JS and Python. I learned how to program
+          applications a few years after I graduated from Arizona State
+          University with a Bachelors in Business. I utilize my background in
+          both business and programming to work with my clients to ensure their
+          applications are both high quality and good from a marketing
+          standpoint.
         </Typography>
       </CardContent>
       <CardContent>
         <Typography variant="body1">
           {" "}
-          You can click on the top tabs to read a little about me, see a little
-          of my CV and read about my journey as a self-taught developer! Hope
-          you enjoy!😊
+          Feel free to take a look around! You can click on the top tabs to read
+          a little about me, see the services I am currently able to offer and
+          send me a message using my contact form.
         </Typography>
       </CardContent>
     </MainCard>
