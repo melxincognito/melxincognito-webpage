@@ -9,6 +9,7 @@ export default function AboutMeBio() {
     maxHeight: 300,
     borderRadius: 40,
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
+    marginTop: 2,
   };
 
   const centerDivStyle = {
@@ -33,18 +34,32 @@ export default function AboutMeBio() {
         <Typography variant="body1">
           {" "}
           Hey! My name is Mel and I'm from Phoenix, Arizona. There's a lot to me
-          so it's hard to narrow it down in a short bio, but I'll give it my
-          best shot. I have a variety of interests such as traveling, fashion,
-          cooking and art. I really enjoy programming and creating applications
-          as well. I never thought that I would be the type of person to like
-          programming this much but once I found it I was hooked. I feel so
-          lucky knowing I'll be able to make a career out of this. They say if
-          you do what you love you'll never work a day in your life so I hope
-          I'll find that statement to be true. I love programming because I like
-          being able to have an idea in my head and make it into something real.
-          Having it running in front of my computer screen makes me feel like a
-          wizard. I am barely at the beginning of my developer journey and it
-          excites me knowing there's still so much left to learn ahead!{" "}
+          so it's hard to narrow it down in a short bio but I'll give it my best
+          shot. I have a variety of interests such as traveling, fashion,
+          cooking and art. When I was 19 years old I moved to Spain and was able
+          to live in Barcelona and Madrid for a few years working as an English
+          Teacher and as a Customer Success Manager at a company specializing in
+          food traceability using blockchain technologies. I speak English and
+          Spanish but I would like to be able to provide my services to
+          customers from all of Latin America so I have been taking classes to
+          learn Portuguese as well.{" "}
+        </Typography>
+      </CardContent>
+      <CardContent>
+        <Typography>
+          I really enjoy programming and creating applications, I feel so lucky
+          being able to make a career doing something I love. They say if you do
+          what you love you'll never work a day in your life & so far I have
+          found this to be true. Currently, I use React.JS and Python to create
+          Web Applications. I would like to have the ability to develop
+          blockchain applications in the near future so I have began my journey
+          learning how to create applications using Rust.
+        </Typography>
+      </CardContent>
+      <CardContent>
+        <Typography>
+          I'm always open to collaborating with others, feel free to reach out
+          using my contact form or by sending me a direct message via Twitter!
         </Typography>
       </CardContent>
     </MainCard>
