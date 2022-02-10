@@ -19,11 +19,7 @@ export default function BottomNavigationLabel() {
         elevation={5}
       >
         {" "}
-        <Typography>
-          {" "}
-          © 2022 - melxincögnito | All Rights Reserved | Designed by Mel
-          Incögnito{" "}
-        </Typography>
+        <Typography> © 2022 - melxincögnito | All Rights Reserved</Typography>
       </Paper>
     </div>
   );

@@ -95,7 +95,7 @@ const NavigationBar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            Mel
+            Mel Incögnito
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -133,14 +133,9 @@ const NavigationBar = () => {
               <MenuItem component={Link} to="/about">
                 <Typography textAlign="center">About Me</Typography>
               </MenuItem>
-              <MenuItem component={Link} to="/mycv">
-                <Typography textAlign="center">My CV</Typography>
-              </MenuItem>
+
               <MenuItem component={Link} to="/services">
                 <Typography textAlign="center">Services</Typography>
-              </MenuItem>
-              <MenuItem component={Link} to="/resources">
-                <Typography textAlign="center">Developer Resources</Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -162,15 +157,15 @@ const NavigationBar = () => {
             >
               <Tab value="one" label="Home" component={Link} to="/" />
               <Tab value="two" label="About Me" component={Link} to="/about" />
-              <Tab value="three" label="My CV" component={Link} to="/mycv" />
+
               <Tab
-                value="four"
+                value="three"
                 label="Services"
                 component={Link}
                 to="/services"
               />
               <Tab
-                value="five"
+                value="four"
                 label="Resources"
                 component={Link}
                 to="/resources"

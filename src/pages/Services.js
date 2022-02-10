@@ -34,13 +34,13 @@ export default function Services() {
         </CardContent>
         <CardContent>
           Website Maintenance. The web is always changing with new practices
-          being introduced everyday. I'll make sure everything on your website
-          stays up to date and working smoothly.
+          being introduced everyday. I'll ensure everything on your website
+          stays up to date and is working smoothly.
         </CardContent>
         <CardContent>
           Domain name registration. Your website wouldn't be complete without a
-          custom domain name. I'll be sure to have your site hosted online at a
-          domain that's associated with your business.
+          custom domain name. I'll do all the work have your site hosted online
+          at a domain that's associated with your business.
         </CardContent>
         <CardContent>
           QR Code creation. Gone are the days where you manually input a website
