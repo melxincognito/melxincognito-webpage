@@ -137,6 +137,9 @@ const NavigationBar = () => {
               <MenuItem component={Link} to="/services">
                 <Typography textAlign="center">Services</Typography>
               </MenuItem>
+              <MenuItem component={Link} to="/contactMe">
+                <Typography textAlign="center">Contact Me</Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -169,6 +172,12 @@ const NavigationBar = () => {
                 label="Resources"
                 component={Link}
                 to="/resources"
+              />
+              <Tab
+                value="five"
+                label="Contact Me"
+                component={Link}
+                to="/contactMe"
               />
             </Tabs>
           </Box>
