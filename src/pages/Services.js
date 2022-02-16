@@ -64,8 +64,8 @@ export default function Services() {
               <Typography>
                 The web is always changing with new practices being introduced
                 everyday. Whether it's updating technological practices or
-                updating content, I'll ensure everything from on your website
-                stays up to date and is working smoothly.
+                updating content, I can ensure everything on your website stays
+                up to date and is working smoothly.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -115,7 +115,7 @@ export default function Services() {
             <AccordionDetails>
               <Typography>
                 Get the most out of your website and increase your business
-                visibility with SEO optimization
+                visibility with SEO optimization.
               </Typography>
             </AccordionDetails>
           </Accordion>
