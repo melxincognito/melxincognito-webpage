@@ -20,7 +20,7 @@ function App() {
       <Layout>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <Switch
-            color="secondary"
+            color="warning"
             checked={darkMode}
             onChange={() => setDarkMode(!darkMode)}
           />
