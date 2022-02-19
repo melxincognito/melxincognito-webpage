@@ -3,6 +3,7 @@ import { Container, Box, Tabs, Tab } from "@mui/material";
 import LearningResources from "../components/resourcesContent/LearningResources";
 import VSCodeExtensions from "../components/resourcesContent/VSCodeExtensions";
 import DeveloperResources from "../components/resourcesContent/DeveloperResources";
+import BottomNavigationLabel from "../components/navigation/BottomNavigation";
 
 export default class Resources extends Component {
   constructor(props) {
@@ -71,6 +72,7 @@ export default class Resources extends Component {
             <div> {this.state.content}</div>
           </Box>
         </Container>
+        <BottomNavigationLabel />
       </Container>
     );
   }

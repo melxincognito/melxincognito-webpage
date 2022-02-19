@@ -1,6 +1,7 @@
 import { CardContent, CardMedia, Typography } from "@mui/material";
 import React from "react";
 import Retiro from "../assets/Retiro.jpg";
+import BottomNavigationLabel from "../components/navigation/BottomNavigation";
 import MainCard from "../components/ui/MainCard";
 
 export default function HomePage() {
@@ -17,36 +18,39 @@ export default function HomePage() {
   };
 
   return (
-    <MainCard>
-      <CardContent>
-        <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
-      </CardContent>
-      <CardContent>
-        <div style={centerDivStyles}>
-          <Typography variant="h4" color="#330e62">
-            Mel Incögnito
+    <>
+      <MainCard>
+        <CardContent>
+          <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
+        </CardContent>
+        <CardContent>
+          <div style={centerDivStyles}>
+            <Typography variant="h4" color="#330e62">
+              Mel Incögnito
+            </Typography>
+          </div>
+        </CardContent>
+        <CardContent>
+          <Typography variant="body1">
+            Welcome to my page! I'm a Software Developer who makes Web
+            applications using React.JS and Python. I learned how to program
+            applications a few years after I graduated from Arizona State
+            University with a Bachelors in Business Law. I utilize my background
+            in both business and programming to work with my clients to ensure
+            their applications are both high quality and good from a marketing
+            standpoint.
           </Typography>
-        </div>
-      </CardContent>
-      <CardContent>
-        <Typography variant="body1">
-          Welcome to my page! I'm a Software Developer who makes Web
-          applications using React.JS and Python. I learned how to program
-          applications a few years after I graduated from Arizona State
-          University with a Bachelors in Business Law. I utilize my background
-          in both business and programming to work with my clients to ensure
-          their applications are both high quality and good from a marketing
-          standpoint.
-        </Typography>
-      </CardContent>
-      <CardContent>
-        <Typography variant="body1">
-          {" "}
-          Feel free to take a look around to find out more! You can click on the
-          top tabs to read a little about me, see the services I am able to
-          offer and request a quote using my contact form.
-        </Typography>
-      </CardContent>
-    </MainCard>
+        </CardContent>
+        <CardContent>
+          <Typography variant="body1">
+            {" "}
+            Feel free to take a look around to find out more! You can click on
+            the top tabs to read a little about me, see the services I am able
+            to offer and request a quote using my contact form.
+          </Typography>
+        </CardContent>
+      </MainCard>
+      <BottomNavigationLabel />
+    </>
   );
 }

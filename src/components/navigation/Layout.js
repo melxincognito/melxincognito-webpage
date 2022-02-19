@@ -1,6 +1,5 @@
 import { Container, Paper } from "@mui/material";
 import React from "react";
-import BottomNavigationLabel from "./BottomNavigation";
 
 import NavigationBar from "./NavigationBar";
 
@@ -29,8 +28,6 @@ export default function Layout(props) {
           {props.children}
         </Container>
       </Paper>
-
-      <BottomNavigationLabel />
     </div>
   );
 }
