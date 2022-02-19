@@ -72,7 +72,6 @@ export default class Resources extends Component {
             <div> {this.state.content}</div>
           </Box>
         </Container>
-        <BottomNavigationLabel />
       </Container>
     );
   }

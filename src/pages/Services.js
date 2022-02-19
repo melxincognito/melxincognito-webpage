@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MainCard from "../components/ui/MainCard";
-import BottomNavigationLabel from "../components/navigation/BottomNavigation";
+
 export default function Services() {
   const headerStyles = {
     display: "flex",
@@ -111,7 +111,6 @@ export default function Services() {
           </Accordion>
         </CardContent>
       </MainCard>
-      <BottomNavigationLabel />
     </>
   );
 }
