@@ -20,9 +20,8 @@ export default function Layout(props) {
           sx={{
             alignContent: "center",
             justifyContent: "center",
-
             marginTop: "1rem",
-            marginBottom: "5rem",
+            marginBottom: "15rem",
           }}
         >
           {props.children}
