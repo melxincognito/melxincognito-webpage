@@ -44,7 +44,7 @@ const NavigationBar = () => {
     bgcolor: "primary.main",
     padding: 2,
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
-    color: "secondary.dark",
+    color: "secondary.light",
   };
 
   const tabsContainerStyles = {
