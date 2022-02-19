@@ -19,12 +19,6 @@ export default function Services() {
     borderRadius: 4,
   };
 
-  const accordionColorTwo = {
-    backgroundColor: "rgba(231, 183, 241, 0.13)",
-  };
-  const accordionColorOne = {
-    backgroundColor: "rgba(155, 35, 179, 0.10)",
-  };
   return (
     <>
       {" "}
@@ -38,7 +32,6 @@ export default function Services() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1"
               id="panel1"
-              sx={accordionColorOne}
             >
               <Typography>Website Design & Development </Typography>
             </AccordionSummary>
@@ -56,7 +49,6 @@ export default function Services() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2"
               id="panel2"
-              sx={accordionColorTwo}
             >
               <Typography>Website Maintenance</Typography>
             </AccordionSummary>
@@ -74,7 +66,6 @@ export default function Services() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel3"
               id="panel3"
-              sx={accordionColorOne}
             >
               <Typography>Domain name registration</Typography>
             </AccordionSummary>
@@ -91,7 +82,6 @@ export default function Services() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel4"
               id="panel4"
-              sx={accordionColorTwo}
             >
               <Typography>Custom QR Code</Typography>
             </AccordionSummary>
@@ -108,7 +98,6 @@ export default function Services() {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel5"
               id="panel5"
-              sx={accordionColorOne}
             >
               <Typography>SEO Optimization</Typography>
             </AccordionSummary>

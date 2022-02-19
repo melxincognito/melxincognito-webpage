@@ -41,8 +41,7 @@ const NavigationBar = () => {
   // nav styles variables
 
   const appBarStyles = {
-    background:
-      "linear-gradient(to right, #c62828, #ff8f00, #ffd600, #388e3c, #0277bd, #303f9f, #e91e63 )",
+    bgcolor: "primary.main",
     padding: 2,
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
   };

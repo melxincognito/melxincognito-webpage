@@ -38,7 +38,7 @@ export default class Resources extends Component {
     };
 
     const tabStyles = {
-      background: "#c5cae9",
+      bgcolor: "primary.main",
       text: "white",
       padding: 5,
       borderRadius: 25,
