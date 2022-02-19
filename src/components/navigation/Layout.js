@@ -1,5 +1,5 @@
 import { Container, Paper } from "@mui/material";
-import React from "react";
+import * as React from "react";
 
 import NavigationBar from "./NavigationBar";
 
