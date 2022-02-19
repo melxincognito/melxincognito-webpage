@@ -55,10 +55,8 @@ export default function Services() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                The web is always changing with new practices being introduced
-                everyday. Whether it's updating technological practices or
-                updating content, I can ensure everything on your website stays
-                up to date and is working smoothly.
+                I can happily provide website maintenance services to those who
+                prefer to have someone else take care of their site for them.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -88,9 +86,8 @@ export default function Services() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Gone are the days where you manually input a website name. In
-                todays world your website wouldn't be complete without a QR code
-                that'll allow users to go directly to your site.
+                Your website wouldn't be complete without a QR code that'll
+                allow users to go directly to your site.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -105,7 +102,7 @@ export default function Services() {
             <AccordionDetails>
               <Typography>
                 Get the most out of your website and increase your business
-                visibility with SEO optimization.
+                visibility by using SEO optimization.
               </Typography>
             </AccordionDetails>
           </Accordion>
