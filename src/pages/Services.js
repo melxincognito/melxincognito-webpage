@@ -14,21 +14,22 @@ export default function Services() {
     display: "flex",
     alignContent: "center",
     justifyContent: "center",
-    color: "#330e62",
+    color: "secondary.main",
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
     margin: 2,
     borderRadius: 4,
+    bgcolor: "rgba(255, 255, 255, 0.39)",
   };
 
   return (
     <>
       {" "}
-      <MainCard>
+      <MainCard BackgroundColor="secondary.dark">
         <CardContent sx={headerStyles}>
           <Typography variant="h4"> Services</Typography>
         </CardContent>
         <CardContent>
-          <Accordion>
+          <Accordion sx={{ bgcolor: "secondary.dark" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1"
@@ -45,7 +46,7 @@ export default function Services() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion sx={{ bgcolor: "secondary.dark" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2"
@@ -60,7 +61,7 @@ export default function Services() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion sx={{ bgcolor: "secondary.dark" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel3"
@@ -76,7 +77,7 @@ export default function Services() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion sx={{ bgcolor: "secondary.dark" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel4"
@@ -91,7 +92,7 @@ export default function Services() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion sx={{ bgcolor: "secondary.dark" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel5"

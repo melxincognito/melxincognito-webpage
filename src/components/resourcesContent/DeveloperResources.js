@@ -16,7 +16,7 @@ export default function DeveloperResources() {
     justifyContent: "center",
   };
   return (
-    <MainCard>
+    <MainCard BackgroundColor="secondary.dark">
       <div>
         <CardContent sx={centerDisplayStyle}>
           <div style={centerDisplayStyle}>
@@ -28,7 +28,7 @@ export default function DeveloperResources() {
         </CardContent>
       </div>
       <CardContent>
-        <Accordion>
+        <Accordion sx={{ bgcolor: "secondary.dark" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -52,7 +52,7 @@ export default function DeveloperResources() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion sx={{ bgcolor: "secondary.dark" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
@@ -183,7 +183,7 @@ export default function DeveloperResources() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion sx={{ bgcolor: "secondary.dark" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"

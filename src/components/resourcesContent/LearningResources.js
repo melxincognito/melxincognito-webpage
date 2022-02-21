@@ -17,7 +17,7 @@ export default function LearningResources() {
   };
 
   return (
-    <MainCard>
+    <MainCard BackgroundColor="secondary.dark">
       <div style={centerDisplayStyles}>
         <CardContent>
           <div style={centerDisplayStyles}>
@@ -29,7 +29,7 @@ export default function LearningResources() {
         </CardContent>
       </div>
       <CardContent>
-        <Accordion>
+        <Accordion sx={{ bgcolor: "secondary.dark" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -59,7 +59,7 @@ export default function LearningResources() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion sx={{ bgcolor: "secondary.dark" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"

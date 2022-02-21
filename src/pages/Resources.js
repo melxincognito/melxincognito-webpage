@@ -3,7 +3,6 @@ import { Container, Box, Tabs, Tab } from "@mui/material";
 import LearningResources from "../components/resourcesContent/LearningResources";
 import VSCodeExtensions from "../components/resourcesContent/VSCodeExtensions";
 import DeveloperResources from "../components/resourcesContent/DeveloperResources";
-import BottomNavigationLabel from "../components/navigation/BottomNavigation";
 
 export default class Resources extends Component {
   constructor(props) {
@@ -39,8 +38,7 @@ export default class Resources extends Component {
     };
 
     const tabStyles = {
-      bgcolor: "primary.main",
-      text: "white",
+      backgroundColor: "rgba(255, 255, 255, 0.39)",
       padding: 5,
       borderRadius: 25,
       boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",

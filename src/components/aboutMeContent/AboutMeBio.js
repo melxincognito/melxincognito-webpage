@@ -28,15 +28,16 @@ export default function AboutMeBio() {
   }; */
 
   return (
-    <MainCard>
+    <MainCard BackgroundColor="secondary.dark">
       <div style={centerDivStyle}>
         <CardContent>
           <div style={centerDivStyle}>
-            <Typography variant="h4" color="#330e62">
+            <Typography variant="h4" color="secondary.main">
               {" "}
               About Me{" "}
             </Typography>
           </div>
+
           <CardMedia sx={cardMediaStyle} component="img" image={Santiago} />
         </CardContent>
       </div>

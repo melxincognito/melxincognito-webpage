@@ -1,7 +1,7 @@
 import { CardContent, CardMedia, Typography } from "@mui/material";
 import React from "react";
 import Retiro from "../assets/Retiro.jpg";
-import BottomNavigationLabel from "../components/navigation/BottomNavigation";
+
 import MainCard from "../components/ui/MainCard";
 
 export default function HomePage() {
@@ -19,13 +19,13 @@ export default function HomePage() {
 
   return (
     <>
-      <MainCard>
+      <MainCard BackgroundColor="secondary.dark">
         <CardContent>
           <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
         </CardContent>
         <CardContent>
           <div style={centerDivStyles}>
-            <Typography variant="h4" color="#330e62">
+            <Typography variant="h4" color="secondary.main">
               Mel Incögnito
             </Typography>
           </div>

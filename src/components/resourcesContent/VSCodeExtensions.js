@@ -17,7 +17,7 @@ export default function VSCodeExtensions() {
   };
 
   return (
-    <MainCard>
+    <MainCard BackgroundColor="secondary.dark">
       <div style={centerDisplayStyle}>
         <CardContent>
           <div style={centerDisplayStyle}>
@@ -29,7 +29,7 @@ export default function VSCodeExtensions() {
         </CardContent>
       </div>
       <CardContent>
-        <Accordion>
+        <Accordion sx={{ bgcolor: "secondary.dark" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -142,7 +142,7 @@ export default function VSCodeExtensions() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion sx={{ bgcolor: "secondary.dark" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"

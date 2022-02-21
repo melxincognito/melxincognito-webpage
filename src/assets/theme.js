@@ -8,6 +8,8 @@ const theme = createTheme({
       light: "#fff4fa",
     },
     secondary: {
+      // theme for background of cards
+      dark: "rgba(255, 255, 255, 0.4)",
       main: "#482880",
       light: "#fafafa",
     },
@@ -25,8 +27,10 @@ export const darkTheme = createTheme({
       light: "#212121",
     },
     secondary: {
-      dark: "440A67",
-      main: "#fafafa",
+      // theme for background of cards
+      dark: "rgba(255, 255, 255, 0.4)",
+      main: "#440A67",
+      light: "#fafafa",
     },
   },
   typography: {
@@ -35,3 +39,4 @@ export const darkTheme = createTheme({
 });
 
 export default theme;
+//#330e62
