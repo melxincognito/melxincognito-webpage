@@ -22,6 +22,13 @@ export default function Services() {
     marginTop: 4,
   };
 
+  const requestQuoteDivStyles = {
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+    marginTop: 10,
+  };
+
   return (
     <>
       {" "}
@@ -111,14 +118,7 @@ export default function Services() {
           </Accordion>
         </CardContent>
       </MainCard>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-          marginTop: 10,
-        }}
-      >
+      <div style={requestQuoteDivStyles}>
         <Typography color="tercera.light">
           {" "}
           To request a quote, send a message via Facebook Messenger{" "}
