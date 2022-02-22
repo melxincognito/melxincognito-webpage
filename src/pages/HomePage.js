@@ -9,7 +9,7 @@ export default function HomePage() {
     borderRadius: 5,
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.5)",
     position: "sticky",
-    marginTop: 2,
+    marginTop: 4,
   };
 
   const headerStyles = {
@@ -29,7 +29,7 @@ export default function HomePage() {
     overflow: "hidden",
     width: "auto",
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
-    marginTop: 4,
+    marginTop: 2,
     bgcolor: "rgba(255, 255, 255, 0.39)",
     borderRadius: "4px 25px 4px 25px",
   };
@@ -44,13 +44,12 @@ export default function HomePage() {
     <>
       <MainCard BackgroundColor="secondary.dark">
         <CardContent sx={headerStyles}>
-          <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
-
           <CardContent sx={headerStyles2}>
             <Typography variant="h4" color="secondary.main">
               Mel Incögnito
             </Typography>
           </CardContent>
+          <CardMedia sx={cardMediaStyles} component="img" image={Retiro} />
         </CardContent>
 
         <CardContent sx={whitebgColor}>
