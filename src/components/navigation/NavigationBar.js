@@ -14,7 +14,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 
 const NavigationBar = () => {
@@ -77,9 +77,9 @@ const NavigationBar = () => {
     window.open("https://www.twitter.com/melxincognito", "_blank");
   }
 
-  function youtubePageClick() {
+  function facebookPageClick() {
     window.open(
-      "https://www.youtube.com/channel/UCIsEgMaokVbYBt6siV9y1NQ",
+      "https://www.facebook.com/MelxInc%C3%B6gnito-101595525789444",
       "_blank"
     );
   }
@@ -197,10 +197,10 @@ const NavigationBar = () => {
                 fontSize="large"
                 onClick={twitterPageClick}
               />
-              <YouTubeIcon
+              <FacebookIcon
                 sx={socialLinkStyles}
                 fontSize="large"
-                onClick={youtubePageClick}
+                onClick={facebookPageClick}
               />
             </Box>
             <Box>
