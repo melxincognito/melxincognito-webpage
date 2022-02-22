@@ -19,6 +19,7 @@ export default function Services() {
     margin: 2,
     borderRadius: "4px 25px 4px 25px",
     bgcolor: "rgba(255, 255, 255, 0.39)",
+    marginTop: 4,
   };
 
   return (
