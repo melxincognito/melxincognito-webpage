@@ -86,9 +86,8 @@ export default function AboutMeBio() {
         </CardContent>
         <CardContent>
           <Typography>
-            I'm always open to working and collaborating with others. Feel free
-            to reach out using my contact form or by sending me a direct message
-            via Twitter!
+            Feel free to reach out by sending me a message on Facebook or
+            Twitter!
           </Typography>
         </CardContent>
       </CardContent>
