@@ -13,7 +13,7 @@ import theme from "./assets/theme";
 import { darkTheme } from "./assets/theme";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : theme}>
