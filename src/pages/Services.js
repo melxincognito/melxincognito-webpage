@@ -111,6 +111,19 @@ export default function Services() {
           </Accordion>
         </CardContent>
       </MainCard>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          marginTop: 10,
+        }}
+      >
+        <Typography color="tercera.light">
+          {" "}
+          To request a quote, send a message via Facebook Messenger{" "}
+        </Typography>
+      </div>
     </>
   );
 }
