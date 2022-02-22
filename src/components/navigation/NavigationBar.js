@@ -135,7 +135,7 @@ const NavigationBar = () => {
             >
               <Container
                 sx={{
-                  width: "30em",
+                  width: "20rem",
                   height: "100%",
                   display: "block",
                   float: "left",
