@@ -17,7 +17,7 @@ export default function Services() {
     color: "secondary.main",
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
     margin: 2,
-    borderRadius: 4,
+    borderRadius: "4px 25px 4px 25px",
     bgcolor: "rgba(255, 255, 255, 0.39)",
   };
 
