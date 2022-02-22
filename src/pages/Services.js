@@ -89,7 +89,8 @@ export default function Services() {
             <AccordionDetails>
               <Typography>
                 Your website wouldn't be complete without a QR code that'll
-                allow users to go directly to your site.
+                allow users to go directly to your site with a point of a
+                camera.
               </Typography>
             </AccordionDetails>
           </Accordion>
