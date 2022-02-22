@@ -9,7 +9,7 @@ export default function AboutMeBio() {
     maxHeight: 300,
     borderRadius: 40,
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.6)",
-    marginTop: 2,
+    marginTop: 4,
   };
 
   const centerDivStyle = {
