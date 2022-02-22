@@ -61,6 +61,12 @@ const NavigationBar = () => {
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
   };
 
+  const mobileTabStyle = {
+    display: "block",
+    width: "100%",
+    padding: "18px 20px",
+  };
+
   const socialLinkStyles = {
     p: 0.5,
   };
@@ -127,16 +133,27 @@ const NavigationBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <MenuItem component={Link} to="/">
-                <Typography textAlign="center">Home</Typography>
-              </MenuItem>
-              <MenuItem component={Link} to="/about">
-                <Typography textAlign="center">About Me</Typography>
-              </MenuItem>
+              <Container
+                sx={{
+                  width: "30em",
+                  height: "100%",
+                  display: "block",
+                  float: "left",
+                  bgcolor: "tercera.main",
+                  color: "tercera.light",
+                }}
+              >
+                <MenuItem component={Link} to="/" sx={mobileTabStyle}>
+                  <Typography textAlign="center">Home</Typography>
+                </MenuItem>
+                <MenuItem component={Link} to="/about" sx={mobileTabStyle}>
+                  <Typography textAlign="center">About Me</Typography>
+                </MenuItem>
 
-              <MenuItem component={Link} to="/services">
-                <Typography textAlign="center">Services</Typography>
-              </MenuItem>
+                <MenuItem component={Link} to="/services" sx={mobileTabStyle}>
+                  <Typography textAlign="center">Services</Typography>
+                </MenuItem>
+              </Container>
             </Menu>
           </Box>
           <Typography

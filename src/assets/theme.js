@@ -13,6 +13,11 @@ const theme = createTheme({
       main: "#482880",
       light: "#fafafa",
     },
+    // theme for navigation bar mobile display
+    tercera: {
+      main: "#fff4fa", // mobile menu display background color
+      light: "#482880", // mobile menu color
+    },
   },
   typography: {
     fontFamily: ["Josefin Sans"],
@@ -31,6 +36,11 @@ export const darkTheme = createTheme({
       dark: "rgba(255, 255, 255, 0.4)",
       main: "#440A67",
       light: "#fafafa",
+    },
+    // theme for navigation bar mobile display
+    tercera: {
+      main: "#212121", // mobile menu display background color
+      light: "rgba(255, 255, 255, 0.4)", // mobile menu color
     },
   },
   typography: {
