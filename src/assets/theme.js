@@ -44,6 +44,9 @@ export const darkTheme = createTheme({
     },
   },
   typography: {
+    h6: {
+      fontFamily: ["Lobster Two"],
+    },
     fontFamily: ["Josefin Sans"],
   },
 });
