@@ -21,12 +21,12 @@ const theme = createTheme({
   },
   typography: {
     h6: {
-      fontFamily: ["Lobster Two"],
+      fontFamily: ["Lobster Two"], // navigation bar title custom font family
     },
     h4: {
-      fontFamily: ["Lobster Two"],
+      fontFamily: ["Lobster Two"], // card header custom font family
     },
-    fontFamily: ["Josefin Sans"],
+    fontFamily: ["Josefin Sans"], // global font family
   },
 });
 
@@ -51,12 +51,12 @@ export const darkTheme = createTheme({
   },
   typography: {
     h6: {
-      fontFamily: ["Lobster Two"],
+      fontFamily: ["Lobster Two"], // navigation bar title custom font family
     },
     h4: {
-      fontFamily: ["Lobster Two"],
+      fontFamily: ["Lobster Two"], // card header custom font family
     },
-    fontFamily: ["Josefin Sans"],
+    fontFamily: ["Josefin Sans"], // global font family
   },
 });
 
