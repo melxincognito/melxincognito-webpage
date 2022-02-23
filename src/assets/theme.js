@@ -48,6 +48,9 @@ export const darkTheme = createTheme({
       main: "#212121", // black, mobile menu display background color
       light: "rgba(255, 255, 255, 0.4)", // white low opacity, mobile menu color
     },
+    success: {
+      main: "#D96098", // pink
+    },
   },
   typography: {
     h6: {
