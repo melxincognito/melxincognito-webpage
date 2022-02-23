@@ -20,6 +20,9 @@ const theme = createTheme({
     },
   },
   typography: {
+    h6: {
+      fontFamily: ["Lobster Two"],
+    },
     fontFamily: ["Josefin Sans"],
   },
 });
