@@ -23,6 +23,9 @@ const theme = createTheme({
     h6: {
       fontFamily: ["Lobster Two"],
     },
+    h4: {
+      fontFamily: ["Lobster Two"],
+    },
     fontFamily: ["Josefin Sans"],
   },
 });
@@ -48,6 +51,9 @@ export const darkTheme = createTheme({
   },
   typography: {
     h6: {
+      fontFamily: ["Lobster Two"],
+    },
+    h4: {
       fontFamily: ["Lobster Two"],
     },
     fontFamily: ["Josefin Sans"],
