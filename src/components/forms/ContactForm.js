@@ -112,7 +112,7 @@ export default function ContactForm() {
 
   const submitButtonStyles = {
     gap: 1,
-    backgroundColor: "black",
+    backgroundColor: "primary.main",
   };
 
   return (
