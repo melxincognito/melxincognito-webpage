@@ -49,7 +49,7 @@ export default function ContactForm() {
     setServiceInquiry(event.target.value);
   };
 
-  // form functionality functions
+  // open and close dialog box
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -94,8 +94,15 @@ export default function ContactForm() {
   };
 
   const formTitleDisplayStyles = {
-    display: "flex",
-    justifyContent: "center",
+    display: "grid",
+    alignItems: "center",
+    justifyItems: "center",
+    overflow: "hidden",
+    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
+    marginTop: 2,
+    bgcolor: "rgba(255, 255, 255, 0.39)",
+    borderRadius: "4px 25px 4px 25px",
+    color: "secondary.main",
   };
   const textFieldStyles = {
     margin: "10px 0px",
