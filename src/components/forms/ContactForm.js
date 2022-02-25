@@ -81,10 +81,7 @@ export default function ContactForm() {
     bgcolor: "rgba(255, 255, 255, 0.79)",
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
   };
-  const whitebgColor = {
-    margin: 2,
-    borderRadius: 3,
-  };
+
   const formTitleDisplayStyles = {
     display: "flex",
     justifyContent: "center",
