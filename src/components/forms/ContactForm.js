@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
 // form imports MUI
 import {
   Card,
@@ -55,7 +56,17 @@ export default function ContactForm() {
 
   const handleClose = () => {
     setOpen(false);
+    routeChange();
   };
+
+  // navigate back to homepage after the form is submitted
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/`;
+    navigate(path);
+  };
+
+  // form forward email functions
   const form = useRef();
 
   const sendEmail = (e) => {
