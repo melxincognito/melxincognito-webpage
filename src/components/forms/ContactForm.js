@@ -78,7 +78,7 @@ export default function ContactForm() {
   const cardStyles = {
     padding: 4,
     borderRadius: 5,
-    bgcolor: "rgba(255, 255, 255, 0.79)",
+    bgcolor: "secondary.dark",
     boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
   };
 
@@ -88,6 +88,8 @@ export default function ContactForm() {
   };
   const textFieldStyles = {
     margin: "10px 0px",
+    bgcolor: "rgba(255, 255, 255, 0.69)",
+    borderRadius: 2,
   };
 
   const submitButtonStyles = {
@@ -138,7 +140,6 @@ export default function ContactForm() {
               label="Service Category"
               value={serviceInquiry}
               onChange={handleServiceChange}
-              helperText="Select the service category you're inquiring about"
               required
               name="serviceCategory"
             >
