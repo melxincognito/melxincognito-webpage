@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+// page imports
 import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
-import MyProjects from "./pages/MyProjects";
 import Resources from "./pages/Resources";
-
 import Layout from "./components/navigation/Layout";
 import Services from "./pages/Services";
+// theme imports
 import { ThemeProvider } from "@mui/material";
 import { Switch } from "@mui/material";
 import theme from "./assets/theme";
@@ -28,7 +28,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutMe />} />
-          <Route path="/mycv" element={<MyProjects />} />
           <Route path="/services" element={<Services />} />
           <Route path="/resources" element={<Resources />} />
         </Routes>
