@@ -28,7 +28,7 @@ import FormLabel from "@mui/material/FormLabel";
 // forms global variables
 const servicesOptions = [
   { value: "Web Design & Development", label: "Web Design & Development" },
-  { value: "WebMaintenance", label: "Website Maintenance" },
+  { value: "Web Maintenance", label: "Website Maintenance" },
   { value: "Other", label: "Other" },
 ];
 
@@ -174,7 +174,7 @@ export default function ContactForm() {
               <RadioGroup
                 row
                 aria-labelledby="radio-buttons-group-label"
-                name="row-radio-buttons-group"
+                name="contactMethod"
               >
                 <FormControlLabel
                   value="Phone"
