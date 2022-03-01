@@ -177,12 +177,12 @@ export default function ContactForm() {
                 name="contactMethod"
               >
                 <FormControlLabel
-                  value="Phone"
+                  value="phone"
                   control={<Radio />}
                   label="Phone Call"
                 />
                 <FormControlLabel
-                  value="Text"
+                  value="text"
                   control={<Radio />}
                   label="Text"
                 />
