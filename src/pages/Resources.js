@@ -3,6 +3,7 @@ import { Container, Box, Tabs, Tab } from "@mui/material";
 import LearningResources from "../components/resourcesContent/LearningResources";
 import VSCodeExtensions from "../components/resourcesContent/VSCodeExtensions";
 import DeveloperResources from "../components/resourcesContent/DeveloperResources";
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 export default class Resources extends Component {
   constructor(props) {
@@ -45,32 +46,41 @@ export default class Resources extends Component {
     };
 
     return (
-      <Container sx={containerStyles}>
-        <Box sx={boxStyles}>
-          <Tabs style={tabStyles}>
-            <Tab
-              value="one"
-              label="Developer Resources"
-              onClick={this.updateDevResources}
-            />
-            <Tab
-              value="two"
-              label="Learning Resources"
-              onClick={this.updateLearningResources}
-            />
-            <Tab
-              value="three"
-              label="VS Code Extensions"
-              onClick={this.updateVSCodeExtensions}
-            />
-          </Tabs>
-        </Box>
-        <Container>
-          <Box>
-            <div> {this.state.content}</div>
-          </Box>
-        </Container>
-      </Container>
+      <AnimatePresence>
+        <motion.div
+          transition={{ delay: 0.17 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <Container sx={containerStyles}>
+            <Box sx={boxStyles}>
+              <Tabs style={tabStyles}>
+                <Tab
+                  value="one"
+                  label="Developer Resources"
+                  onClick={this.updateDevResources}
+                />
+                <Tab
+                  value="two"
+                  label="Learning Resources"
+                  onClick={this.updateLearningResources}
+                />
+                <Tab
+                  value="three"
+                  label="VS Code Extensions"
+                  onClick={this.updateVSCodeExtensions}
+                />
+              </Tabs>
+            </Box>
+            <Container>
+              <Box>
+                <div> {this.state.content}</div>
+              </Box>
+            </Container>
+          </Container>
+        </motion.div>
+      </AnimatePresence>
     );
   }
 }
