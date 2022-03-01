@@ -205,20 +205,15 @@ export default function ContactForm() {
               name="message"
               required
             />
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              style={{ padding: 0, bgcolor: "primary.main" }}
+
+            <Button
+              variant="contained"
+              sx={submitButtonStyles}
+              type="submit"
+              onClick={handleClickOpen}
             >
-              <Button
-                variant="contained"
-                sx={submitButtonStyles}
-                type="submit"
-                onClick={handleClickOpen}
-              >
-                <SendIcon /> Submit
-              </Button>
-            </motion.button>
+              <SendIcon /> Submit
+            </Button>
           </form>
         </CardContent>
       </Card>
