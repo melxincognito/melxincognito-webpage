@@ -25,8 +25,6 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 
-import { motion } from "framer-motion/dist/framer-motion";
-
 // forms global variables
 const servicesOptions = [
   { value: "Web Design & Development", label: "Web Design & Development" },
