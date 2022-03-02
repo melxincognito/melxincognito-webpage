@@ -129,7 +129,8 @@ export default function Services() {
         <div style={requestQuoteDivStyles}>
           <Typography color="tercera.light">
             {" "}
-            To request a quote, send a message via Facebook Messenger{" "}
+            Send a message using my contact form to ask any questions or to
+            request a quote{" "}
           </Typography>
         </div>
       </motion.div>
