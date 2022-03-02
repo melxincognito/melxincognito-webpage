@@ -49,12 +49,12 @@ export default function Services() {
                 aria-controls="panel1"
                 id="panel1"
               >
-                <Typography>Website Design & Development </Typography>
+                <Typography>Web App Development </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
                   I work with my clients from start to finish. We'll start with
-                  choosing a design for your site to fit your business'
+                  choosing a design for your site to fit your applications
                   particular needs. After we've settled on a design I'll work on
                   creating everything using the best development tools for your
                   project.
@@ -67,13 +67,14 @@ export default function Services() {
                 aria-controls="panel2"
                 id="panel2"
               >
-                <Typography>Website Maintenance</Typography>
+                <Typography>Web App Maintenance</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  I can happily provide website maintenance services to those
-                  who prefer to have someone else take care of their site for
-                  them.
+                  For every client I provide six months of web application
+                  maintenance after delivery which can be extended at the
+                  clients request. Maintenance fees depends on the scale of the
+                  application.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -87,9 +88,10 @@ export default function Services() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Your website wouldn't be complete without a custom domain
-                  name. I'll do all the work have your site hosted online at a
-                  domain that's associated with your business.
+                  Your app wouldn't be complete without a custom domain name for
+                  users to get to your site easily. I'll do all the work have
+                  your site hosted online at a domain that's associated with
+                  your business.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -103,7 +105,7 @@ export default function Services() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Your website wouldn't be complete without a QR code that'll
+                  Your web app wouldn't be complete without a QR code that'll
                   allow users to go directly to your site with a point of a
                   camera.
                 </Typography>
