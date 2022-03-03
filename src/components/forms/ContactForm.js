@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { useNavigate } from "react-router-dom";
 // form imports MUI
@@ -16,38 +15,43 @@ import {
   DialogContentText,
   DialogTitle,
   Slide,
+  Radio,
+  RadioGroup,
+  FormControlLabel,
+  FormControl,
+  FormLabel,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-
 // forms global variables
+const initialFormValues = { name: "", userEmail: "", phone: "", message: "" };
+
 const servicesOptions = [
   { value: "Web Design & Development", label: "Web Design & Development" },
   { value: "Web Maintenance", label: "Website Maintenance" },
   { value: "Other", label: "Other" },
 ];
-const initialFormValues = { name: "", userEmail: "", phone: "", message: "" };
-
+// transition for message sent confirmation popup
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function ContactForm() {
-  // form functionality variables
+  // message sent confirmation popup state, hidden on init
   const [open, setOpen] = React.useState(false);
 
+  // states for form inputs to validate input and set input errors
   const [formValues, setFormValues] = React.useState(initialFormValues);
   const [formErrors, setFormErrors] = React.useState({});
+
+  // on submit state that'll get set to true when all inputs are valid
+  // and will allow the popup to appear and message to send
   const [isSubmit, setIsSubmit] = React.useState(false);
 
   const [serviceInquiry, setServiceInquiry] = React.useState(
     "Web Design & Development"
   );
+
   // open and close dialog box
   const handleClickOpen = () => {
     setOpen(true);
@@ -57,6 +61,8 @@ export default function ContactForm() {
     setOpen(false);
     routeChange();
   };
+
+  // handlechange to add input values into empty state for validation
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
@@ -65,8 +71,9 @@ export default function ContactForm() {
   const handleServiceChange = (event) => {
     setServiceInquiry(event.target.value);
   };
-  // form forward email functions
-  const form = useRef();
+
+  // form forward email functions using email js service
+  const form = React.useRef();
 
   const sendEmail = () => {
     emailjs
@@ -82,18 +89,23 @@ export default function ContactForm() {
       .catch((err) => console.log(err));
   };
 
+  // function to validate submit form and show
   const handleSubmitForm = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
   };
 
+  // useEffect that'll automatically submit the form and have the popup
+  // once everything in the input fields are valid
   React.useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       sendEmail();
       handleClickOpen();
     }
   });
+
+  // different possible errors for input fields
   const validate = (values) => {
     const errors = {};
     const regex =
