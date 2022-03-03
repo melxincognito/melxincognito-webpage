@@ -31,6 +31,7 @@ const servicesOptions = [
   { value: "Web Maintenance", label: "Website Maintenance" },
   { value: "Other", label: "Other" },
 ];
+const initialFormValues = { name: "", userEmail: "", phone: "", message: "" };
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -38,17 +39,15 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function ContactForm() {
   // form functionality variables
-
   const [open, setOpen] = React.useState(false);
+
+  const [formValues, setFormValues] = React.useState(initialFormValues);
+  const [formErrors, setFormErrors] = React.useState({});
+  const [isSubmit, setIsSubmit] = React.useState(false);
 
   const [serviceInquiry, setServiceInquiry] = React.useState(
     "Web Design & Development"
   );
-
-  const handleServiceChange = (event) => {
-    setServiceInquiry(event.target.value);
-  };
-
   // open and close dialog box
   const handleClickOpen = () => {
     setOpen(true);
@@ -58,20 +57,18 @@ export default function ContactForm() {
     setOpen(false);
     routeChange();
   };
-
-  // navigate back to homepage after the form is submitted
-  let navigate = useNavigate();
-  const routeChange = () => {
-    let path = `/`;
-    navigate(path);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
   };
 
+  const handleServiceChange = (event) => {
+    setServiceInquiry(event.target.value);
+  };
   // form forward email functions
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
+  const sendEmail = () => {
     emailjs
       .sendForm(
         "service_8w10yxm",
@@ -83,6 +80,46 @@ export default function ContactForm() {
         console.log(res);
       })
       .catch((err) => console.log(err));
+  };
+
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+  };
+
+  React.useEffect(() => {
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      sendEmail();
+      handleClickOpen();
+    }
+  });
+  const validate = (values) => {
+    const errors = {};
+    const regex =
+      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!values.name) {
+      errors.name = "Name is required!";
+    }
+    if (!values.userEmail) {
+      errors.userEmail = "Email is required!";
+    } else if (!regex.test(values.userEmail)) {
+      errors.userEmail = "This is not a valid email format";
+    }
+    if (values.phone < 10) {
+      errors.phone = "Phone number must be at least 10 numbers";
+    }
+    if (values.message < 30) {
+      errors.message = "Message must be at least 30 characters";
+    }
+    return errors;
+  };
+
+  // navigate back to homepage after the form is submitted
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/`;
+    navigate(path);
   };
 
   // styles variables
@@ -110,9 +147,15 @@ export default function ContactForm() {
     borderRadius: 2,
   };
 
+  const errorMessageStyle = {
+    color: "#a00e0e",
+    display: "flex",
+    justifyContent: "center",
+  };
   const submitButtonStyles = {
     gap: 1,
     backgroundColor: "primary.main",
+    marginTop: 1,
   };
 
   return (
@@ -123,95 +166,112 @@ export default function ContactForm() {
         </CardContent>
 
         <CardContent>
-          <form ref={form} onSubmit={sendEmail}>
-            <TextField
-              fullWidth
-              sx={textFieldStyles}
-              label="Name"
-              id="contactName"
-              name="name"
-              required
-            />
-            <TextField
-              fullWidth
-              sx={textFieldStyles}
-              label="Contact Phone"
-              type="tel"
-              id="contactPhone"
-              name="phone"
-              required
-            />
-            <TextField
-              fullWidth
-              sx={textFieldStyles}
-              label="Contact Email"
-              type="email"
-              id="contactEmail"
-              name="userEmail"
-              required
-            />
-            <TextField
-              sx={textFieldStyles}
-              id="serviceInquirySelection"
-              fullWidth
-              select
-              label="Service Category"
-              value={serviceInquiry}
-              onChange={handleServiceChange}
-              required
-              name="serviceCategory"
-            >
-              {servicesOptions.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-            <FormControl required>
-              <FormLabel id="radio-buttons-group-label">
-                Preferred method of contact:
-              </FormLabel>
-              <RadioGroup
-                row
-                aria-labelledby="radio-buttons-group-label"
-                name="contactMethod"
-              >
-                <FormControlLabel
-                  value="phone"
-                  control={<Radio />}
-                  label="Phone Call"
-                />
-                <FormControlLabel
-                  value="text"
-                  control={<Radio />}
-                  label="Text"
-                />
-                <FormControlLabel
-                  value="email"
-                  control={<Radio />}
-                  label="E-mail"
-                />
-              </RadioGroup>
-            </FormControl>
-            <TextField
-              fullWidth
-              multiline
-              sx={textFieldStyles}
-              rows={5}
-              label="Message"
-              id="fullWidth"
-              name="message"
-              required
-            />
+          <form ref={form} onSubmit={handleSubmitForm}>
+            <span style={errorMessageStyle}> {formErrors.name}</span>
+            <div id="inputField">
+              <TextField
+                fullWidth
+                sx={textFieldStyles}
+                value={formValues.name}
+                onChange={handleChange}
+                label="Name"
+                id="contactName"
+                name="name"
+              />
+            </div>
+            <span style={errorMessageStyle}> {formErrors.phone}</span>
+            <div id="inputField">
+              <TextField
+                fullWidth
+                sx={textFieldStyles}
+                value={formValues.phone}
+                onChange={handleChange}
+                label="Contact Phone"
+                type="tel"
+                id="contactPhone"
+                name="phone"
+              />
+            </div>
+            <span style={errorMessageStyle}> {formErrors.userEmail}</span>
+            <div id="inputField">
+              <TextField
+                fullWidth
+                sx={textFieldStyles}
+                value={formValues.userEmail}
+                onChange={handleChange}
+                label="Contact Email"
+                type="email"
+                id="contactEmail"
+                name="userEmail"
+              />
+            </div>
 
-            <Button
-              variant="contained"
-              sx={submitButtonStyles}
-              type="submit"
-              onClick={handleClickOpen}
-            >
-              <SendIcon /> Submit
-            </Button>
+            <div id="inputField">
+              <TextField
+                sx={textFieldStyles}
+                id="serviceInquirySelection"
+                fullWidth
+                select
+                label="Service Category"
+                value={serviceInquiry}
+                onChange={handleServiceChange}
+                name="serviceCategory"
+              >
+                {servicesOptions.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </div>
+            <div id="inputField">
+              <FormControl>
+                <FormLabel id="radio-buttons-group-label">
+                  Preferred method of contact:
+                </FormLabel>
+                <RadioGroup
+                  row
+                  aria-labelledby="radio-buttons-group-label"
+                  name="contactMethod"
+                >
+                  <FormControlLabel
+                    value="phone"
+                    control={<Radio />}
+                    label="Phone Call"
+                  />
+                  <FormControlLabel
+                    value="text"
+                    control={<Radio />}
+                    label="Text"
+                  />
+                  <FormControlLabel
+                    value="email"
+                    control={<Radio />}
+                    label="E-mail"
+                  />
+                </RadioGroup>
+              </FormControl>
+            </div>
+            <span style={errorMessageStyle}> {formErrors.message}</span>
+            <div id="inputField">
+              <TextField
+                fullWidth
+                multiline
+                sx={textFieldStyles}
+                value={formValues.message}
+                onChange={handleChange}
+                rows={5}
+                label="Message"
+                id="fullWidth"
+                name="message"
+              />
+            </div>
+
+            <div>
+              <Button variant="contained" sx={submitButtonStyles} type="submit">
+                <SendIcon /> Submit
+              </Button>
+            </div>
           </form>
         </CardContent>
       </Card>
