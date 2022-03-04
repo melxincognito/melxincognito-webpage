@@ -162,7 +162,6 @@ export default function ContactForm() {
   const errorMessageStyle = {
     color: "#a00e0e",
     display: "flex",
-    justifyContent: "center",
   };
   const submitButtonStyles = {
     gap: 1,
