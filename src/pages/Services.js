@@ -49,15 +49,17 @@ export default function Services() {
                 aria-controls="panel1"
                 id="panel1"
               >
-                <Typography>Web App Development </Typography>
+                <Typography>Web App Development</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  I work with my clients from start to finish. We'll start with
-                  choosing a design for your site to fit your applications
-                  particular needs. After we've settled on a design I'll work on
-                  creating everything using the best development tools for your
-                  project.
+                  I work with my clients from start to finish. We'll start by
+                  going over your business' particular needs in order to decide
+                  on the best design and development tools needed to create a
+                  high quality application that is able to provide additional
+                  value to your business. Pricing is dependent on the scale of
+                  the web application and includes a 5 year custom domain name
+                  registration.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -67,31 +69,16 @@ export default function Services() {
                 aria-controls="panel2"
                 id="panel2"
               >
-                <Typography>Web App Maintenance</Typography>
+                <Typography>Mobile App Development</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  For every client I provide six months of web application
-                  maintenance after delivery which can be extended at the
-                  clients request. Maintenance fees depends on the scale of the
-                  application.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion sx={{ bgcolor: "secondary.dark" }}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel3"
-                id="panel3"
-              >
-                <Typography>Domain name registration</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Your app wouldn't be complete without a custom domain name for
-                  users to get to your site easily. I'll do all the work have
-                  your site hosted online at a domain that's associated with
-                  your business.
+                  I work with my clients from start to finish. We'll start by
+                  going over your business' particular needs in order to decide
+                  on the best design and development tools needed to create a
+                  high quality application that is able to provide additional
+                  value to your business. Mobile Apps will be able to run on
+                  both iPhone and Android.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -105,9 +92,13 @@ export default function Services() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Your web app wouldn't be complete without a QR code that'll
-                  allow users to go directly to your site with a point of a
-                  camera.
+                  Most people agree QR codes make reaching a web page a lot
+                  easier, your app wouldn't be complete without a QR code
+                  that'll allow users to go directly to your site with a point
+                  of a camera. I will do the extra step of making sure your QR
+                  code is scaled to the perfect size so whether you want to
+                  place them on business cards, products, stickers or
+                  advertising materials it will look crisp and professional.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -121,8 +112,9 @@ export default function Services() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Get the most out of your website and increase your business
-                  visibility by using SEO optimization.
+                  Gain more user traffic to your web application by using SEO
+                  Optimization. I'll do all the tricks under the hood to help
+                  your application gain more traction by search engines.
                 </Typography>
               </AccordionDetails>
             </Accordion>

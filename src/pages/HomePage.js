@@ -61,7 +61,7 @@ export default function HomePage() {
 
           <CardContent sx={whitebgColor}>
             <CardContent>
-              <Typography variant="body1">
+              <Typography>
                 Welcome to my page! I'm a Software Developer who makes custom
                 web applications for content creators and businesses. I learned
                 how to program applications a few years after I graduated from
@@ -72,7 +72,7 @@ export default function HomePage() {
               </Typography>
             </CardContent>
             <CardContent>
-              <Typography variant="body1">
+              <Typography>
                 {" "}
                 Click on the top tabs to read a little about me and see the
                 services I am able to offer. Feel free to send any questions or

@@ -67,15 +67,16 @@ export default function AboutMeBio() {
             cooking and art. When I was 19 years old I moved to Spain and was
             able to live in Barcelona and Madrid for a few years working as an
             English Teacher and as a Customer Success Manager at a company
-            specializing in food traceability using blockchain technologies.{" "}
+            specializing in food traceability using blockchain technologies.
           </Typography>
         </CardContent>
         <CardContent>
           <Typography>
-            I really enjoy programming and creating applications, I feel so
-            lucky being able to have a career doing something I love. They say
-            if you do what you love you'll never work a day in your life & so
-            far I have found this to be true.
+            I really enjoy programming and creating applications. It makes me
+            happy seeing how I can help provide additional value to my clients
+            business. I feel so lucky being able to have a career doing
+            something I love. They say if you do what you love you'll never work
+            a day in your life & so far I have found this to be true.
           </Typography>
         </CardContent>
         <CardContent>
