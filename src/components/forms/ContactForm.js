@@ -27,8 +27,14 @@ import SendIcon from "@mui/icons-material/Send";
 const initialFormValues = { name: "", userEmail: "", phone: "", message: "" };
 
 const servicesOptions = [
-  { value: "Web Design & Development", label: "Web Design & Development" },
-  { value: "Web Maintenance", label: "Website Maintenance" },
+  {
+    value: "Web Application Development",
+    label: "Web Application Development",
+  },
+  {
+    value: "Mobile Application Development",
+    label: "Mobile Application Development",
+  },
   { value: "Other", label: "Other" },
 ];
 // transition for message sent confirmation popup
@@ -49,7 +55,7 @@ export default function ContactForm() {
   const [isSubmit, setIsSubmit] = React.useState(false);
 
   const [serviceInquiry, setServiceInquiry] = React.useState(
-    "Web Design & Development"
+    "Web Application Development"
   );
 
   // open and close dialog box
