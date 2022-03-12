@@ -75,10 +75,7 @@ export default function AboutMeBio() {
             cooking and art. When I was 19 years old I moved to Spain and was
             able to live in Barcelona and Madrid for a few years working as an
             English Teacher and as a Customer Success Manager at a company
-            specializing in food traceability using blockchain technologies. I
-            speak English and Spanish but I would like to be able to provide my
-            services to customers from all of Latin America so I have been
-            taking classes to learn Portuguese as well.{" "}
+            specializing in food traceability using blockchain technologies.{" "}
           </Typography>
         </CardContent>
         <CardContent>
@@ -94,8 +91,8 @@ export default function AboutMeBio() {
         </CardContent>
         <CardContent>
           <Typography>
-            Feel free to reach out by sending me a message on Facebook or
-            Twitter!
+            Feel free to reach out by sending me a message using my contact
+            form!
           </Typography>
         </CardContent>
       </CardContent>
