@@ -83,10 +83,7 @@ export default function AboutMeBio() {
             I really enjoy programming and creating applications, I feel so
             lucky being able to have a career doing something I love. They say
             if you do what you love you'll never work a day in your life & so
-            far I have found this to be true. Currently, I use React.JS and
-            Python to create Web Applications. I would like to have the ability
-            to work with blockchain technologies in the near future so I have
-            began my journey learning how to create applications using Rust.
+            far I have found this to be true.
           </Typography>
         </CardContent>
         <CardContent>
