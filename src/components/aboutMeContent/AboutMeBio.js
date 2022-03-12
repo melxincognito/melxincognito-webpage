@@ -61,7 +61,7 @@ export default function AboutMeBio() {
         <CardContent>
           <Typography variant="body1">
             {" "}
-            Hey! My name is Mel and I'm from Arizona. There's a lot to me so
+            My name is Mel and I'm from Phoenix, Arizona. There's a lot to me so
             it's hard to narrow it down in a short bio but I'll give it my best
             shot. I have a variety of interests such as traveling, fashion,
             cooking and art. When I was 19 years old I moved to Spain and was
