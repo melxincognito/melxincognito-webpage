@@ -62,21 +62,21 @@ export default function HomePage() {
           <CardContent sx={whitebgColor}>
             <CardContent>
               <Typography variant="body1">
-                Welcome to my page! I'm a Software Developer who makes Web
-                applications using React.JS and Python. I learned how to program
-                applications a few years after I graduated from Arizona State
-                University with a Bachelors in Business. I utilize my background
-                in both business and programming to work with my clients to
-                ensure their sites are both high quality and good from a
-                business standpoint.
+                Welcome to my page! I'm a Software Developer who makes custom
+                web applications for content creators and businesses. I learned
+                how to program applications a few years after I graduated from
+                Arizona State University with a Bachelors in Business. I utilize
+                my background in both business and programming to work with my
+                clients to ensure their applications are both high quality and
+                good from a business standpoint.
               </Typography>
             </CardContent>
             <CardContent>
               <Typography variant="body1">
                 {" "}
                 Click on the top tabs to read a little about me and see the
-                services I am able to offer. You can also send me a message
-                using my contact form!
+                services I am able to offer. Feel free to send any questions or
+                business inquiries using my contact form!
               </Typography>
             </CardContent>
           </CardContent>
