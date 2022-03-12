@@ -5,6 +5,7 @@ body {
     "Fuzzy Bubbles", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
   background-color: #fff4fa;
   text-size-adjust: none;
 }
