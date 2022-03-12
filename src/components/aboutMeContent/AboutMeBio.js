@@ -2,7 +2,6 @@ import React from "react";
 import Santiago from "../../assets/Santiago.png";
 import { CardContent, Typography, CardMedia } from "@mui/material";
 import MainCard from "../ui/MainCard";
-//import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 export default function AboutMeBio() {
   const cardMediaStyle = {
@@ -45,13 +44,6 @@ export default function AboutMeBio() {
   };
 
   return (
-    //<AnimatePresence>
-    //<motion.div
-    //  transition={{ delay: 0.17 }}
-    //  initial={{ opacity: 0 }}
-    //  animate={{ opacity: 1 }}
-    //   exit={{ opacity: 0 }}
-    // >
     <MainCard BackgroundColor="secondary.dark">
       <CardContent sx={headerStyles}>
         <CardContent sx={headerStyles2}>
@@ -94,7 +86,5 @@ export default function AboutMeBio() {
         </CardContent>
       </CardContent>
     </MainCard>
-    //  </motion.div>
-    // </AnimatePresence>
   );
 }
