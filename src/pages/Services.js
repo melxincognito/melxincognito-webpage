@@ -77,8 +77,8 @@ export default function Services() {
                   going over your business' particular needs in order to decide
                   on the best design and development tools needed to create a
                   high quality application that is able to provide additional
-                  value to your business. Mobile Apps will be able to run on
-                  both iPhone and Android.
+                  value to your business. Mobile Apps can be made to run on both
+                  iPhone and Android.
                 </Typography>
               </AccordionDetails>
             </Accordion>
