@@ -74,9 +74,10 @@ export default function HomePage() {
             <CardContent>
               <Typography>
                 {" "}
-                Click on the top tabs to read a little about me and see the
-                services I am able to offer. Feel free to send any questions or
-                business inquiries using my contact form!
+                Click on the top tabs if you'd like to read a little about me
+                and see the services I am able to offer. Feel free to contact me
+                with any questions or business inquiries by using my contact
+                form.
               </Typography>
             </CardContent>
           </CardContent>
