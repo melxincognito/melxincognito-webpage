@@ -113,7 +113,7 @@ export default function DeveloperResources() {
                           {" "}
                           <li>
                             @mui/material @emotion/react @emotion/styled
-                            @mui/styles @mui/icons-material{" "}
+                            @mui/system @mui/icons-material{" "}
                           </li>
                         </ul>
                         If you follow these links to the{" "}
@@ -124,10 +124,10 @@ export default function DeveloperResources() {
                           Installation,
                         </Link>{" "}
                         <Link
-                          href="https://mui.com/styles/basics/"
+                          href="https://mui.com/system/basics/"
                           target="_blank"
                         >
-                          Styles
+                          MUI System
                         </Link>{" "}
                         &{" "}
                         <Link
