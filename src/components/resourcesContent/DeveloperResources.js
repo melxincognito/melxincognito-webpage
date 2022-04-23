@@ -158,7 +158,7 @@ export default function DeveloperResources() {
                         >
                           this
                         </Link>{" "}
-                        Youtube video for a walkthrough of the basics.
+                        Youtube video for a walk through of the basics.
                       </li>
                     </ul>
                     <li>
@@ -186,7 +186,7 @@ export default function DeveloperResources() {
                     </li>
                     <ul>
                       <li>
-                        My favorite color palett picker. Sometimes it's
+                        My favorite color pallet picker. Sometimes it's
                         difficult to know which colors will flow well with one
                         another. This site combines colors that compliment one
                         another while also providing you the color codes needed.
