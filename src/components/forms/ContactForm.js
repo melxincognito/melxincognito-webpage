@@ -84,10 +84,10 @@ export default function ContactForm() {
   const sendEmail = () => {
     emailjs
       .sendForm(
-        "service_8w10yxm",
-        "template_4e06fuy",
+        `${process.env.REACT_APP_CONTACT_FORM_SERVICE_ID}`,
+        `${process.env.REACT_APP_CONTACT_FORM_TEMPLATE_ID}`,
         form.current,
-        "user_wKGjgdwvgNqEiJyejXWHN"
+        `${process.env.REACT_APP_CONTACT_FORM_USER_ACC}`
       )
       .then((res) => {
         console.log(res);
@@ -100,6 +100,7 @@ export default function ContactForm() {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    handleClickOpen();
   };
 
   // useEffect that'll automatically submit the form and have the popup
