@@ -7,6 +7,7 @@ import Resources from "./pages/Resources";
 import Layout from "./components/navigation/Layout";
 import Services from "./pages/Services";
 import ContactMePage from "./pages/ContactMe";
+import ClientTestimonials from "./pages/ClientTestimonials";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactMePage />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/testimonials" element={<ClientTestimonials />} />
       </Routes>
     </Layout>
   );

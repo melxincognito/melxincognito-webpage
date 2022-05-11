@@ -18,6 +18,24 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 
 const NavigationBar = () => {
+  // tab items
+
+  const mobileTabsItems = [
+    { label: "Home", link: "/", id: 0 },
+    { label: "About Me", link: "/about", id: 1 },
+    { label: "Services", link: "/services", id: 2 },
+    { label: "Contact Me", link: "/contact", id: 3 },
+    { label: "Testimonials", link: "/testimonials", id: 4 },
+  ];
+
+  const desktopTabsItems = [
+    { label: "Home", link: "/", id: 1 },
+    { label: "About Me", link: "/about", id: 2 },
+    { label: "Services", link: "/services", id: 3 },
+    { label: "Testimonials", link: "/testimonials", id: 4 },
+    { label: "Contact Me", link: "/contact", id: 5 },
+  ];
+
   // state variables
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -143,19 +161,16 @@ const NavigationBar = () => {
                   color: "tercera.light",
                 }}
               >
-                <MenuItem component={Link} to="/" sx={mobileTabStyle}>
-                  <Typography textAlign="center">Home</Typography>
-                </MenuItem>
-                <MenuItem component={Link} to="/about" sx={mobileTabStyle}>
-                  <Typography textAlign="center">About Me</Typography>
-                </MenuItem>
-
-                <MenuItem component={Link} to="/services" sx={mobileTabStyle}>
-                  <Typography textAlign="center">Services</Typography>
-                </MenuItem>
-                <MenuItem component={Link} to="/contact" sx={mobileTabStyle}>
-                  <Typography textAlign="center">Contact Me</Typography>
-                </MenuItem>
+                {mobileTabsItems.map((item) => (
+                  <MenuItem
+                    key={item.id}
+                    component={Link}
+                    to={item.link}
+                    sx={mobileTabStyle}
+                  >
+                    <Typography textAlign="center"> {item.label}</Typography>
+                  </MenuItem>
+                ))}
               </Container>
             </Menu>
           </Box>
@@ -175,27 +190,15 @@ const NavigationBar = () => {
               textColor="secondary"
               indicatorColor="secondary"
             >
-              <Tab value="one" label="Home" component={Link} to="/" />
-              <Tab value="two" label="About Me" component={Link} to="/about" />
-
-              <Tab
-                value="three"
-                label="Services"
-                component={Link}
-                to="/services"
-              />
-              <Tab
-                value="four"
-                label="Resources"
-                component={Link}
-                to="/resources"
-              />
-              <Tab
-                value="five"
-                label="Contact Me"
-                component={Link}
-                to="/contact"
-              />
+              {desktopTabsItems.map((item) => (
+                <Tab
+                  key={item.id}
+                  value={item.id}
+                  label={item.label}
+                  component={Link}
+                  to={item.link}
+                />
+              ))}
             </Tabs>
           </Box>
 
