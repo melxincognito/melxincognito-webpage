@@ -1,5 +1,10 @@
 import React from "react";
+import SubmitTestimonialForm from "../components/forms/SubmitTestimonialForm";
 
 export default function ClientTestimonials() {
-  return <div>ClientTestimonials</div>;
+  return (
+    <div>
+      <SubmitTestimonialForm />
+    </div>
+  );
 }

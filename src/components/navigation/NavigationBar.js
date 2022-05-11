@@ -40,7 +40,7 @@ const NavigationBar = () => {
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const [value, setValue] = React.useState("one");
+  const [value, setValue] = React.useState(1);
 
   // handle event variables
 
@@ -87,6 +87,7 @@ const NavigationBar = () => {
 
   const socialLinkStyles = {
     p: 0.5,
+    cursor: "pointer",
   };
 
   // social link external page routes
