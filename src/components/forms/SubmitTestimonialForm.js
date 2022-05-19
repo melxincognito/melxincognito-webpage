@@ -17,12 +17,13 @@ import {
 import SendIcon from "@mui/icons-material/Send";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
+import { set, ref } from "firebase/database";
+import { db } from "../../firebase-config";
 
 const servicesOptions = [
   { value: "Web Application", label: "Web Application" },
   { value: "Mobile Application", label: "Mobile Application" },
   { value: "Desktop Application", label: "Desktop Application" },
-
   { value: "Other", label: "Other" },
 ];
 
@@ -52,6 +53,22 @@ export default function SubmitTestimonialForm() {
     Review: customerReview,
     Service: serviceReview,
     ImgUrl: customerImgUrl,
+  };
+
+  const sendReview = (e) => {
+    e.preventDefault();
+
+    console.log(data);
+    set(ref(db, "PendingReviews/" + userId), {
+      id: userId,
+      name: data.Name,
+      email: data.Email,
+      review: data.Review,
+      service: data.Service,
+      imgUrl: data.ImgUrl,
+    });
+
+    console.log("sent to pending reviews");
   };
 
   // set popup after submit upon
@@ -121,7 +138,7 @@ export default function SubmitTestimonialForm() {
             </Typography>
           </Box>
 
-          <form>
+          <form onSubmit={sendReview}>
             <div id="nameInputField">
               <TextField
                 fullWidth
