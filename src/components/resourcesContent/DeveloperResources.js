@@ -198,40 +198,6 @@ export default function DeveloperResources() {
                 </Typography>
               </AccordionDetails>
             </Accordion>
-            <Accordion sx={{ bgcolor: "secondary.dark" }}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel3"
-              >
-                <Typography>Twitter</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Tech Twitter is a really good networking resource for
-                  developers. I've found it to be a very supportive community
-                  with a lot of useful resources. There's a lot of people on
-                  there willing to help others break into tech by taking the
-                  time out of their days to speak on twitter spaces with useful
-                  advice, do portfolio/resume reviews, create content with tips,
-                  etc. You get the most out of it if you're willing to learn
-                  publicly and aren't afraid to interact with people. I
-                  personally believe you won't get anywhere if nobody knows you
-                  exist. I'll be updating this list as I go along, but some good
-                  accounts to follow are:
-                  <ul>
-                    <li>@prathkum</li>
-                    <li>@DThompsonDev</li>
-                    <li>@shashiwhocodes</li>
-                    <li>@VittoStack</li>
-                    <li>@eddiejaoude</li>
-                    <li>@oliverjumpertz</li>
-                    <li>@palashv2</li>
-                    <li>@denicmarko</li>
-                  </ul>
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
           </CardContent>
         </MainCard>
       </motion.div>
