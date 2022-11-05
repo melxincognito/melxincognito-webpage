@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, forwardRef, useRef } from "react";
 import emailjs from "emailjs-com";
 import { useNavigate } from "react-router-dom";
 // form imports MUI
@@ -24,7 +24,6 @@ import {
 import SendIcon from "@mui/icons-material/Send";
 
 // forms global variables
-const initialFormValues = { name: "", userEmail: "", phone: "", message: "" };
 
 const servicesOptions = [
   {
@@ -37,24 +36,36 @@ const servicesOptions = [
   },
   { value: "Other", label: "Other" },
 ];
+
+function formatPhoneNumber(value) {
+  if (!value) return value;
+  const phoneNumber = value.replace(/[^\d]/g, "");
+  const phoneNumberLength = phoneNumber.length;
+
+  if (phoneNumberLength < 4) return phoneNumber;
+
+  if (phoneNumberLength < 7) {
+    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+  }
+
+  return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+    3,
+    6
+  )}-${phoneNumber.slice(6, 10)}`;
+}
+
 // transition for message sent confirmation popup
-const Transition = React.forwardRef(function Transition(props, ref) {
+const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function ContactForm() {
-  // message sent confirmation popup state, hidden on init
-  const [open, setOpen] = React.useState(false);
+  // message sent confirmation popup dialog
+  const [open, setOpen] = useState(false);
 
-  // states for form inputs to validate input and set input errors
-  const [formValues, setFormValues] = React.useState(initialFormValues);
-  const [formErrors, setFormErrors] = React.useState({});
+  const [phone, setPhone] = useState("");
 
-  // on submit state that'll get set to true when all inputs are valid
-  // and will allow the popup to appear and message to send
-  const [isSubmit, setIsSubmit] = React.useState(false);
-
-  const [serviceInquiry, setServiceInquiry] = React.useState(
+  const [serviceInquiry, setServiceInquiry] = useState(
     "Web Application Development"
   );
 
@@ -68,10 +79,9 @@ export default function ContactForm() {
     routeChange();
   };
 
-  // handlechange to add input values into empty state for validation
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
+  const handlePhoneChange = (e) => {
+    const formattedPhoneNumber = formatPhoneNumber(e.target.value);
+    setPhone(formattedPhoneNumber);
   };
 
   const handleServiceChange = (event) => {
@@ -79,7 +89,7 @@ export default function ContactForm() {
   };
 
   // form forward email functions using email js service
-  const form = React.useRef();
+  const form = useRef();
 
   const sendEmail = () => {
     emailjs
@@ -98,40 +108,9 @@ export default function ContactForm() {
   // function to validate submit form and show
   const handleSubmitForm = (e) => {
     e.preventDefault();
-    setFormErrors(validate(formValues));
-    setIsSubmit(true);
+
+    sendEmail();
     handleClickOpen();
-  };
-
-  // useEffect that'll automatically submit the form and have the popup
-  // once everything in the input fields are valid
-  React.useEffect(() => {
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      sendEmail();
-      handleClickOpen();
-    }
-  });
-
-  // different possible errors for input fields
-  const validate = (values) => {
-    const errors = {};
-    const regex =
-      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (!values.name) {
-      errors.name = "Name is required!";
-    }
-    if (!values.userEmail) {
-      errors.userEmail = "Email is required!";
-    } else if (!regex.test(values.userEmail)) {
-      errors.userEmail = "This is not a valid email format";
-    }
-    if (values.phone < 10) {
-      errors.phone = "Phone number must be at least 10 numbers";
-    }
-    if (values.message < 30) {
-      errors.message = "Message must be at least 30 characters";
-    }
-    return errors;
   };
 
   // navigate back to homepage after the form is submitted
@@ -166,10 +145,6 @@ export default function ContactForm() {
     borderRadius: 2,
   };
 
-  const errorMessageStyle = {
-    color: "#a00e0e",
-    display: "flex",
-  };
   const submitButtonStyles = {
     gap: 1,
     backgroundColor: "primary.main",
@@ -185,111 +160,96 @@ export default function ContactForm() {
 
         <CardContent>
           <form ref={form} onSubmit={handleSubmitForm}>
-            <span style={errorMessageStyle}> {formErrors.name}</span>
-            <div id="inputField">
-              <TextField
-                fullWidth
-                sx={textFieldStyles}
-                value={formValues.name}
-                onChange={handleChange}
-                label="Name"
-                id="contactName"
-                name="name"
-              />
-            </div>
-            <span style={errorMessageStyle}> {formErrors.phone}</span>
-            <div id="inputField">
-              <TextField
-                fullWidth
-                sx={textFieldStyles}
-                value={formValues.phone}
-                onChange={handleChange}
-                label="Contact Phone"
-                type="tel"
-                id="contactPhone"
-                name="phone"
-              />
-            </div>
-            <span style={errorMessageStyle}> {formErrors.userEmail}</span>
-            <div id="inputField">
-              <TextField
-                fullWidth
-                sx={textFieldStyles}
-                value={formValues.userEmail}
-                onChange={handleChange}
-                label="Contact Email"
-                type="email"
-                id="contactEmail"
-                name="userEmail"
-              />
-            </div>
+            <TextField
+              fullWidth
+              sx={textFieldStyles}
+              label="Name"
+              id="contactName"
+              name="name"
+            />
 
-            <div id="inputField">
-              <TextField
-                sx={textFieldStyles}
-                id="serviceInquirySelection"
-                fullWidth
-                select
-                label="Service Category"
-                value={serviceInquiry}
-                onChange={handleServiceChange}
-                name="serviceCategory"
+            <TextField
+              fullWidth
+              sx={textFieldStyles}
+              value={phone}
+              onChange={handlePhoneChange}
+              label="Contact Phone"
+              type="tel"
+              id="contactPhone"
+              name="phone"
+            />
+
+            <TextField
+              fullWidth
+              sx={textFieldStyles}
+              label="Contact Email"
+              type="email"
+              id="contactEmail"
+              name="userEmail"
+            />
+
+            <TextField
+              sx={textFieldStyles}
+              id="serviceInquirySelection"
+              fullWidth
+              select
+              label="Service Category"
+              value={serviceInquiry}
+              onChange={handleServiceChange}
+              name="serviceCategory"
+            >
+              {servicesOptions.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+
+            <FormControl>
+              <FormLabel id="radio-buttons-group-label">
+                Preferred method of contact:
+              </FormLabel>
+              <RadioGroup
+                row
+                aria-labelledby="radio-buttons-group-label"
+                name="contactMethod"
               >
-                {servicesOptions.map((option) => (
-                  <MenuItem key={option.value} value={option.value}>
-                    {option.label}
-                  </MenuItem>
-                ))}
-              </TextField>
-            </div>
-            <div id="inputField">
-              <FormControl>
-                <FormLabel id="radio-buttons-group-label">
-                  Preferred method of contact:
-                </FormLabel>
-                <RadioGroup
-                  row
-                  aria-labelledby="radio-buttons-group-label"
-                  name="contactMethod"
-                >
-                  <FormControlLabel
-                    value="phone"
-                    control={<Radio />}
-                    label="Phone Call"
-                  />
-                  <FormControlLabel
-                    value="text"
-                    control={<Radio />}
-                    label="Text"
-                  />
-                  <FormControlLabel
-                    value="email"
-                    control={<Radio />}
-                    label="E-mail"
-                  />
-                </RadioGroup>
-              </FormControl>
-            </div>
-            <span style={errorMessageStyle}> {formErrors.message}</span>
-            <div id="inputField">
-              <TextField
-                fullWidth
-                multiline
-                sx={textFieldStyles}
-                value={formValues.message}
-                onChange={handleChange}
-                rows={5}
-                label="Message"
-                id="fullWidth"
-                name="message"
-              />
-            </div>
+                <FormControlLabel
+                  value="phone"
+                  control={<Radio />}
+                  label="Phone Call"
+                />
+                <FormControlLabel
+                  value="text"
+                  control={<Radio />}
+                  label="Text"
+                />
+                <FormControlLabel
+                  value="email"
+                  control={<Radio />}
+                  label="E-mail"
+                />
+              </RadioGroup>
+            </FormControl>
 
-            <div>
-              <Button variant="contained" sx={submitButtonStyles} type="submit">
-                <SendIcon /> Submit
-              </Button>
-            </div>
+            <TextField
+              fullWidth
+              multiline
+              sx={textFieldStyles}
+              rows={5}
+              label="Message"
+              id="fullWidth"
+              name="message"
+            />
+
+            <Button
+              variant="contained"
+              sx={submitButtonStyles}
+              type="submit"
+              fullWidth
+            >
+              <SendIcon /> Submit
+            </Button>
           </form>
         </CardContent>
       </Card>
