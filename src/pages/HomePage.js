@@ -63,12 +63,12 @@ export default function HomePage() {
             <CardContent>
               <Typography>
                 Welcome to my page! I'm a Software Developer who makes custom
-                web applications for content creators and businesses. I learned
-                how to program applications a few years after I graduated from
-                Arizona State University with a Bachelors in Business. I utilize
-                my background in both business and programming to work with my
-                clients to ensure their applications are both high quality and
-                good from a business standpoint.
+                web applications for businesses. I learned how to program
+                applications a few years after I graduated from Arizona State
+                University with a Bachelors in Business. I utilize my background
+                in both business and programming to work with my clients to
+                ensure their applications are both high quality and good from a
+                marketing standpoint.
               </Typography>
             </CardContent>
             <CardContent>
