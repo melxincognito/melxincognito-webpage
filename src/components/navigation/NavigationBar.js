@@ -99,7 +99,7 @@ const NavigationBar = () => {
   const socialLinks = [
     {
       id: 0,
-      name: "GitHub",
+      name: "GitHub Social Link",
       icon: (
         <GitHub
           onClick={() =>
@@ -107,14 +107,12 @@ const NavigationBar = () => {
           }
           sx={socialLinkStyles}
           fontSize="large"
-          role="button"
-          aria-label="GitHub social link"
         />
       ),
     },
     {
       id: 1,
-      name: "LinkedIn",
+      name: "LinkedIn Social Link",
       icon: (
         <LinkedIn
           onClick={() =>
@@ -122,14 +120,12 @@ const NavigationBar = () => {
           }
           sx={socialLinkStyles}
           fontSize="large"
-          role="button"
-          aria-label="LinkedIn social link"
         />
       ),
     },
     {
       id: 2,
-      name: "HashNode Blog",
+      name: "HashNode Blog Social Link",
       icon: (
         <ComputerIcon
           onClick={() =>
@@ -137,15 +133,13 @@ const NavigationBar = () => {
           }
           sx={socialLinkStyles}
           fontSize="large"
-          role="button"
-          aria-label="HashNode social link"
         />
       ),
     },
 
     {
       id: 3,
-      name: "Facebook",
+      name: "Facebook Social Link",
       icon: (
         <FacebookIcon
           onClick={() => {
@@ -156,8 +150,6 @@ const NavigationBar = () => {
           }}
           sx={socialLinkStyles}
           fontSize="large"
-          role="button"
-          aria-label="Facebook social link"
         />
       ),
     },
@@ -251,7 +243,14 @@ const NavigationBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Box sx={socialLinkContainerStyles}>
               {socialLinks.map((socialLink) => (
-                <Box key={socialLink.id}>{socialLink.icon}</Box>
+                <Box
+                  key={socialLink.id}
+                  role="button"
+                  aria-label={socialLink.name}
+                  tabIndex={0}
+                >
+                  {socialLink.icon}
+                </Box>
               ))}
             </Box>
           </Box>
