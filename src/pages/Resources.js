@@ -55,7 +55,7 @@ export default class Resources extends Component {
         >
           <Container sx={containerStyles}>
             <Box sx={boxStyles}>
-              <Tabs style={tabStyles}>
+              <Tabs style={tabStyles} variant="scrollable">
                 <Tab
                   value="one"
                   label="Developer Resources"
