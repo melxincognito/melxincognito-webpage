@@ -88,6 +88,14 @@ const NavigationBar = () => {
     setAnchorElNav(null);
   };
 
+  const tabItems = [
+    { label: "Home", value: "one", link: "/" },
+    { label: "About Me", value: "two", link: "/about" },
+    { label: "Services", value: "three", link: "/services" },
+    { label: "Resources", value: "four", link: "/resources" },
+    { label: "Contact Me", value: "five", link: "/contact" },
+  ];
+
   const socialLinks = [
     {
       id: 0,
@@ -197,19 +205,18 @@ const NavigationBar = () => {
               }}
             >
               <Container sx={mobileTabsContainerStyles}>
-                <MenuItem component={Link} to="/" sx={mobileTabStyle}>
-                  <Typography textAlign="center">Home</Typography>
-                </MenuItem>
-                <MenuItem component={Link} to="/about" sx={mobileTabStyle}>
-                  <Typography textAlign="center">About Me</Typography>
-                </MenuItem>
-
-                <MenuItem component={Link} to="/services" sx={mobileTabStyle}>
-                  <Typography textAlign="center">Services</Typography>
-                </MenuItem>
-                <MenuItem component={Link} to="/contact" sx={mobileTabStyle}>
-                  <Typography textAlign="center">Contact Me</Typography>
-                </MenuItem>
+                {tabItems.map((mobileTabItem) => (
+                  <MenuItem
+                    key={mobileTabItem.value}
+                    component={Link}
+                    to={mobileTabItem.link}
+                    sx={mobileTabStyle}
+                  >
+                    <Typography textAlign="center">
+                      {mobileTabItem.label}{" "}
+                    </Typography>
+                  </MenuItem>
+                ))}
               </Container>
             </Menu>
           </Box>
@@ -229,27 +236,15 @@ const NavigationBar = () => {
               textColor="secondary"
               indicatorColor="secondary"
             >
-              <Tab value="one" label="Home" component={Link} to="/" />
-              <Tab value="two" label="About Me" component={Link} to="/about" />
-
-              <Tab
-                value="three"
-                label="Services"
-                component={Link}
-                to="/services"
-              />
-              <Tab
-                value="four"
-                label="Resources"
-                component={Link}
-                to="/resources"
-              />
-              <Tab
-                value="five"
-                label="Contact Me"
-                component={Link}
-                to="/contact"
-              />
+              {tabItems.map((desktopTabItem) => (
+                <Tab
+                  key={desktopTabItem.value}
+                  value={desktopTabItem.value}
+                  label={desktopTabItem.label}
+                  component={Link}
+                  to={desktopTabItem.link}
+                />
+              ))}
             </Tabs>
           </Box>
 
