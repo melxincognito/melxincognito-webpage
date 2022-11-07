@@ -212,6 +212,10 @@ const NavigationBar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Box sx={socialLinkContainerStyles}>
+              {/* onKeyDown is needed so it can open the link using a keyboard. Having 
+              just the onClick doesn't allow keyboard accessibility & needs to be set so it
+              only opens when enter is pressed. Without it it'll open the link with any button 
+              being pressed */}
               {socialLinks.map((socialLink) => (
                 <Box
                   key={socialLink.id}
@@ -219,13 +223,15 @@ const NavigationBar = () => {
                   aria-label={socialLink.name}
                   tabIndex={0}
                   onClick={() => window.open(`${socialLink.link}`, "_blank")}
-                  onKeyDown={() => window.open(`${socialLink.link}`, "_blank")}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      window.open(`${socialLink.link}`, "_blank");
+                    }
+                  }}
                 >
                   {socialLink.icon}
                 </Box>
               ))}
-              {/* onKeyDown is needed so it can open the link using a keyboard. Having 
-              just the onClick doesn't allow keyboard accessibility */}
             </Box>
           </Box>
         </Toolbar>
