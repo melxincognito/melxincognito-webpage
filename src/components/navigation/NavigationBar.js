@@ -1,6 +1,5 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import {
   AppBar,
   Box,
@@ -14,15 +13,66 @@ import {
   MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { LinkedIn, GitHub } from "@mui/icons-material";
+import ComputerIcon from "@mui/icons-material/Computer";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
+
+//styles variables
+
+const appBarStyles = {
+  bgcolor: "primary.main",
+  padding: 2,
+  boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
+  color: "secondary.light",
+};
+
+const tabsContainerStyles = {
+  flexGrow: 1,
+  alignContent: "center",
+  justifyContent: "center",
+  display: { xs: "none", md: "flex" },
+};
+
+const tabsStyles = {
+  bgcolor: "rgba(255, 255, 255, 0.35)",
+  borderRadius: 5,
+  pt: 1.3,
+  boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
+};
+
+const mobileTabsContainerStyles = {
+  width: "20rem",
+  height: "100%",
+  display: "block",
+  float: "left",
+  bgcolor: "tercera.main",
+  color: "tercera.light",
+};
+
+const mobileTabStyle = {
+  display: "block",
+  width: "100%",
+  padding: "18px 20px",
+};
+
+const socialLinkContainerStyles = {
+  display: "flex",
+  flexWrap: "wrap",
+  width: { xs: "18vw", md: "10vw" },
+  justifyContent: "center",
+};
+
+const socialLinkStyles = {
+  p: 0.5,
+  cursor: "pointer",
+};
 
 const NavigationBar = () => {
   // state variables
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
-  const [value, setValue] = React.useState("one");
+  const [value, setValue] = useState("one");
 
   // handle event variables
 
@@ -38,58 +88,64 @@ const NavigationBar = () => {
     setAnchorElNav(null);
   };
 
-  // nav styles variables
+  const socialLinks = [
+    {
+      id: 0,
+      name: "GitHub",
+      icon: (
+        <GitHub
+          onClick={() =>
+            window.open("https://github.com/melxincognito", "_blank")
+          }
+          sx={socialLinkStyles}
+          fontSize="large"
+        />
+      ),
+    },
+    {
+      id: 1,
+      name: "LinkedIn",
+      icon: (
+        <LinkedIn
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/melgonzalez092/", "_blank")
+          }
+          sx={socialLinkStyles}
+          fontSize="large"
+        />
+      ),
+    },
+    {
+      id: 2,
+      name: "Hashnode Blog",
+      icon: (
+        <ComputerIcon
+          onClick={() =>
+            window.open("https://hashnode.com/@melxincognito", "_blank")
+          }
+          sx={socialLinkStyles}
+          fontSize="large"
+        />
+      ),
+    },
 
-  const appBarStyles = {
-    bgcolor: "primary.main",
-    padding: 2,
-    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
-    color: "secondary.light",
-  };
-
-  const tabsContainerStyles = {
-    flexGrow: 1,
-    alignContent: "center",
-    justifyContent: "center",
-    display: { xs: "none", md: "flex" },
-  };
-
-  const tabsStyles = {
-    bgcolor: "rgba(255, 255, 255, 0.35)",
-    borderRadius: 5,
-    pt: 1.3,
-    boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.4)",
-  };
-
-  const mobileTabStyle = {
-    display: "block",
-    width: "100%",
-    padding: "18px 20px",
-  };
-
-  const socialLinkStyles = {
-    p: 0.5,
-  };
-
-  // social link external page routes
-
-  function twitterPageClick() {
-    window.open("https://www.twitter.com/melxincognito", "_blank");
-  }
-
-  function facebookPageClick() {
-    window.open(
-      "https://www.facebook.com/MelxInc%C3%B6gnito-101595525789444",
-      "_blank"
-    );
-  }
-  function githubPageClick() {
-    window.open("https://github.com/melxincognito", "_blank");
-  }
-
-  function linkedInPageClick() {
-    window.open("https://www.linkedin.com/in/melgonzalez092/", "_blank");
-  }
+    {
+      id: 3,
+      name: "Facebook",
+      icon: (
+        <FacebookIcon
+          onClick={() => {
+            window.open(
+              "https://www.facebook.com/MelxInc%C3%B6gnito-101595525789444",
+              "_blank"
+            );
+          }}
+          sx={socialLinkStyles}
+          fontSize="large"
+        />
+      ),
+    },
+  ];
 
   return (
     <AppBar position="static" sx={appBarStyles}>
@@ -133,16 +189,7 @@ const NavigationBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <Container
-                sx={{
-                  width: "20rem",
-                  height: "100%",
-                  display: "block",
-                  float: "left",
-                  bgcolor: "tercera.main",
-                  color: "tercera.light",
-                }}
-              >
+              <Container sx={mobileTabsContainerStyles}>
                 <MenuItem component={Link} to="/" sx={mobileTabStyle}>
                   <Typography textAlign="center">Home</Typography>
                 </MenuItem>
@@ -199,30 +246,11 @@ const NavigationBar = () => {
             </Tabs>
           </Box>
 
-          <Box display="grid" sx={{ flexGrow: 0 }}>
-            <Box display="flex">
-              <Twitter
-                sx={socialLinkStyles}
-                fontSize="large"
-                onClick={twitterPageClick}
-              />
-              <FacebookIcon
-                sx={socialLinkStyles}
-                fontSize="large"
-                onClick={facebookPageClick}
-              />
-            </Box>
-            <Box>
-              <GitHub
-                sx={socialLinkStyles}
-                fontSize="large"
-                onClick={githubPageClick}
-              />
-              <LinkedIn
-                sx={socialLinkStyles}
-                fontSize="large"
-                onClick={linkedInPageClick}
-              />
+          <Box sx={{ flexGrow: 0 }}>
+            <Box sx={socialLinkContainerStyles}>
+              {socialLinks.map((socialLink) => (
+                <Box key={socialLink.id}>{socialLink.icon}</Box>
+              ))}
             </Box>
           </Box>
         </Toolbar>
