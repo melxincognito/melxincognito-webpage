@@ -99,6 +99,8 @@ const NavigationBar = () => {
           }
           sx={socialLinkStyles}
           fontSize="large"
+          role="button"
+          aria-label="GitHub social link"
         />
       ),
     },
@@ -112,12 +114,14 @@ const NavigationBar = () => {
           }
           sx={socialLinkStyles}
           fontSize="large"
+          role="button"
+          aria-label="LinkedIn social link"
         />
       ),
     },
     {
       id: 2,
-      name: "Hashnode Blog",
+      name: "HashNode Blog",
       icon: (
         <ComputerIcon
           onClick={() =>
@@ -125,6 +129,8 @@ const NavigationBar = () => {
           }
           sx={socialLinkStyles}
           fontSize="large"
+          role="button"
+          aria-label="HashNode social link"
         />
       ),
     },
@@ -142,6 +148,8 @@ const NavigationBar = () => {
           }}
           sx={socialLinkStyles}
           fontSize="large"
+          role="button"
+          aria-label="Facebook social link"
         />
       ),
     },
