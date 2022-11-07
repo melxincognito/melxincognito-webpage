@@ -100,58 +100,28 @@ const NavigationBar = () => {
     {
       id: 0,
       name: "GitHub Social Link",
-      icon: (
-        <GitHub
-          onClick={() =>
-            window.open("https://github.com/melxincognito", "_blank")
-          }
-          sx={socialLinkStyles}
-          fontSize="large"
-        />
-      ),
+      icon: <GitHub sx={socialLinkStyles} fontSize="large" />,
+      link: "https://github.com/melxincognito",
     },
     {
       id: 1,
       name: "LinkedIn Social Link",
-      icon: (
-        <LinkedIn
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/melgonzalez092/", "_blank")
-          }
-          sx={socialLinkStyles}
-          fontSize="large"
-        />
-      ),
+
+      icon: <LinkedIn sx={socialLinkStyles} fontSize="large" />,
+      link: "https://www.linkedin.com/in/melgonzalez092/",
     },
     {
       id: 2,
       name: "HashNode Blog Social Link",
-      icon: (
-        <ComputerIcon
-          onClick={() =>
-            window.open("https://hashnode.com/@melxincognito", "_blank")
-          }
-          sx={socialLinkStyles}
-          fontSize="large"
-        />
-      ),
+      icon: <ComputerIcon sx={socialLinkStyles} fontSize="large" />,
+      link: "https://hashnode.com/@melxincognito",
     },
 
     {
       id: 3,
       name: "Facebook Social Link",
-      icon: (
-        <FacebookIcon
-          onClick={() => {
-            window.open(
-              "https://www.facebook.com/MelxInc%C3%B6gnito-101595525789444",
-              "_blank"
-            );
-          }}
-          sx={socialLinkStyles}
-          fontSize="large"
-        />
-      ),
+      icon: <FacebookIcon sx={socialLinkStyles} fontSize="large" />,
+      link: "https://www.facebook.com/MelxInc%C3%B6gnito-101595525789444",
     },
   ];
 
@@ -248,10 +218,14 @@ const NavigationBar = () => {
                   role="button"
                   aria-label={socialLink.name}
                   tabIndex={0}
+                  onClick={() => window.open(`${socialLink.link}`, "_blank")}
+                  onKeyDown={() => window.open(`${socialLink.link}`, "_blank")}
                 >
                   {socialLink.icon}
                 </Box>
               ))}
+              {/* onKeyDown is needed so it can open the link using a keyboard. Having 
+              just the onClick doesn't allow keyboard accessibility */}
             </Box>
           </Box>
         </Toolbar>
